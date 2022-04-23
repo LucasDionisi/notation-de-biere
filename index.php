@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <?php include 'tools/head.php';?>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
