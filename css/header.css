@@ -1,0 +1,14 @@
+header{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+}
+
+.header-right{
+    display: flex;
+}
