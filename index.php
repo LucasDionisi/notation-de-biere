@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <?php include 'tools/head.php';?>
+  <head>
+    <?php include 'tools/head.php';?>
+  </head>
   <body>
   </body>
 </html>
