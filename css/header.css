@@ -1,4 +1,4 @@
-header{
+header {
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
@@ -7,10 +7,15 @@ header{
     font-size: 1.2em;
 }
 
-.header-left{
+.header > img {
+    width: 3em;
+    margin-right: 1em;
+}
+
+.header-left {
     display: flex;
 }
 
-.header-right{
+.header-right {
     display: flex;
 }
