@@ -1,5 +1,7 @@
-html {
+body {
     font-family: 'Brush Script MT', cursive, sans-serif;
     font-weight: unset;
     font-size: 1em;
+    margin: 0px;
+    background-color: #1f1f23;
 }

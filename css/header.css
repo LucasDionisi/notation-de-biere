@@ -1,25 +1,40 @@
 header {
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 1em 10% 1em 10%;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 1.2em;
+    background-color: #0e0e10;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+header p {
+    color: white;
 }
 
 .header > img {
     width: 3em;
-    margin-right: 1em;
 }
 
 .header-left {
     display: flex;
 }
 
+.header-left > img {
+    margin-right: 1em;
+}
+
 .header-right {
     display: flex;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 1em;
+        padding: 0.5em 10% 0.5em 10%;
+    }
 
-} */
+    .header > img {
+        width: 2em;
+    }
+}
