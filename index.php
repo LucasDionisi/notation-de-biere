@@ -11,7 +11,7 @@
         <p>Notation de bière</p>
       </div>
       <div class="header header-right">
-        <p>Image de profil</p>
+        <img src="resources/img/profil.svg" alt="Photo de profil"/>
       </div>
     </header>
   </body>
