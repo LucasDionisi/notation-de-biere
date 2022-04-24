@@ -3,3 +3,4 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Notation de bière</title>
 <link rel="stylesheet" href="../css/header.css">
+<link rel="icon" href="../resources/img/favicon.ico">
