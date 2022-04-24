@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     font-weight: bold;
     font-size: 1.2em;
-    background-color: #0e0e10;
+    background-color: #100f0e;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -12,7 +12,7 @@ header p {
     color: white;
 }
 
-.header > img {
+.header img {
     width: 3em;
 }
 
@@ -26,6 +26,17 @@ header p {
 
 .header-right {
     display: flex;
+}
+
+.add-advice {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.add-advice img {
+    width: 2em;
+    margin-right: 0.5em;
 }
 
 @media screen and (max-width: 600px) {
