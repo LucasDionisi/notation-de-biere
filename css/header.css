@@ -39,7 +39,7 @@ header p {
     margin-right: 0.5em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     header {
         font-size: 1em;
         padding: 0.5em 10% 0.5em 10%;
@@ -47,5 +47,9 @@ header p {
 
     .header > img {
         width: 2em;
+    }
+
+    .add-advice > p {
+        display: none;
     }
 }
