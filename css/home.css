@@ -1,0 +1,16 @@
+.input-search {
+    all: unset;
+    background-color: #100f0e;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    max-width: 100%;
+    width: 25em;
+    height: 2em;
+    color: white;
+    border-radius: 15px;
+    font-style: italic;
+}
+
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+  }

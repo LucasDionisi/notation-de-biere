@@ -18,5 +18,10 @@
         <img src="resources/img/profil.svg" alt="Photo de profil"/>
       </div>
     </header>
+    <main>
+      <form class="form-search" role="search">
+        <input type="search" class="input-search" placeholder="Quelle bière ?" aria-label="Rechercher une bière">
+      </form>
+    </main>
   </body>
 </html>
