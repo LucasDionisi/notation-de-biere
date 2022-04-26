@@ -11,6 +11,25 @@
     font-style: italic;
 }
 
-input[type="search"]::-webkit-search-results-decoration {
-    -webkit-appearance:none;
-  }
+.collection-beer
+{
+    background-color: white;
+    padding-top: 2%;
+    height: 30em;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beer-preview
+{
+    background-color: grey;
+    list-style: none;
+    flex: 0 0 30%;
+    height: 2em;
+    min-width: 15em;
+    max-width: 20em;
+    margin-left: 1%;
+    margin-right: 1%;
+}

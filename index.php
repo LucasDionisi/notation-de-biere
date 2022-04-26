@@ -9,6 +9,35 @@
       <form class="form-search" role="search">
         <input type="search" class="input-search" placeholder="Quelle bière ?" aria-label="Rechercher une bière">
       </form>
+      <div class="collection-beer">
+        <div class="beer-preview">
+          
+        </div>
+                <div class="beer-preview">
+          
+        </div>
+                <div class="beer-preview">
+          
+        </div>
+                <div class="beer-preview">
+          
+        </div>
+                <div class="beer-preview">
+          
+        </div>
+                <div class="beer-preview">
+          
+        </div>
+                <div class="beer-preview">
+          
+        </div>
+                <div class="beer-preview">
+          
+        </div>
+                <div class="beer-preview">
+          
+        </div>
+      </div>
     </main>
   </body>
 </html>
