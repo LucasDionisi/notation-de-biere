@@ -4,7 +4,6 @@
 <title>Notation de bière</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="../css/header.css">
-<link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/home.css">
 <link rel="stylesheet" href="../css/footer.css">
 <link rel="icon" href="../resources/img/favicon.ico">

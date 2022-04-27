@@ -5,7 +5,6 @@
   </head>
   <body>
     <?php include 'tools/header.php';?>
-    <div class="main">
       <form class="form-search" role="search">
         <input type="search" class="input-search" placeholder="Quelle bière ?" aria-label="Rechercher une bière">
       </form>
@@ -431,6 +430,5 @@
           </div>
         </div>
       </div>
-    </div>
   </body>
 </html>
