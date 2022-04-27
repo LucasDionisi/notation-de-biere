@@ -11,31 +11,49 @@
       </form>
       <div class="collection-beer">
         <div class="beer-preview">
-          
+          <div class="beer-thumbnail">
+            <img src="resources/img/beers/leffe.jpg"/>
+          </div>
         </div>
-                <div class="beer-preview">
-          
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+            <img src="resources/img/beers/fada.png"/>
+          </div>
         </div>
-                <div class="beer-preview">
-          
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+            <img src="resources/img/beers/fada.png"/>
+          </div>
         </div>
-                <div class="beer-preview">
-          
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+            <img src="resources/img/beers/chouffe.jpg"/>
+          </div>
         </div>
-                <div class="beer-preview">
-          
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+           <img src="resources/img/beers/fada.png"/>
+          </div>
         </div>
-                <div class="beer-preview">
-          
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+            <img src="resources/img/beers/fada.png"/>
+          </div>
         </div>
-                <div class="beer-preview">
-          
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+           <img src="resources/img/beers/fada.png"/>
+          </div>
         </div>
-                <div class="beer-preview">
-          
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+            <img src="resources/img/beers/fada.png"/>
+          </div>
         </div>
-                <div class="beer-preview">
-          
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+           <img src="resources/img/beers/fada.png"/>
+          </div>
         </div>
       </div>
     </main>
