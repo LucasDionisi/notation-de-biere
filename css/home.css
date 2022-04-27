@@ -15,11 +15,18 @@
 .collection-beer
 {
     padding-top: 2%;
-    height: 30em;
     margin-top: 2em;
+    height: calc(100vh - 12em);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: auto;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.collection-beer::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 .beer-preview
