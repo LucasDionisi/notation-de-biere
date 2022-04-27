@@ -15,7 +15,19 @@
             <img src="resources/img/beers/leffe.jpg"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
         <div class="beer-preview">
@@ -23,7 +35,19 @@
             <img src="resources/img/beers/fada.png"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
         <div class="beer-preview">
@@ -31,7 +55,19 @@
             <img src="resources/img/beers/fada.png"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
         <div class="beer-preview">
@@ -39,7 +75,19 @@
             <img src="resources/img/beers/chouffe.jpg"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
         <div class="beer-preview">
@@ -47,7 +95,19 @@
            <img src="resources/img/beers/fada.png"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
         <div class="beer-preview">
@@ -55,7 +115,19 @@
             <img src="resources/img/beers/fada.png"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
         <div class="beer-preview">
@@ -63,7 +135,19 @@
            <img src="resources/img/beers/fada.png"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
         <div class="beer-preview">
@@ -71,7 +155,19 @@
             <img src="resources/img/beers/fada.png"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
         <div class="beer-preview">
@@ -79,7 +175,19 @@
            <img src="resources/img/beers/fada.png"/>
           </div>
           <div class="beer-description">
-            <p>Bla bla bla</p>
+            <div class="beer-description-name"><p>Bla bla bla</p></div>
+            <div class="beer-rate">
+              <div class="beer-rate-img">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+                <img src="resources/img/beer-rate.svg">
+              </div>
+              <div class="beer-rate-advices">
+                641
+              </div>
+            </div>
           </div>
         </div>
       </div>

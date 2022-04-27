@@ -24,7 +24,6 @@
 
 .beer-preview
 {
-    background-color: grey;
     height: 20em;
     min-width: 16em;
     max-width: 16em;
@@ -52,5 +51,39 @@
 
 .beer-description
 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 4em;
+    padding-left: 1em;
+}
+
+.beer-description-name
+{
+    font-size: 1.3em;
+}
+
+.beer-description p
+{
+    font-weight: bold;
+    margin: 0;
+}
+
+.beer-rate
+{
+    display: flex;
+}
+
+.beer-rate-img img
+{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.beer-rate-advices
+{
+    margin-left: 1em;
+    font-style: italic;
+    color: grey;
 }
