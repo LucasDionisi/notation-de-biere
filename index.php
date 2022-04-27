@@ -14,45 +14,72 @@
           <div class="beer-thumbnail">
             <img src="resources/img/beers/leffe.jpg"/>
           </div>
-        </div>
-        <div class="beer-preview">
-          <div class="beer-thumbnail">
-            <img src="resources/img/beers/fada.png"/>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
           </div>
         </div>
         <div class="beer-preview">
           <div class="beer-thumbnail">
             <img src="resources/img/beers/fada.png"/>
+          </div>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
+          </div>
+        </div>
+        <div class="beer-preview">
+          <div class="beer-thumbnail">
+            <img src="resources/img/beers/fada.png"/>
+          </div>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
           </div>
         </div>
         <div class="beer-preview">
           <div class="beer-thumbnail">
             <img src="resources/img/beers/chouffe.jpg"/>
           </div>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
+          </div>
         </div>
         <div class="beer-preview">
           <div class="beer-thumbnail">
            <img src="resources/img/beers/fada.png"/>
+          </div>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
           </div>
         </div>
         <div class="beer-preview">
           <div class="beer-thumbnail">
             <img src="resources/img/beers/fada.png"/>
           </div>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
+          </div>
         </div>
         <div class="beer-preview">
           <div class="beer-thumbnail">
            <img src="resources/img/beers/fada.png"/>
+          </div>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
           </div>
         </div>
         <div class="beer-preview">
           <div class="beer-thumbnail">
             <img src="resources/img/beers/fada.png"/>
           </div>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
+          </div>
         </div>
         <div class="beer-preview">
           <div class="beer-thumbnail">
            <img src="resources/img/beers/fada.png"/>
+          </div>
+          <div class="beer-description">
+            <p>Bla bla bla</p>
           </div>
         </div>
       </div>
