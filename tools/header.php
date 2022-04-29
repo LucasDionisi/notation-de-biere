@@ -4,9 +4,9 @@
         <p>Notation de bière</p>
       </div>
       <div class="header header-right">
-        <div class="add-advice">
+        <div class="add-beer">
           <img src="resources/img/add.svg" alt="Ajouter un avis"/>
-          <p>Ajouter un avis</p>
+          <p>Ajouter une bière</p>
         </div>
         <img src="resources/img/profil.svg" alt="Photo de profil"/>
       </div>

@@ -28,13 +28,13 @@ header p {
     display: flex;
 }
 
-.add-advice {
+.add-beer {
     display: flex;
     align-items: center;
     margin-right: 2em;
 }
 
-.add-advice img {
+.add-beer img {
     width: 2em;
     margin-right: 0.5em;
 }
@@ -49,7 +49,7 @@ header p {
         width: 2em;
     }
 
-    .add-advice > p {
+    .add-beer > p {
         display: none;
     }
 }
