@@ -1,0 +1,34 @@
+.beer-info
+{
+	margin: 2em 11% 0 11%;
+	height: 30vh;
+	background-color: #100f0ea8;
+	border-radius: 1em;
+	overflow: hidden;
+}
+
+h1
+{
+	color: white;
+	margin: 0;
+	padding: 0.5% 1% 0 5%;
+}
+
+.title-and-rate
+{
+	padding-top: 0.5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rate-icons
+{
+	padding-right: 5%;
+}
+
+.rate-icons img
+{
+	width: 2em;
+	height: 2em;
+}
