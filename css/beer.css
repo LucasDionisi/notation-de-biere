@@ -18,8 +18,7 @@ h1
 {
 	padding-top: 0.5%;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .rate-icons
