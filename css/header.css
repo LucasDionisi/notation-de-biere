@@ -41,6 +41,12 @@ header p
     margin-right: 2em;
 }
 
+.add-beer > a
+{
+    all: inherit;
+    cursor: pointer;
+}
+
 .add-beer img 
 {
     width: 2em;
@@ -60,13 +66,19 @@ header p
         width: 2em;
     }
 
-    .add-beer > p 
+    .add-beer
+    {
+        margin-right: 0.2em;
+    }
+
+    .add-beer p 
     {
         display: none;
     }
 
-    .add-beer > img
+    .add-beer img
     {
         width: 1.6em;
+        margin-right: 0;
     }
 }
