@@ -6,5 +6,8 @@
   </head>
   <body>
     <?php include '../tools/header.php';?>
+    <h1>
+        Ajouter une nouvelle bière
+    </h1>
   </body>
 </html>
