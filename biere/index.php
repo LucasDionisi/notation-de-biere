@@ -19,9 +19,27 @@
       </div>
       <div class="description-and-img">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Des matières premières sélectionnées avec grand soin
+
+          C’est à la Brasserie du Castellet à Signes que sont brassées ces bières artisanales et provençales, à partir de matières premières locales.
+
+          Epeautre tout droit venu de la Drôme pour la Blonde, romarin des collines cueilli à la main pour la blanche et saveur pêche pour la Sunny India Pale Ale.
+
+          Des recettes originales élaborées avec soin par Victor, maître brasseur amoureux de la Provence et passionné de son métier.
         </p>
         <img src="../resources/img/beers/fada.png">
+      </div>
+    </div>
+    <div class="beer-content">
+      <button class="add-advice">Rédiger un avis</button>
+      <div class="beer-advices">
+        <div class="beer-advice"></div>
+        <div class="beer-advice"></div>
+        <div class="beer-advice"></div>
+        <div class="beer-advice"></div>
+        <div class="beer-advice"></div>
+        <div class="beer-advice"></div>
+        <div class="beer-advice"></div>
       </div>
     </div>
   </body>
