@@ -8,6 +8,7 @@
     <?php include '../tools/header.php';?>
     <div class="beer-page">
       <div class="beer-info">
+        <div class="title-rate-and-description">
         <div class="title-and-rate">
           <h1>Fada</h1>
           <div class="rate-icons">
@@ -18,7 +19,7 @@
             <img src="../resources/img/beer-rate.svg">
           </div>
         </div>
-        <div class="description-and-img">
+        <div class="description">
           <p>
             Des matières premières sélectionnées avec grand soin
 
@@ -28,8 +29,9 @@
 
             Des recettes originales élaborées avec soin par Victor, maître brasseur amoureux de la Provence et passionné de son métier.
           </p>
-          <img src="../resources/img/beers/fada.png">
         </div>
+        </div>
+        <img src="../resources/img/beers/fada.png">
       </div>
       <div class="beer-content">
         <button class="add-advice">Rédiger un avis</button>
