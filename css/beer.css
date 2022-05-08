@@ -1,10 +1,36 @@
+.beer-page {
+	margin: 2em 11% 0 11%;
+	overflow: auto;
+	height: calc(100vh - 8em);
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+.beer-page::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 .beer-info
 {
-	margin: 2em 11% 0 11%;
-	/*height: 30vh;*/
+	
 	background-color: #100f0ea8;
 	border-radius: 1em;
 	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 1em 0 1em;
+}
+
+.beer-content
+{
+	margin-top: 2em;
+}
+
+.title-and-rate > h1
+{
+	color: white;
+	margin: 0;
+	padding: 0.5% 1% 0 0;
 }
 
 .title-and-rate
@@ -25,33 +51,38 @@
 	height: 2em;
 }
 
-.description-and-img
+.description
 {
-	padding: 0 2% 2% 2%;
-	max-height: 15em;
+	max-height: 8em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.description-and-img p
+.description p
 {
-	width: 65%;
-	max-height: 15em;
-	margin: auto;
+	max-height: 8em;
 	overflow: auto;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
 }
 
-.description-and-img p::-webkit-scrollbar {
+.description p::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-.description-and-img img
+.title-rate-and-description
+{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.beer-info > img
 {
 	max-height: 15em;
-	margin: auto;
+	margin: 1em 0 1em 0;
 }
 
 @media screen and (max-width: 700px) {
@@ -61,18 +92,50 @@
 		height: 1.2em;
 	}
 
-	.description-and-img
+	.description
 	{
-		max-height: 10em;
+		max-height: 6em;
 	}
 	
-	.description-and-img p
+	.description p
 	{
-		max-height: 10em;
+		max-height: 6em;
 	}
 
-	.description-and-img img
+	.beer-info > img
 	{
-		max-height: 10em;
+		max-height: 6em;
+	}
+}
+
+.beer-advices
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.beer-advice
+{
+	background-color: white;
+	height: 12em;
+	margin-top: 1em;
+}
+
+@media screen and (max-width: 380px) {
+	.beer-info > img
+	{
+		display: none;
+	}
+
+	.title-rate-and-description
+	{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.beer-advice
+	{
+		height: 5em;
 	}
 }
