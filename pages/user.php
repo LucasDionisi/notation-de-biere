@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <?php include 'tools/head.php';?>
+    <?php include 'includes/head.php';?>
   </head>
   <body>
-    <?php include 'tools/header.php';?>
+    <?php include 'includes/header.php';?>
   </body>
 </html>

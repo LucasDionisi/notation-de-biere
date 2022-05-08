@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <?php include 'tools/head.php';?>
+    <?php include 'includes/head.php';?>
     <link rel="stylesheet" href="css/home.css">
   </head>
   <body>
-    <?php include 'tools/header.php';?>
+    <?php include 'includes/header.php';?>
       <form class="form-search" role="search">
         <input type="search" class="input-search" placeholder="Quelle bière ?" aria-label="Rechercher une bière">
       </form>
