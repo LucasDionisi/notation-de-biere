@@ -13,9 +13,9 @@
       try {
         $test = new DatabaseViewer();
         $test->connect();
-        echo 'OK';
+        
       } catch (Exception $exception) {
-        // Show exception->getmessage();  dans logger
+        // Show exception->getmessage(); dans logger
         header("Location: ../404");
         exit();
       }

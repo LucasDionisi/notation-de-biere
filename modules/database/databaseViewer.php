@@ -22,17 +22,17 @@
             $dbNameKey = "dbName";
 
             $this->serverName = $databaseCredentials->$serverNameKey;
-            $this->serverName = $databaseCredentials->$userNameKey;
-            $this->serverName = $databaseCredentials->$passwordKey;
-            $this->serverName = $databaseCredentials->$dbNameKey;
+            $this->userName = $databaseCredentials->$userNameKey;
+            $this->password = $databaseCredentials->$passwordKey;
+            $this->dbName = $databaseCredentials->$dbNameKey;
         }
 
         function connect() {
             $this->connection = new mysqli(
-                $this->serverNameKey, 
-                $this->userNameKey, 
-                $this->passwordKey, 
-                $this->dbNameKey
+                $this->serverName, 
+                $this->userName, 
+                $this->password, 
+                $this->dbName
             );
 
             if ($this->connection->connect_error) throw new Exception("Error during the connection to the database.");
