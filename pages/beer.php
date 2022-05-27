@@ -5,7 +5,22 @@
     <link rel="stylesheet" href="../css/beer.css">
   </head>
   <body>
-    <?php include 'includes/header.php';?>
+    <?php 
+      include 'includes/header.php';
+
+      require_once 'modules/database/databaseViewer.php';
+
+      try {
+        $test = new DatabaseViewer();
+        $test->connect();
+        echo 'OK';
+      } catch (Exception $exception) {
+        // Show exception->getmessage();  dans logger
+        header("Location: ../404");
+        exit();
+      }
+    ?>
+
     <div class="beer-page">
       <div class="beer-info">
         <div class="title-rate-and-description">
