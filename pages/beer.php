@@ -11,8 +11,11 @@
       require_once 'modules/database/databaseViewer.php';
 
       try {
-        $test = new DatabaseViewer();
-        $test->connect();
+        $databaseViewer = new DatabaseViewer();
+        $databaseViewer->connect();
+
+        $databaseViewer->getBeer("Fada");
+        $databaseViewer->disconnect();
         
       } catch (Exception $exception) {
         // Show exception->getmessage(); dans logger

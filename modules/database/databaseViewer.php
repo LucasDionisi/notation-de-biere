@@ -27,7 +27,8 @@
             $this->dbName = $databaseCredentials->$dbNameKey;
         }
 
-        function connect() {
+        function connect() 
+        {
             $this->connection = new mysqli(
                 $this->serverName, 
                 $this->userName, 
@@ -36,6 +37,26 @@
             );
 
             if ($this->connection->connect_error) throw new Exception("Error during the connection to the database.");
+        }
+
+        function disconnect()
+        {
+            $this->connection->close();
+        }
+
+        function getBeer($name) 
+        {
+            if ($this->connection == NULL) return NULL;
+
+            $sql = "SELECT * FROM biere WHERE LOWER(nom) = LOWER(?)";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 's', $name);
+            $stmt->execute();
+            
+            $res = $stmt->get_result();
+            $stmt->close();
+
+            return $res;
         }
     }
 ?>
