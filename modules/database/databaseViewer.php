@@ -53,7 +53,7 @@
         {
             if ($this->connection == NULL) return NULL;
 
-            $sql = "SELECT * FROM biere WHERE LOWER(nom) = LOWER(?)";
+            $sql = "SELECT b.*, COUNT(a.biereID) AS nbAvis, AVG(a.note) as noteMoyenne FROM biere b LEFT JOIN avis a ON b.id = a.biereID WHERE LOWER(b.nom) = LOWER(?) GROUP BY b.id";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $name);
             $stmt->execute();

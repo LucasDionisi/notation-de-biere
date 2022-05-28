@@ -59,7 +59,10 @@
         <img src="../resources/img/beers/fada.png">
       </div>
       <div class="beer-content">
-        <button class="add-advice">Rédiger un avis</button>
+        <div class="beer-content-header">
+          <button class="add-advice">Rédiger un avis</button>
+          <p><?=$beer['nbAvis']?> avis</p>
+        </div>
         <div class="beer-advices">
           <div class="beer-advice"></div>
           <div class="beer-advice"></div>

@@ -26,6 +26,17 @@
 	margin-top: 2em;
 }
 
+.beer-content-header
+{
+	display: flex;
+}
+
+.beer-content-header p
+{
+	margin-left: 2em;
+	font-style: italic;
+}
+
 .title-and-rate
 {
 	padding-top: 0.5%;
