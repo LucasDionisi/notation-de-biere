@@ -10,13 +10,24 @@
 
       require_once 'modules/database/databaseViewer.php';
 
+      $beer = null;
       try {
         $databaseViewer = new DatabaseViewer();
         $databaseViewer->connect();
-
-        $databaseViewer->getBeer("Fada");
+        $result = $databaseViewer->getBeer($beerName);
         $databaseViewer->disconnect();
-        
+
+        if ($result->num_rows != 1) {
+          header("Location: ../404");
+          exit();
+        }
+
+        $beer = $result->fetch_assoc();
+        if ($beer == null) {
+          header("Location: ../404");
+          exit();
+        }
+
       } catch (Exception $exception) {
         // Show exception->getmessage(); dans logger
         header("Location: ../404");
