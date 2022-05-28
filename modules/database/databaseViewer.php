@@ -63,5 +63,20 @@
 
             return $res;
         }
+
+        function getAdvices($beerID)
+        {
+            if ($this->connection == NULL) return NULL;
+
+            $sql = "SELECT a.*, u.nom AS userName FROM avis a LEFT JOIN user u ON a.userID = u.id WHERE biereID = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'i', $beerID);
+            $stmt->execute();
+
+            $res = $stmt->get_result();
+            $stmt->close();
+
+            return $res;
+        }
     }
 ?>
