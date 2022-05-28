@@ -52,9 +52,7 @@
                   <img src="resources/img/beer-rate.svg">
                   <img src="resources/img/beer-rate.svg">
                 </div>
-                <div class="beer-rate-advices">
-                  641
-                </div>
+                <div class="beer-rate-advices"><?=$beer['nbAvis']?> avis</div>
               </div>
             </div>
           </a>

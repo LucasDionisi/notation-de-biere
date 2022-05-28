@@ -46,7 +46,7 @@
 
         function getBeers()
         {
-            return $this->connection->query("SELECT * FROM biere");
+            return $this->connection->query("SELECT b.*, COUNT(a.biereID) AS nbAvis, AVG(a.note) AS noteMoyenne FROM biere b LEFT JOIN avis a ON b.id = a.biereID GROUP BY b.id;");
         }
 
         function getBeer($name) 
