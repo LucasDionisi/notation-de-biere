@@ -39,7 +39,10 @@
       <div class="beer-info">
         <div class="title-rate-and-description">
         <div class="title-and-rate">
-          <h1>Fada</h1>
+          <div class="title-info">
+            <h1><?=$beer['nom']?></h1>
+            <p>Alc. 5.5% Vol.</p>
+          </div>
           <div class="rate-icons">
             <img src="../resources/img/beer-rate.svg">
             <img src="../resources/img/beer-rate.svg">
@@ -49,15 +52,7 @@
           </div>
         </div>
         <div class="description">
-          <p>
-            Des matières premières sélectionnées avec grand soin
-
-            C’est à la Brasserie du Castellet à Signes que sont brassées ces bières artisanales et provençales, à partir de matières premières locales.
-
-            Epeautre tout droit venu de la Drôme pour la Blonde, romarin des collines cueilli à la main pour la blanche et saveur pêche pour la Sunny India Pale Ale.
-
-            Des recettes originales élaborées avec soin par Victor, maître brasseur amoureux de la Provence et passionné de son métier.
-          </p>
+          <p><?=$beer['information']?></p>
         </div>
         </div>
         <img src="../resources/img/beers/fada.png">

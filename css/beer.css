@@ -26,23 +26,35 @@
 	margin-top: 2em;
 }
 
-.title-and-rate > h1
+.title-and-rate
+{
+	padding-top: 0.5%;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.title-and-rate h1
 {
 	color: white;
 	margin: 0;
 	padding: 0.5% 1% 0 0;
 }
 
-.title-and-rate
+.title-info
 {
-	padding-top: 0.5%;
 	display: flex;
-	align-items: flex-end;
+}
+
+.title-info p
+{
+	white-space: nowrap;
 }
 
 .rate-icons
 {
-	padding-right: 5%;
+	padding-left:  2%;
+	padding-right: 2%;
 }
 
 .rate-icons img
