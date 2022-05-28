@@ -11,7 +11,8 @@
       require_once 'modules/database/databaseViewer.php';
 
       $beer = null;
-      try {
+      try 
+      {
         $databaseViewer = new DatabaseViewer();
         $databaseViewer->connect();
         $result = $databaseViewer->getBeer($beerName);
@@ -27,8 +28,8 @@
           header("Location: ../404");
           exit();
         }
-
-      } catch (Exception $exception) {
+      } catch (Exception $exception) 
+      {
         // Show exception->getmessage(); dans logger
         header("Location: ../404");
         exit();
@@ -41,7 +42,7 @@
         <div class="title-and-rate">
           <div class="title-info">
             <h1><?=$beer['nom']?></h1>
-            <p>Alc. 5.5% Vol.</p>
+            <p>Alc. <?=$beer['degre_alcool']?>% Vol.</p>
           </div>
           <div class="rate-icons">
             <img src="../resources/img/beer-rate.svg">

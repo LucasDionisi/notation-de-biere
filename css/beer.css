@@ -48,6 +48,7 @@
 
 .title-info p
 {
+	margin-left: 7%;
 	white-space: nowrap;
 }
 
@@ -97,7 +98,8 @@
 	margin: 1em 0 1em 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) 
+{
 	.rate-icons img
 	{
 		width: 1.2em;
@@ -133,7 +135,8 @@
 	margin-top: 1em;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 380px) 
+{
 	.beer-info > img
 	{
 		display: none;
@@ -145,7 +148,8 @@
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) 
+{
 	.beer-advice
 	{
 		height: 5em;

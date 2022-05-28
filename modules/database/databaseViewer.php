@@ -44,6 +44,11 @@
             $this->connection->close();
         }
 
+        function getBeers()
+        {
+            return $this->connection->query("SELECT * FROM biere");
+        }
+
         function getBeer($name) 
         {
             if ($this->connection == NULL) return NULL;
