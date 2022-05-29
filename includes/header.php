@@ -1,8 +1,10 @@
 <header>
-  <div class="header header-left">
-    <img src="../resources/img/beer.svg" alt="Logo notation de bière"/>
-    <a href="../"><p>Notation de bière</p></a>
-  </div>
+  <a href="../">
+    <div class="header header-left">
+      <img src="../resources/img/beer.svg" alt="Logo notation de bière"/>
+      <p>Notation de bière</p>
+    </div>
+  </a>
   <div class="header header-right">
     <div class="add-beer">
       <a href="../ajouter/">
