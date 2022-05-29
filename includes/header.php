@@ -8,7 +8,7 @@
   <div class="header header-right">
     <div class="add-beer">
       <a href="../ajouter/">
-        <img src="../resources/img/add.svg" alt="Ajouter un avis"/>
+        <img src="../resources/img/add.svg" alt="Ajouter un advice"/>
         <p>Ajouter une bière</p>
       </a>
     </div>

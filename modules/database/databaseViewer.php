@@ -46,14 +46,14 @@
 
         function getBeers()
         {
-            return $this->connection->query("SELECT b.*, COUNT(a.biereID) AS nbAvis, AVG(a.note) AS noteMoyenne FROM biere b LEFT JOIN avis a ON b.id = a.biereID GROUP BY b.id;");
+            return $this->connection->query("SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) AS rate_average FROM beer b LEFT JOIN advice a ON b.id = a.beer_id GROUP BY b.id;");
         }
 
         function getBeer($name) 
         {
             if ($this->connection == NULL) return NULL;
 
-            $sql = "SELECT b.*, COUNT(a.biereID) AS nbAvis, AVG(a.note) as noteMoyenne FROM biere b LEFT JOIN avis a ON b.id = a.biereID WHERE LOWER(b.nom) = LOWER(?) GROUP BY b.id";
+            $sql = "SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) as rate_average FROM beer b LEFT JOIN advice a ON b.id = a.beer_id WHERE LOWER(b.name) = LOWER(?) GROUP BY b.id";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $name);
             $stmt->execute();
@@ -64,13 +64,13 @@
             return $res;
         }
 
-        function getAdvices($beerID)
+        function getAdvices($beer_id)
         {
             if ($this->connection == NULL) return NULL;
 
-            $sql = "SELECT a.*, u.nom AS userName FROM avis a LEFT JOIN user u ON a.userID = u.id WHERE biereID = ?";
+            $sql = "SELECT a.*, u.name AS userName FROM advice a LEFT JOIN user u ON a.user_id = u.id WHERE beer_id = ?";
             $stmt = $this->connection->prepare($sql);
-            mysqli_stmt_bind_param($stmt, 'i', $beerID);
+            mysqli_stmt_bind_param($stmt, 'i', $beer_id);
             $stmt->execute();
 
             $res = $stmt->get_result();

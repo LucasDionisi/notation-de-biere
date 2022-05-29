@@ -38,12 +38,12 @@
       ?>
 
         <div class="beer-preview">
-          <a href="/biere/<?=$beer['nom']?>">
+          <a href="/biere/<?=$beer['name']?>">
             <div class="beer-thumbnail">
-              <img src="resources/img/beers/leffe.jpg"/>
+              <img src="resources/img/beers/<?=$beer['image_name']?>"/>
             </div>
             <div class="beer-description">
-              <div class="beer-description-name"><p><?=$beer['nom']?></p></div>
+              <div class="beer-description-name"><p><?=$beer['name']?></p></div>
               <div class="beer-rate">
                 <div class="beer-rate-img">
                   <img src="resources/img/beer-rate.svg">
@@ -52,7 +52,7 @@
                   <img src="resources/img/beer-rate.svg">
                   <img src="resources/img/beer-rate.svg">
                 </div>
-                <div class="beer-rate-advices"><?=$beer['nbAvis']?> avis</div>
+                <div class="beer-rate-advices"><?=$beer['nb_advices']?> avis</div>
               </div>
             </div>
           </a>
