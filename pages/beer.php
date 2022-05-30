@@ -93,9 +93,23 @@
           while ($advice = $advices->fetch_assoc()) {
       ?>
           <div class="beer-advice">
-            <!-- c'est écrit en blanc lol -->
-            <p><?=$advice['userName']?></p>
-            <p><?=$advice['comment']?></p>
+            <div class="beer-advice-left">
+              <img src="../resources/img/profil.svg">
+              <div class="userInfos">
+                <div class="userName">
+                  <p><?=$advice['userName']?></p>
+                </div>
+                <div class="nbAdvices">
+                  <p>7 Avis</p>
+                </div>
+              </div>
+            </div>
+            <div class="beer-advice-right">
+
+            </div>
+
+            <!-- <p><?=$advice['userName']?></p>
+            <p><?=$advice['comment']?></p> -->
           </div>
         
       <?php
