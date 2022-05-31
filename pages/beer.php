@@ -80,7 +80,7 @@
 
       <div class="beer-content">
         <div class="beer-content-header">
-          <button class="add-advice">Rédiger un avis</button>
+          <button class="add-advice" onclick="window.location.href='../rediger/<?=$beer['name']?>'">Rédiger un avis</button>
           <p><?=$beer['nb_advices']?> avis</p>
         </div>
         <div class="beer-advices">

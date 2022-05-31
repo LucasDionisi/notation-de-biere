@@ -13,6 +13,10 @@ if ($url == '') {
       $beerName = $url[1];
       require 'pages/beer.php';
       break;
+    case 'rediger':
+      $beerName = $url[1];
+      require 'pages/write.php';
+      break;
     case '404':
       require 'pages/404.php';
       break;
