@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS advice
     beer_id INT NOT NULL,
     user_id INT NOT NULL,
     rate INT NOT NULL,
+    title VARCHAR(100),
     comment VARCHAR(500),
     PRIMARY KEY (id),
     FOREIGN KEY (beer_id) REFERENCES beer(id),
