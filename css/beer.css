@@ -21,6 +21,13 @@
 	padding: 0 1em 0 1em;
 }
 
+.beer-info > img
+{
+	max-height: 15em;
+	margin: 1em 0 1em 0;
+}
+
+
 .beer-content
 {
 	margin-top: 2em;
@@ -103,11 +110,6 @@
 	justify-content: space-around;
 }
 
-.beer-info > img
-{
-	max-height: 15em;
-	margin: 1em 0 1em 0;
-}
 
 @media screen and (max-width: 700px) 
 {
