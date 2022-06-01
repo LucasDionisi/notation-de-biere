@@ -3,6 +3,8 @@ function imageOver(param) {
     
     let message = '< Selectionnez pour noter';
 
+    document.getElementById('rate-input').value = param.name;
+
     switch(param.name){
         case '1':
             message = 'Horrible';

@@ -14,6 +14,7 @@
 {
 	background-color: #100f0ea8;
     display: flex;
+    flex-direction: column;
     border-radius: 0.8em;
     margin-top: 1em;
     padding: 1em 3em 0 2em;
@@ -28,6 +29,7 @@
 {
 	display: flex;
 	align-items: center;
+	margin-bottom: 2em;
 }
 
 .rate-group p
@@ -35,4 +37,9 @@
 	margin-left: 1em;
 	color: #f3a401;
 	font-size: 1.1em;
+}
+
+.info-group
+{
+	margin-bottom: 2em
 }

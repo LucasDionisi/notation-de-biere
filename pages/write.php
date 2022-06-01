@@ -31,7 +31,12 @@
             <img name="4" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
             <img name="5" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
           </div>
+          <input type="text" name="rate" id="rate-input" value="0" hidden>
           <p id="rate-message">< Selectionnez pour noter</p>
+        </div>
+        <div class="info-group">
+          <input type="text" id="rate-title-input" required>
+          <label for="rate-title-input">Titre</label>
         </div>
       </div>
     </div>
@@ -41,7 +46,6 @@
         $databaseViewer->disconnect();
       }
     ?>
-
     <script type="text/javascript" src="../js/writeAdvice.js"></script>
   </body>
 </html>
