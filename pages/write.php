@@ -18,8 +18,21 @@
     <?php
       include 'includes/beerInfo.php';
     ?>
+      <div class="buttons-bar">
+        <button>Annuler</button>
+        <button>Poster l'avis</button>
+      </div>
       <div class="write-advice">
-        
+        <div class="rate-group">
+          <div class="rate-img">
+            <img name="1" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+            <img name="2" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+            <img name="3" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+            <img name="4" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+            <img name="5" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+          </div>
+          <p id="rate-message">< Selectionnez pour noter</p>
+        </div>
       </div>
     </div>
     <?php
@@ -28,5 +41,7 @@
         $databaseViewer->disconnect();
       }
     ?>
+
+    <script type="text/javascript" src="../js/writeAdvice.js"></script>
   </body>
 </html>

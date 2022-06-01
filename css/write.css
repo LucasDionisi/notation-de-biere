@@ -1,4 +1,38 @@
+.buttons-bar
+{
+	margin-top: 1em;
+	display: flex;
+    justify-content: flex-end;
+}
+
+.buttons-bar button
+{
+	margin-left: 1em;
+}
+
 .write-advice
 {
-	
+	background-color: #100f0ea8;
+    display: flex;
+    border-radius: 0.8em;
+    margin-top: 1em;
+    padding: 1em 3em 0 2em;
+}
+
+.write-advice .rate-img img
+{
+	cursor: pointer;
+}
+
+.rate-group
+{
+	display: flex;
+	align-items: center;
+}
+
+.rate-group p
+{
+	margin-left: 1em;
+	color: #f3a401;
+	font-size: 1.1em;
 }
