@@ -1,8 +1,8 @@
 <header>
   <a href="../">
     <div class="header header-left">
-      <img src="../resources/img/beer.svg" alt="Logo notation de bière"/>
-      <p>Notation de bière</p>
+      <img src="../resources/img/beer.svg" alt="Logo Notabière"/>
+      <p>Notabière</p>
     </div>
   </a>
   <div class="header header-right">
