@@ -61,9 +61,9 @@
           ?>
           </div>
         </div>
-        <div class="description">
-          <p><?=$beer['information']?></p>
-        </div>
+          <div class="description">
+            <p><?=$beer['information']?></p>
+          </div>
         </div>
         <img src="../resources/img/beers/<?=$beer['image_name']?>">
 </div>

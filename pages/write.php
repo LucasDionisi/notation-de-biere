@@ -35,8 +35,9 @@
           <p id="rate-message">< Selectionnez pour noter</p>
         </div>
         <div class="info-group">
-          <input type="text" id="rate-title-input" required>
-          <label for="rate-title-input">Titre</label>
+          <input type="text" required maxlength="100">
+          <span class="bar"></span>
+          <label>Titre</label>
         </div>
       </div>
     </div>
