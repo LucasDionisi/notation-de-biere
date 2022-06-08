@@ -18,14 +18,10 @@
     <?php
       include 'includes/beerInfo.php';
     ?>
-      <div class="buttons-bar">
-        <button>Annuler</button>
-        <button>Poster l'avis</button>
-      </div>
       <div class="write-advice">
         <div class="advice-header">
           <div class="title-group">
-            <input type="text" required maxlength="100">
+            <input id="title-input" type="text" required maxlength="100">
             <span class="bar"></span>
             <label>Titre</label>
           </div>
@@ -42,8 +38,12 @@
           </div>
         </div>
         <div class="comment-group">
-          <textarea placeholder="Faites part de votre avis." rows="10" cols="40"></textarea>
+          <textarea id="comment-textarea" placeholder="Faites part de votre avis." rows="10" cols="40"></textarea>
         </div>
+      </div>
+      <div class="buttons-bar">
+        <button onclick="window.location.href='../biere/<?=$beer['name']?>'">Annuler</button>
+        <button id="post-advice">Poster l'avis</button>
       </div>
     </div>
     <?php
@@ -52,6 +52,7 @@
         $databaseViewer->disconnect();
       }
     ?>
+    <script type="text/javascript" src="../js/libs/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../js/writeAdvice.js"></script>
   </body>
 </html>

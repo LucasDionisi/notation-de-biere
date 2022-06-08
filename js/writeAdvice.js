@@ -3,7 +3,7 @@ function imageOver(param) {
     
     let message = '< Selectionnez pour noter';
 
-    document.getElementById('rate-input').value = param.name;
+    $('#rate-input').val(param.name);
 
     switch(param.name){
         case '1':
@@ -23,7 +23,7 @@ function imageOver(param) {
             break;
     }
 
-    document.getElementById('rate-message').innerHTML = message;
+    $('#rate-message').innerHTML = message;
 }
 
 function changeImage(parent, id) {
@@ -36,3 +36,19 @@ function changeImage(parent, id) {
         }
     }
 }
+
+$('#post-advice').click(function() {
+    let title = $('#title-input').val();
+    let rate = $('#rate-input').val();
+    let comment = $('#comment-textarea').val();
+
+    /* 
+        TODO
+        Check if no empty result and notify/block the user.
+        Server side: if getting an empty result -> notify/block client (in case of client mock)
+    */
+
+    $.post('/send', {
+        name:'toto'
+    })
+});
