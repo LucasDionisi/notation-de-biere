@@ -7,6 +7,12 @@ body {
     overflow: hidden;
 }
 
+input
+{
+    font-family: cursive, 'Brush Script MT', sans-serif;
+    font-weight: unset; 
+}
+
 a
 {
     text-decoration: none;

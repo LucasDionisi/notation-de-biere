@@ -7,19 +7,19 @@ function imageOver(param) {
 
     switch(param.name){
         case '1':
-            message = 'Horrible';
+            message = 'Horrible >';
             break;
         case '2':
-            message = 'Médiocre';
+            message = 'Médiocre >';
             break;
         case '3':
-            message = 'Moyen';
+            message = 'Moyen >';
             break;
         case '4':
-            message = 'Très bien';
+            message = 'Très bien >';
             break;
         case '5':
-            message = 'Excellent';
+            message = 'Excellent >';
             break;
     }
 
