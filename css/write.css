@@ -146,7 +146,8 @@
 
 .comment-group textarea::placeholder
 {
-	color: lightgrey;
+	color: grey;
+  font-style: italic;
 }
 
 .comment-group textarea:focus

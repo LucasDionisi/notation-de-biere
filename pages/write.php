@@ -17,34 +17,51 @@
     <div class="beer-page">
     <?php
       include 'includes/beerInfo.php';
+
+      $title = "";
+      $rate = "";
+      $comment = "";
+
+      if (isset($_POST['submitButton'])) {
+        $title = $_POST['title'];
+        $rate = $_POST['rate'];
+        $comment = $_POST['comment'];
+        
+        $titleLength = strlen($title);
+        $rateLength = strlen($rate); 
+        $commentLength = strlen($comment);
+        if ()
+      }
     ?>
-      <div class="write-advice">
-        <div class="advice-header">
-          <div class="title-group">
-            <input id="title-input" type="text" required maxlength="100">
-            <span class="bar"></span>
-            <label>Titre</label>
-          </div>
-          <div class="rate-group">
-            <p id="rate-message">Selectionnez pour noter ></p>
-            <div class="rate-img">
-              <img name="1" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-              <img name="2" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-              <img name="3" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-              <img name="4" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-              <img name="5" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+      <form method="POST" action="">
+        <div class="write-advice">
+          <div class="advice-header">
+            <div class="title-group">
+              <input id="title-input" type="text" name="title" required maxlength="100" value="<?=$title?>">
+              <span class="bar"></span>
+              <label>Titre</label>
             </div>
-            <input type="text" name="rate" id="rate-input" value="0" hidden>
+            <div class="rate-group">
+              <p id="rate-message">Selectionnez pour noter ></p>
+              <div class="rate-img">
+                <img name="1" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                <img name="2" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                <img name="3" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                <img name="4" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                <img name="5" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+              </div>
+              <input type="text" name="rate" id="rate-input" value="<?=$rate?>" hidden>
+            </div>
+          </div>
+          <div class="comment-group">
+            <textarea id="comment-textarea" name="comment" placeholder="Faites part de votre avis." rows="10" cols="40" required><?=$comment?></textarea>
           </div>
         </div>
-        <div class="comment-group">
-          <textarea id="comment-textarea" placeholder="Faites part de votre avis." rows="10" cols="40"></textarea>
+        <div class="buttons-bar">
+          <button onclick="window.location.href='../../biere/<?=$beer['name']?>'">Annuler</button>
+          <button type="submit" name="submitButton">Poster l'avis</button>
         </div>
-      </div>
-      <div class="buttons-bar">
-        <button onclick="window.location.href='../biere/<?=$beer['name']?>'">Annuler</button>
-        <button id="post-advice">Poster l'avis</button>
-      </div>
+      </form>
     </div>
     <?php
       if ($databaseViewer != null) 
