@@ -60,7 +60,7 @@
 
           echo "inbefore";
 
-          $res = $databaseManager->addAdvice($beer['id'], 1, 5, 'toto', 'blablabla');
+          $res = $databaseManager->addAdvice($beer['id'], 1, $rate, $title, $comment);
 
           echo "inafter";
 
