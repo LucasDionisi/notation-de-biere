@@ -1,25 +1,25 @@
 <?php
       try 
       {
-        $databaseViewer = new DatabaseViewer();
-        $databaseViewer->connect();
-        $result = $databaseViewer->getBeer($beerName);
+        $databaseManager = new DatabaseManager();
+        $databaseManager->connect();
+        $result = $databaseManager->getBeer($beerName);
 
         if ($result->num_rows != 1) {
-          $databaseViewer->disconnect();
+          $databaseManager->disconnect();
           header("Location: ../404");
           exit();
         }
 
         $beer = $result->fetch_assoc();
         if ($beer == null) {
-          $databaseViewer->disconnect();
+          $databaseManager->disconnect();
           header("Location: ../404");
           exit();
         }
       } catch (Exception $exception) 
       {
-        $databaseViewer->disconnect();
+        $databaseManager->disconnect();
         // Show exception->getmessage(); dans logger
         header("Location: ../404");
         exit();

@@ -1,5 +1,5 @@
 <?php
-    class DatabaseViewer 
+    class DatabaseManager 
     {
         private $serverName;
         private $userName;

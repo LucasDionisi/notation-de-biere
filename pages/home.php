@@ -12,15 +12,15 @@
 
       <div class="collection-beer">
       <?php
-        require_once 'modules/database/databaseViewer.php';
+        require_once 'modules/database/databaseManager.php';
 
         $beers = null;
         try
         {
-          $databaseViewer = new DatabaseViewer();
-          $databaseViewer->connect();
-          $beers = $databaseViewer->getBeers();
-          $databaseViewer->disconnect();
+          $databaseManager = new DatabaseManager();
+          $databaseManager->connect();
+          $beers = $databaseManager->getBeers();
+          $databaseManager->disconnect();
         } catch (Exception $e)
         {
           // Show exception->getMessage(); dans logger

@@ -8,8 +8,8 @@
     <?php 
       include 'includes/header.php';
 
-      require_once 'modules/database/databaseViewer.php';
-      $databaseViewer = null;
+      require_once 'modules/database/databaseManager.php';
+      $databaseManager = null;
 
       $beer = null;
     ?>
@@ -26,7 +26,12 @@
         <div class="beer-advices">
 
       <?php
-        $advices = $databaseViewer->getAdvices($beer['id']);
+        if (!isset($databaseManager)) 
+        {
+          $databaseManager = new DatabaseManager();
+        }
+        
+        $advices = $databaseManager->getAdvices($beer['id']);
 
         if ($advices->num_rows > 0) {
           while ($advice = $advices->fetch_assoc()) {
@@ -85,9 +90,9 @@
           }
         }
 
-        if ($databaseViewer != null) 
+        if ($databaseManager != null) 
         {
-          $databaseViewer->disconnect();
+          $databaseManager->disconnect();
         }
       ?>
         </div>

@@ -8,8 +8,8 @@
   <body>
     <?php 
       include 'includes/header.php';
-      require_once 'modules/database/databaseViewer.php';
-      $databaseViewer = null;
+      require_once 'modules/database/databaseManager.php';
+      $databaseManager = null;
 
       $beer = null;
     ?>
@@ -47,6 +47,16 @@
         {
           $errorMsg = $errorMsg . "Veuillez donner un commentaire d'au moins 15 caractères."; 
         }
+
+        if (empty($errorMsg)) {
+           
+          if (isset($databaseManager)) {
+            $databaseManager = new DatabaseManager();
+          }
+
+
+           header('Location: ../biere/' . $beer['name']);
+        }
       }
     ?>
       <form method="POST" action="">
@@ -62,7 +72,7 @@
               <div class="rate-img">
                 <img name="1" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
                 <img name="2" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-                <img name="3" onclick="imageOver(this)" rasrc="../resources/img/beer-rate/beer-0.png">
+                <img name="3" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
                 <img name="4" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
                 <img name="5" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
               </div>
@@ -77,15 +87,15 @@
           <?php } ?>
         </div>
         <div class="buttons-bar">
-          <button onclick="window.location.href='../../biere/<?=$beer['name']?>'">Annuler</button>
+          <!-- <button onclick="window.location.href='../biere/<?=$beer['name']?>'">Annuler</button>-->
           <button type="submit" name="submitButton">Poster l'avis</button>
         </div>
       </form>
     </div>
     <?php
-      if ($databaseViewer != null) 
+      if ($databaseManager != null) 
       {
-        $databaseViewer->disconnect();
+        $databaseManager->disconnect();
       }
     ?>
     <script type="text/javascript" src="../js/libs/jquery-3.6.0.min.js"></script>
