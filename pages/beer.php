@@ -77,7 +77,7 @@
                   } 
                   ?>
                 </div>
-                <p><i>Avis publié : le 31 mai 2022</i></p>
+                <p><i>Avis publié le <?=date_format(new DateTime($advice['created_at']), 'd-m-Y à H:i')?></i></p>
               </div>
               <div class="advice-title">
                 <p><?=$advice['title']?></p>

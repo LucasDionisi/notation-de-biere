@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS advice
     rate INT NOT NULL,
     title VARCHAR(100),
     comment VARCHAR(500),
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id),
     FOREIGN KEY (beer_id) REFERENCES beer(id),
     FOREIGN KEY (user_id) REFERENCES user(id)
