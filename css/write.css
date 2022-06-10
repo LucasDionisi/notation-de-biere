@@ -154,3 +154,11 @@
 {
 	outline: none;
 }
+
+.error-message
+{
+	margin: 0 0 1em 0;
+	color: red;
+	font-style: italic;
+	font-size: 0.8em;
+}

@@ -1,3 +1,11 @@
+$(document).ready(function () {
+    let rateInputVal = $('#rate-input').val();
+    if (rateInputVal !== '')
+    {
+        $('div.rate-img img[name=' +rateInputVal +']').click();
+    }
+});
+
 function imageOver(param) {
     changeImage(param.parentElement, param.name);
     

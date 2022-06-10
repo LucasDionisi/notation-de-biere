@@ -30,7 +30,23 @@
         $titleLength = strlen($title);
         $rateLength = strlen($rate); 
         $commentLength = strlen($comment);
-        if ()
+        
+        $errorMsg  = "";
+
+        if ($titleLength < 3 || $titleLength > 100)
+        {
+          $errorMsg = $errorMsg . "Veuillez écrire un titre.";
+        }
+
+        if ($rateLength < 1 || $rateLength > 5)
+        {
+          $errorMsg = $errorMsg . "Veuillez donner une note."; 
+        }
+
+        if ($commentLength < 15 || $commentLength > 500)
+        {
+          $errorMsg = $errorMsg . "Veuillez donner un commentaire d'au moins 15 caractères."; 
+        }
       }
     ?>
       <form method="POST" action="">
@@ -46,7 +62,7 @@
               <div class="rate-img">
                 <img name="1" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
                 <img name="2" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-                <img name="3" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                <img name="3" onclick="imageOver(this)" rasrc="../resources/img/beer-rate/beer-0.png">
                 <img name="4" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
                 <img name="5" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
               </div>
@@ -54,8 +70,11 @@
             </div>
           </div>
           <div class="comment-group">
-            <textarea id="comment-textarea" name="comment" placeholder="Faites part de votre avis." rows="10" cols="40" required><?=$comment?></textarea>
+            <textarea id="comment-textarea" name="comment" required maxlength="500" placeholder="Faites part de votre avis." rows="10" cols="40"><?=$comment?></textarea>
           </div>
+          <?php if (!empty($errorMsg)) { ?>
+            <p class="error-message">Pour créer un avis : <?=$errorMsg?></p>
+          <?php } ?>
         </div>
         <div class="buttons-bar">
           <button onclick="window.location.href='../../biere/<?=$beer['name']?>'">Annuler</button>
