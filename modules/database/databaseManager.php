@@ -1,4 +1,6 @@
 <?php
+    
+    // TODO in each function check if it's an INT a STRING, ...
     class DatabaseManager 
     {
         private $serverName;
@@ -77,6 +79,19 @@
             $stmt->close();
 
             return $res;
+        }
+
+        function addAdvice($beer_id, $user_id, $rate, $title, $comment)
+        {
+            if ($this->connection == NULL) return NULL;
+
+            $sql = "INSERT INTO advice (beer_id, user_id, rate, title, comment) VALUES (?, ?, ?, ?, ?)";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'iiiss', $beer_id, $user_id, $rate, $title, $comment);
+            
+            if (!$stmt->execute()) {
+                return NULL;
+            }
         }
     }
 ?>

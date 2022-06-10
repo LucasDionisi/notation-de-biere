@@ -48,17 +48,30 @@
           $errorMsg = $errorMsg . "Veuillez donner un commentaire d'au moins 15 caractères."; 
         }
 
+        echo "before";
+
         if (empty($errorMsg)) {
            
-          if (isset($databaseManager)) {
-            $databaseManager = new DatabaseManager();
+          echo "in";
+
+          if (!isset($databaseManager)) {
+            $databaseManager = new DatabaseManager();            
           }
 
+          echo "inbefore";
 
-           header('Location: ../biere/' . $beer['name']);
+          $res = $databaseManager->addAdvice($beer['id'], 1, 5, 'toto', 'blablabla');
+
+          echo "inafter";
+
+          if (!isset($res)) {
+            header('Location: ../biere/' . $beer['name']);
+          } else {
+            // TODO display error
+          }
         }
       }
-    ?>
+      ?>
       <form method="POST" action="">
         <div class="write-advice">
           <div class="advice-header">
@@ -93,7 +106,7 @@
       </form>
     </div>
     <?php
-      if ($databaseManager != null) 
+      if (isset($databaseManager)) 
       {
         $databaseManager->disconnect();
       }
