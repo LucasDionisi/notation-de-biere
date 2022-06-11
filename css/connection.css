@@ -109,3 +109,10 @@
 {
   width:50%;
 }
+
+.error-message
+{
+    color: red;
+	font-style: italic;
+	font-size: 0.8em;
+}
