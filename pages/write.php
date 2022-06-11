@@ -48,21 +48,13 @@
           $errorMsg = $errorMsg . "Veuillez donner un commentaire d'au moins 15 caractères."; 
         }
 
-        echo "before";
-
-        if (empty($errorMsg)) {
-           
-          echo "in";
-
+        if (empty($errorMsg)) 
+        {
           if (!isset($databaseManager)) {
             $databaseManager = new DatabaseManager();            
           }
-
-          echo "inbefore";
-
+          
           $res = $databaseManager->addAdvice($beer['id'], 1, $rate, $title, $comment);
-
-          echo "inafter";
 
           if (!isset($res)) {
             header('Location: ../biere/' . $beer['name']);

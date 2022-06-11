@@ -38,6 +38,8 @@
                 $this->dbName
             );
 
+            $this->connection->set_charset("utf8mb4");
+
             if ($this->connection->connect_error) throw new Exception("Error during the connection to the database.");
         }
 
