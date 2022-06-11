@@ -26,7 +26,7 @@
       <form method="POST" action="">
         <div class="connection-box">
           <div class="input-group">
-            <input id="email-input" type="text" name="email" required>
+            <input id="email-input" type="text" name="email" required value="<?=$email?>">
             <span class="bar"></span>
             <label>Adresse mail</label>
           </div>

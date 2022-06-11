@@ -25,7 +25,15 @@ CREATE TABLE IF NOT EXISTS user
 (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
+    email VARCHAR(100),
     PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS user_credential
+(
+    user_id INT NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES user(id)
 );
 
 CREATE TABLE IF NOT EXISTS advice
@@ -41,3 +49,11 @@ CREATE TABLE IF NOT EXISTS advice
     FOREIGN KEY (beer_id) REFERENCES beer(id),
     FOREIGN KEY (user_id) REFERENCES user(id)
 );
+
+CREATE TABLE IF NOT EXISTS configuration
+{
+    id INT NOT NULL AUTO_INCREMENT,
+    key VARCHAR(100) NOT NULL,
+    value VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id)
+}
