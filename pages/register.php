@@ -6,7 +6,7 @@
   <body>
     <?php include 'includes/header.php';?>
     <h1>
-        404 not found
+        REGISTER !!!!
     </h1>
   </body>
 </html>

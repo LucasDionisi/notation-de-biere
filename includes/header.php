@@ -12,6 +12,11 @@
         <p>Ajouter une bière</p>
       </a>
     </div>
-    <img src="../resources/img/profil.svg" alt="Photo de profil"/>
+    <div>
+      <a href="/connexion/">
+        <p>Connectez-vous</p>
+      </a>
+    </div>
+    <!-- <img src="../resources/img/profil.svg" alt="Photo de profil"/> -->
   </div>
 </header>

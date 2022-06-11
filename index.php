@@ -17,12 +17,17 @@ if ($url == '') {
       $beerName = $url[1];
       require 'pages/write.php';
       break;
+    case 'connexion':
+      require 'pages/connection.php';
+      break;
+    case 'inscription':
+      require 'pages/register.php';
+      break;
     case '404':
       require 'pages/404.php';
       break;
     default:
-      echo "404.";
-      // required '404.php';
+    require 'pages/404.php';
   }
 }
 

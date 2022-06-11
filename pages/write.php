@@ -53,7 +53,7 @@
           if (!isset($databaseManager)) {
             $databaseManager = new DatabaseManager();            
           }
-          
+
           $res = $databaseManager->addAdvice($beer['id'], 1, $rate, $title, $comment);
 
           if (!isset($res)) {
@@ -92,7 +92,6 @@
           <?php } ?>
         </div>
         <div class="buttons-bar">
-          <!-- <button onclick="window.location.href='../biere/<?=$beer['name']?>'">Annuler</button>-->
           <button type="submit" name="submitButton">Poster l'avis</button>
         </div>
       </form>
