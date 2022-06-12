@@ -59,6 +59,7 @@
         }
 
         function getBeers() {
+            if (! isset($this->connection)) return NULL;
             return $this->connection->query("SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) AS rate_average FROM beer b LEFT JOIN advice a ON b.id = a.beer_id GROUP BY b.id;");
         }
 
@@ -88,6 +89,11 @@
             $stmt->close();
 
             return $res;
+        }
+
+        function getSalt() {
+            if (! isset($this->connection)) return NULL;
+            return $this->connection->query('SELECT * FROM configuration WHERE param = "salt"');
         }
 
         function getAdvices($beer_id) {

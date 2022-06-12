@@ -21,9 +21,14 @@
         }
 
         function connectUser($email, $password) {
-            if ($email === 'lucas.dionisi@gmail.com' && $password === 'password') {
-                return true;
-            } else {
+            try {
+                $salt = $this->databaseManager->getSalt()->fetch_assoc()['data'];
+
+                $passwordCrypted = crypt($password, $salt);
+                $res = $this->databaseManager->getUserByCredentials($email, $passwordCrypted);
+                if ($res->num_rows === 1) return true;
+                else return false;
+            } catch (Exception $e) {
                 return false;
             }
         }

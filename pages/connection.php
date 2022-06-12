@@ -21,7 +21,8 @@
         } else {
           $credentialManager = new CredentialManager();
           if($credentialManager->connectUser($email, $password)) {
-
+            // Stocker dans la session
+            // header()
           } else {
             $errorMsg = "L'identifiant ou le mot de passe est incorrect.";
           }
