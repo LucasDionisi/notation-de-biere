@@ -112,7 +112,14 @@
 
 .error-message
 {
-    color: red;
+  color: red;
 	font-style: italic;
-	font-size: 0.8em;
+	font-size: 1em;
+}
+
+.valid-message
+{
+  color: green;
+	font-style: italic;
+	font-size: 1em;
 }

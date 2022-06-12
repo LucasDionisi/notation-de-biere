@@ -19,6 +19,7 @@
         $passwordConfirmation = $_POST["password-confirmation"];
 
         $errorMsg = "";
+        $validMsg = "";
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           $errorMsg = "Le format de l'adresse mail n'est pas valide.";
@@ -43,7 +44,7 @@
                 $passwordCrypted = crypt($password, $salt);
                 $databaseManager->createUser($email, $pseudo, $passwordCrypted);
 
-                // Message en vert pour dire qu'il faut valider via le mail
+                $validMsg = "Vous avez reçu un mail pour valider la création du compte.";
               }
             }
           }
@@ -80,6 +81,13 @@
             if (!empty($errorMsg)) {
           ?>
             <p class="error-message"><?=$errorMsg?></p>
+          <?php
+            }
+          ?>
+          <?php
+            if (!empty($validMsg)) {
+          ?>
+            <p class="valid-message"><?=$validMsg?></p>
           <?php
             }
           ?>
