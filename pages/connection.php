@@ -21,8 +21,12 @@
         } else {
           $credentialManager = new CredentialManager();
           if($credentialManager->connectUser($email, $password)) {
-            // Stocker dans la session
-            // header()
+            
+            require_once 'modules/session/sessionManager.php';
+
+            
+
+            header('Location: ..');
           } else {
             $errorMsg = "L'identifiant ou le mot de passe est incorrect.";
           }
