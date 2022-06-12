@@ -33,7 +33,6 @@ CREATE TABLE IF NOT EXISTS user_credential
 (
     user_id INT NOT NULL,
     password VARCHAR(100) NOT NULL,
-    session_id VARCHAR(100),
     FOREIGN KEY (user_id) REFERENCES user(id)
 );
 
