@@ -32,7 +32,7 @@
               $user = $res->fetch_assoc();
 
               $userInfo = array();
-              $userInfo['name'] = $user['name'];
+              $userInfo['pseudo'] = $user['pseudo'];
   
               $sessionManager->connectUser($userInfo);
 

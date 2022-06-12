@@ -11,7 +11,7 @@ INSERT INTO beer (name, style_id, information, alcohol_level, image_name) VALUES
 ("Fada3", 2, "EKRZAJKELAZJLKEJLKEAJEZALKJELKZAJELKZAJE ezkljz alkeazkle azlkje klazjelkaz", 3.2, "fada.png"),
 ("Fada4", 1, "C'est la bière du sud minot.", 4, "fada.png");
 
-INSERT INTO user (name, email) VALUES 
+INSERT INTO user (pseudo, email) VALUES 
 ("Lucas", "lucas.dionisi@gmail.com");
 
 INSERT INTO user_credential (user_id, password) VALUES
