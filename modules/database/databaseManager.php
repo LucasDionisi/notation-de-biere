@@ -91,12 +91,47 @@
             return $res;
         }
 
+        function createUser($email, $pseudo, $passwordCrypted) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "INSERT INTO user (email, pseudo) VALUES (?, ?)";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'ss', $email, $pseudo);
+            $stmt->execute();
+
+            $sql = "SELECT id FROM user WHERE email = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 's', $email);
+            $stmt->execute();
+            $res = $stmt->get_result();
+
+            $sql = "INSERT INTO user_credential (user_id, password) VALUES (?, ?)";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'is', $res->fetch_assoc()['id'], $passwordCrypted);
+            $stmt->execute();
+            
+        }
+
         function getUserByEmail($email) {
             if (! isset($this->connection)) return NULL;
 
             $sql = "SELECT pseudo FROM user WHERE email = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $email);
+            $stmt->execute();
+
+            $res = $stmt->get_result();
+            $stmt->close();
+
+            return $res;
+        }
+
+        function getUserByPseudo($pseudo) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "SELECT * FROM user WHERE pseudo = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 's', $pseudo);
             $stmt->execute();
 
             $res = $stmt->get_result();

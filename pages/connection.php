@@ -49,12 +49,12 @@
       <form method="POST" action="">
         <div class="connection-box">
           <div class="input-group">
-            <input id="email-input" type="text" name="email" required value="<?=$email?>">
+            <input type="text" name="email" required value="<?=$email?>">
             <span class="bar"></span>
             <label>Adresse mail</label>
           </div>
           <div class="input-group">
-            <input id="password-input" type="password" name="password" required>
+            <input type="password" name="password" required>
             <span class="bar"></span>
             <label>Mot de passe</label>
           </div>
