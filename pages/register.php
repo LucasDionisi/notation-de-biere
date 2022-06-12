@@ -11,7 +11,7 @@
   <body>
     <?php 
       include 'includes/header.php';
-    
+
       if (isset($_POST['submitButton'])) {
         $email = $_POST["email"];
         $pseudo = $_POST["pseudo"];
@@ -45,6 +45,7 @@
                 $databaseManager->createUser($email, $pseudo, $passwordCrypted);
 
                 $validMsg = "Vous avez reçu un mail pour valider la création du compte.";
+                //bin2hex(random_bytes(16))
               }
             }
           }
