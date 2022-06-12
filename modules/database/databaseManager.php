@@ -8,6 +8,8 @@
         private $password;
         private $dbName;
 
+        private $connected;
+
         private $connection = NULL;
 
         function __construct()
@@ -29,6 +31,13 @@
             $this->dbName = $databaseCredentials->$dbNameKey;
         }
 
+        function __destruct()
+        {
+            if ($this->connected == true) {
+                $this->connection->close();
+            }
+        }
+
         function connect() 
         {
             $this->connection = new mysqli(
@@ -38,6 +47,7 @@
                 $this->dbName
             );
 
+            $this->connected = true;
             $this->connection->set_charset("utf8mb4");
 
             if ($this->connection->connect_error) throw new Exception("Error during the connection to the database.");
@@ -46,6 +56,7 @@
         function disconnect()
         {
             $this->connection->close();
+            $this->connected = false;
         }
 
         function getBeers()
