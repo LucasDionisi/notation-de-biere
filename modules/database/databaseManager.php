@@ -76,12 +76,12 @@
             return $res;
         }
 
-        function getUserCredentials($email) {
+        function getUserByCredentials($email, $password) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT u.*, c.password FROM user u LEFT JOIN user_credential c ON u.id = c.user_id WHERE u.email = ?";
+            $sql = "SELECT u.*, c.password FROM user u LEFT JOIN user_credential c ON u.id = c.user_id WHERE u.email = ? AND c.password = ?";
             $stmt = $this->connection->prepare($sql);
-            mysqli_stmt_bind_param($stmt, 's', $email);
+            mysqli_stmt_bind_param($stmt, 'ss', $email, $password);
             $stmt->execute();
 
             $res = $stmt->get_result();
