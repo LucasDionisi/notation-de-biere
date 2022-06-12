@@ -8,6 +8,7 @@
     <?php 
       include 'includes/header.php';
       require_once 'modules/database/databaseManager.php';
+      require_once 'modules/database/credentialManager.php';
 
       if (isset($_POST['submitButton'])) {
         $email = $_POST["email"];
@@ -18,7 +19,12 @@
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           $errorMsg = "Le format de l'adresse mail n'est pas valide.";
         } else {
-          
+          $credentialManager = new CredentialManager();
+          if($credentialManager->connectUser($email, $password)) {
+
+          } else {
+            $errorMsg = "L'identifiant ou le mot de passe est incorrect.";
+          }
         }
       }
     ?>
