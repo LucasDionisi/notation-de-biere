@@ -1,8 +1,7 @@
 <?php
     
     // TODO in each function check if it's an INT a STRING, ...
-    class DatabaseManager 
-    {
+    class DatabaseManager {
         private $serverName;
         private $userName;
         private $password;
@@ -12,8 +11,7 @@
 
         private $connection = NULL;
 
-        function __construct()
-        {
+        function __construct() {
             $fileContent = file_get_contents(__DIR__ . '/../../configurations/databaseCredentials.json');
             if ($fileContent == NULL) throw new Exception("Error during the collection of data from the file.");
 
@@ -31,15 +29,13 @@
             $this->dbName = $databaseCredentials->$dbNameKey;
         }
 
-        function __destruct()
-        {
+        function __destruct() {
             if ($this->connected == true) {
                 $this->connection->close();
             }
         }
 
-        function connect() 
-        {
+        function connect() {
             if ($this->connected) {
                 return;
             }
@@ -57,20 +53,17 @@
             if ($this->connection->connect_error) throw new Exception("Error during the connection to the database.");
         }
 
-        function disconnect()
-        {
+        function disconnect() {
             $this->connection->close();
             $this->connected = false;
         }
 
-        function getBeers()
-        {
+        function getBeers() {
             return $this->connection->query("SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) AS rate_average FROM beer b LEFT JOIN advice a ON b.id = a.beer_id GROUP BY b.id;");
         }
 
-        function getBeer($name) 
-        {
-            if ($this->connection == NULL) return NULL;
+        function getBeer($name) {
+            if (! isset($this->connection)) return NULL;
 
             $sql = "SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) as rate_average FROM beer b LEFT JOIN advice a ON b.id = a.beer_id WHERE LOWER(b.name) = LOWER(?) GROUP BY b.id";
             $stmt = $this->connection->prepare($sql);
@@ -83,9 +76,22 @@
             return $res;
         }
 
-        function getAdvices($beer_id)
-        {
-            if ($this->connection == NULL) return NULL;
+        function getUserCredentials($email) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "SELECT u.*, c.password FROM user u LEFT JOIN user_credential c ON u.id = c.user_id WHERE u.email = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 's', $email);
+            $stmt->execute();
+
+            $res = $stmt->get_result();
+            $stmt->close();
+
+            return $res;
+        }
+
+        function getAdvices($beer_id) {
+            if (! isset($this->connection)) return NULL;
 
             $sql = "SELECT a.*, u.name AS userName FROM advice a LEFT JOIN user u ON a.user_id = u.id WHERE beer_id = ? ORDER BY a.created_at DESC";
             $stmt = $this->connection->prepare($sql);
@@ -98,9 +104,8 @@
             return $res;
         }
 
-        function addAdvice($beer_id, $user_id, $rate, $title, $comment)
-        {
-            if ($this->connection == NULL) return NULL;
+        function addAdvice($beer_id, $user_id, $rate, $title, $comment) {
+            if (! isset($this->connection)) return NULL;
 
             $sql = "INSERT INTO advice (beer_id, user_id, rate, title, comment) VALUES (?, ?, ?, ?, ?)";
             $stmt = $this->connection->prepare($sql);
