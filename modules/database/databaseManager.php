@@ -40,6 +40,10 @@
 
         function connect() 
         {
+            if ($this->connected) {
+                return;
+            }
+
             $this->connection = new mysqli(
                 $this->serverName, 
                 $this->userName, 
