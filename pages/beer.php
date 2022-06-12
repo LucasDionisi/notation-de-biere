@@ -29,6 +29,7 @@
         if (!isset($databaseManager)) 
         {
           $databaseManager = new DatabaseManager();
+          $databaseManager->connect();
         }
         
         $advices = $databaseManager->getAdvices($beer['id']);

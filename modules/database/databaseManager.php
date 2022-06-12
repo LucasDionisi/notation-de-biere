@@ -91,6 +91,20 @@
             return $res;
         }
 
+        function getUserByEmail($email) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "SELECT name FROM user WHERE email = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 's', $email);
+            $stmt->execute();
+
+            $res = $stmt->get_result();
+            $stmt->close();
+
+            return $res;
+        }
+
         function getSalt() {
             if (! isset($this->connection)) return NULL;
             return $this->connection->query('SELECT * FROM configuration WHERE param = "salt"');

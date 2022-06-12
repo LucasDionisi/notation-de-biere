@@ -1,3 +1,7 @@
+<?php
+  require_once 'modules/session/sessionManager.php';
+?>
+
 <header>
   <a href="../">
     <div class="header header-left">
@@ -12,11 +16,24 @@
         <p>Ajouter une bière</p>
       </a>
     </div>
-    <div>
-      <a href="/connexion/">
-        <p>Connectez-vous</p>
-      </a>
-    </div>
-    <!-- <img src="../resources/img/profil.svg" alt="Photo de profil"/> -->
+    <?php
+      $session = $sessionManager->getUserInfo();
+      if ($session === NULL) {
+    ?>
+      <div>
+        <a href="/connexion/">
+          <p>Connectez-vous</p>
+        </a>
+      </div>
+    <?php 
+      } else {
+    ?>
+      <!-- <img src="../resources/img/profil.svg" alt="Photo de profil"/> -->
+      <div>
+        <p><?=$session['name']?></p>
+      </div>
+    <?php
+      }
+    ?>
   </div>
 </header>

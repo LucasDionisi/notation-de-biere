@@ -38,4 +38,6 @@
             return $_SESSION['USER'];
         }
     }
+
+    $sessionManager = new SessionManager();
 ?>

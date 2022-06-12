@@ -24,9 +24,19 @@
             
             require_once 'modules/session/sessionManager.php';
 
-            
+            $databaseManager = new DatabaseManager();
+            $databaseManager->connect();
 
-            header('Location: ..');
+            $res = $databaseManager->getUserByEmail($email);
+            if ($res->num_rows === 1) {
+              $user = $res->fetch_assoc();
+
+              $userInfo = array();
+              $userInfo['name'] = $user['name'];
+  
+              $sessionManager->connectUser($userInfo);
+              header('Location: ..');
+            }
           } else {
             $errorMsg = "L'identifiant ou le mot de passe est incorrect.";
           }
