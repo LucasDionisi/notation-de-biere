@@ -17,7 +17,7 @@
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           $errorMsg = "Le format de l'adresse mail n'est pas valide.";
         } else {
-          echo 'oui';
+          
         }
       }
     ?>
