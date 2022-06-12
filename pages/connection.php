@@ -35,7 +35,8 @@
               $userInfo['name'] = $user['name'];
   
               $sessionManager->connectUser($userInfo);
-              header('Location: ..');
+
+              header('Location: ../');
             }
           } else {
             $errorMsg = "L'identifiant ou le mot de passe est incorrect.";

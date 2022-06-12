@@ -17,6 +17,9 @@ if ($url == '') {
       $beerName = $url[1];
       require 'pages/write.php';
       break;
+    case 'ajouter':
+      require 'pages/add.php';
+      break;
     case 'connexion':
       require 'pages/connection.php';
       break;

@@ -28,10 +28,7 @@
     <?php 
       } else {
     ?>
-      <!-- <img src="../resources/img/profil.svg" alt="Photo de profil"/> -->
-      <div>
-        <p><?=$session['name']?></p>
-      </div>
+      <img src="../resources/img/profil.svg" alt="Photo de profil"/>
     <?php
       }
     ?>
