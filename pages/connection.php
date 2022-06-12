@@ -9,7 +9,7 @@
       include 'includes/header.php';
       require_once 'modules/database/databaseManager.php';
       require_once 'modules/database/credentialManager.php';
-
+      
       if (isset($_POST['submitButton'])) {
         $email = $_POST["email"];
         $password = $_POST["password"];
