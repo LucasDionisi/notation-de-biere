@@ -7,6 +7,7 @@
   <body>
     <?php 
       include 'includes/header.php';
+      require_once 'modules/database/databaseManager.php';
 
       if (isset($_POST['submitButton'])) {
         $email = $_POST["email"];
