@@ -51,9 +51,9 @@ CREATE TABLE IF NOT EXISTS advice
 );
 
 CREATE TABLE IF NOT EXISTS configuration
-{
+(
     id INT NOT NULL AUTO_INCREMENT,
-    key VARCHAR(100) NOT NULL,
-    value VARCHAR(100) NOT NULL,
+    param VARCHAR(100),
+    data VARCHAR(100),
     PRIMARY KEY (id)
-}
+)
