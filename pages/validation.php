@@ -18,7 +18,13 @@
         $userValidation = $res->fetch_assoc();
         if (!$userValidation['is_validated']) {
           $validationDate = $userValidation['validation_date'];
-          
+          $dateValidation = new DateTime($validationDate);
+          $dateNow = new DateTime("now", new DateTimeZone('Europe/Paris'));
+
+          $diff = abs($dateNow->getTimestamp() - $dateValidation->getTimestamp());
+          echo date_format($dateNow, 'd-m-Y à H:i') . "<br>";
+          echo date_format($dateValidation, 'd-m-Y à H:i') . "<br>";
+          echo $diff/60;
         } else {
           $message = "Ce compte a déjà été validé.";
         }

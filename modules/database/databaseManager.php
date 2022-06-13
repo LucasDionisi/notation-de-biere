@@ -154,7 +154,7 @@
             return $res;
         }
 
-        
+
 
         function getSalt() {
             if (! isset($this->connection)) return NULL;
