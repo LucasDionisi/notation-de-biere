@@ -35,6 +35,7 @@
 
         public function getUserInfo() {
             if (!$this->checkTimeSessionCreated()) return NULL;
+            $this->resetTimeSessionCreated();
             return $_SESSION['USER'];
         }
     }

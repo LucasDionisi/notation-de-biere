@@ -30,6 +30,10 @@ if ($url == '') {
       $validationToken = $url[1];
       require 'pages/validation.php';
       break;
+    case 'u':
+      $pseudo = $url[1];
+      require 'pages/user.php';
+      break;
     case '404':
       require 'pages/404.php';
       break;

@@ -28,7 +28,7 @@
     <?php 
       } else {
     ?>
-      <img src="../resources/img/profil.svg" alt="Photo de profil"/>
+      <a href="../u/<?=$session['pseudo']?>"><img src="../resources/img/profil.svg" alt="Photo de profil"/></a>
     <?php
       }
     ?>
