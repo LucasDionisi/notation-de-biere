@@ -91,12 +91,12 @@
             return $res;
         }
 
-        function createUser($email, $pseudo, $passwordCrypted, $validation_token) {
+        function createUser($email, $pseudo, $passwordCrypted, $validationToken) {
             if (! isset($this->connection)) return NULL;
 
             $sql = "INSERT INTO user (email, pseudo, validation_token) VALUES (?, ?, ?)";
             $stmt = $this->connection->prepare($sql);
-            mysqli_stmt_bind_param($stmt, 'sss', $email, $pseudo, $validation_token);
+            mysqli_stmt_bind_param($stmt, 'sss', $email, $pseudo, $validationToken);
             $stmt->execute();
 
             $sql = "SELECT id FROM user WHERE email = ?";
@@ -143,7 +143,7 @@
         function getUserByValidationToken($validationToken) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT is_validated, validation_date FROM user WHERE validation_token = ?";
+            $sql = "SELECT is_validated FROM user WHERE validation_token = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $validationToken);
             $stmt->execute();

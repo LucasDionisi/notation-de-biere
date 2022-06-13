@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS user
     email VARCHAR(100),
     validation_token VARCHAR(100),
     is_validated BOOLEAN DEFAULT false,
-    validation_date DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
 
