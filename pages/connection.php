@@ -31,12 +31,16 @@
             if ($res->num_rows === 1) {
               $user = $res->fetch_assoc();
 
-              $userInfo = array();
-              $userInfo['pseudo'] = $user['pseudo'];
-  
-              $sessionManager->connectUser($userInfo);
+              if (!$user['is_validated']) {
+                $userInfo = array();
+                $userInfo['pseudo'] = $user['pseudo'];
+    
+                $sessionManager->connectUser($userInfo);
 
-              header('Location: ../');
+                header('Location: ../');
+              } else {
+                $errorMsg = "Votre compte n'a pas encore été validé. Vérifiez vos mails.";
+              }
             }
           } else {
             $errorMsg = "L'identifiant ou le mot de passe est incorrect.";
