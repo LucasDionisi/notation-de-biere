@@ -42,10 +42,14 @@
               } else {
                 $salt = $databaseManager->getSalt()->fetch_assoc()['data'];
                 $passwordCrypted = crypt($password, $salt);
-                $databaseManager->createUser($email, $pseudo, $passwordCrypted);
+                $validation_token = bin2hex(random_bytes(16));
+                $databaseManager->createUser($email, $pseudo, $passwordCrypted, $validation_token);
+
+                // reset values
+                $email = "";
+                $pseudo = "";
 
                 $validMsg = "Vous avez reçu un mail pour valider la création du compte.";
-                //bin2hex(random_bytes(16))
               }
             }
           }

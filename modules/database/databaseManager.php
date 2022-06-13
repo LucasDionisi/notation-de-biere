@@ -91,12 +91,12 @@
             return $res;
         }
 
-        function createUser($email, $pseudo, $passwordCrypted) {
+        function createUser($email, $pseudo, $passwordCrypted, $validation_token) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "INSERT INTO user (email, pseudo) VALUES (?, ?)";
+            $sql = "INSERT INTO user (email, pseudo, validation_token) VALUES (?, ?, ?)";
             $stmt = $this->connection->prepare($sql);
-            mysqli_stmt_bind_param($stmt, 'ss', $email, $pseudo);
+            mysqli_stmt_bind_param($stmt, 'sss', $email, $pseudo, $validation_token);
             $stmt->execute();
 
             $sql = "SELECT id FROM user WHERE email = ?";
