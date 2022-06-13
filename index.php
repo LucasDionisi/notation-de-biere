@@ -27,7 +27,7 @@ if ($url == '') {
       require 'pages/register.php';
       break;
     case 'validation':
-      $validation_token = $url[1];
+      $validationToken = $url[1];
       require 'pages/validation.php';
       break;
     case '404':

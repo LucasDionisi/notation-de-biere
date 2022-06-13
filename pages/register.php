@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/register.css">
 
     <?php
-      require 'modules/database/databaseManager.php'
+      require_once 'modules/database/databaseManager.php';
     ?>
   </head>
   <body>
