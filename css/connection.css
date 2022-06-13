@@ -32,7 +32,7 @@
 
 .input-group
 {
-	position: relative;
+	  position: relative;
     margin-bottom: 3em;
 }
 
@@ -112,7 +112,7 @@
 
 .error-message
 {
-    color: red;
+  color: red;
 	font-style: italic;
 	font-size: 0.8em;
 }

@@ -1,0 +1,38 @@
+.validation-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.box
+{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #100f0ea8;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.validation-page h1 {
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+.validation-page p {
+	margin: 0.2em;
+	font-size: 1.8em;
+	color: #f3a401;
+}
+
+.validation-page .error-message {
+ 	color: red;
+}
+
+.validation-page .msg-connection {
+	font-size: 1em;
+	font-style: italic;
+}
