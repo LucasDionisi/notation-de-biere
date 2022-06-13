@@ -39,16 +39,19 @@
       ?>
           <div class="beer-advice">
             <div class="beer-advice-left">
-              <img src="../resources/img/profil.svg">
-              <div class="userInfos">
-                <div class="userName">
-                  <p><?=$advice['userName']?></p>
+              <a href="../u/<?=$advice['userName']?>">
+                <img src="../resources/img/profil.svg">
+                <div class="userInfos">
+                  <div class="userName">
+                    <p><?=$advice['userName']?></p>
+                  </div>
+                  <!--<div class="nbAdvices">
+                    <p><?=$advices->num_rows?> Avis</p>
+                  </div>-->
                 </div>
-                <div class="nbAdvices">
-                  <p><?=$advices->num_rows?> Avis</p>
-                </div>
-              </div>
+              </a>
             </div>
+            
             <div class="beer-advice-right">
               <div class="rate-and-date">
                 <div class="advice-rate">
