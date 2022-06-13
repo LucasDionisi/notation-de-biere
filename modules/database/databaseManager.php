@@ -154,7 +154,15 @@
             return $res;
         }
 
+        function validateUser($validationToken) {
+            if (! isset($this->connection)) return NULL;
 
+            $sql = "UPDATE user SET is_validated = 1, validation_token = NULL where validation_token = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 's', $validationToken);
+            $stmt->execute();
+            $stmt->close();
+        }
 
         function getSalt() {
             if (! isset($this->connection)) return NULL;

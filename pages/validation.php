@@ -13,11 +13,13 @@
       $res = $databaseManager->getUserByValidationToken($validationToken);
 
       $message = "";
+      $isValidated = false;
 
       if($res->num_rows > 0) {
         $userValidation = $res->fetch_assoc();
         if (!$userValidation['is_validated']) {
-         
+          $databaseManager->validateUser($validationToken);
+          $isValidated = true;
         } else {
           $message = "Ce compte a déjà été validé.";
         }
