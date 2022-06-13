@@ -9,6 +9,17 @@
       include 'includes/header.php';
 
       $isMyPage = $session['pseudo'] === $pseudo;
+
+      require_once 'modules/database/databaseManager.php';
+      $databaseManager = new DatabaseManager();
+      $databaseManager->connect();
+      $res = $databaseManager->getUserByPseudo($pseudo);
+
+      if ($res->num_rows != 1) {
+        header('Location: ../404');
+      }
+
+      $user = $res->fetch_assoc();
     ?>
 
     <div class="user-page">
@@ -16,7 +27,7 @@
           <img src="../resources/img/profil.svg" alt="Photo de profil"/>
           <div class="user-header-right">
             <div class="user-header-right-top">
-              <p>Lucas</p>
+              <p><?=$user['pseudo']?></p>
               <button>Modifier le profil</button>
             </div>
             <div class="user-header-right-bottom">
