@@ -129,7 +129,7 @@
         function getUserByPseudo($pseudo) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT email, pseudo FROM user WHERE pseudo = ?";
+            $sql = "SELECT id, email, pseudo FROM user WHERE pseudo = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $pseudo);
             $stmt->execute();
@@ -175,6 +175,20 @@
             $sql = "SELECT a.*, u.pseudo AS userName FROM advice a LEFT JOIN user u ON a.user_id = u.id WHERE beer_id = ? ORDER BY a.created_at DESC";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 'i', $beer_id);
+            $stmt->execute();
+
+            $res = $stmt->get_result();
+            $stmt->close();
+
+            return $res;
+        }
+
+        function getAdvicesByUserId($userId) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "SELECT * FROM advice WHERE user_id = ? ORDER BY created_at DESC";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'i', $userId);
             $stmt->execute();
 
             $res = $stmt->get_result();

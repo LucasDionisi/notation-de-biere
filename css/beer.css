@@ -3,16 +3,14 @@
 	overflow: auto;
 	height: calc(100vh - 8em);
 	-ms-overflow-style: none; /* for Internet Explorer, Edge */
-  	scrollbar-width: none; /* for Firefox */
+  scrollbar-width: none; /* for Firefox */
 }
 
 .beer-page::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-.beer-info
-{
-	
+.beer-info {
 	background-color: #100f0e;
 	border-radius: 1em;
 	overflow: hidden;
