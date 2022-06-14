@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <?php include 'includes/head.php';?>
     <link rel="stylesheet" type="text/css" href="../css/validation.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <?php 
       include 'includes/header.php';
       require_once 'modules/database/databaseManager.php';
@@ -30,17 +32,22 @@
       }
     ?>
     <div class="validation-page">
-      <div class="box">
-        <h1>Validation du compte</h1>
-        
-        <?php if ($isValidated) { ?>
-          <p>Votre compte a bien été validé 🍻.</p>
-          <a href="../connexion"><p class="msg-connection">Se connecter</p></a>
-        <?php } else { ?>
-          <p class="error-message"><?=$message?></p>
-          <a href="../inscription"><p class="msg-connection">S'inscrire</p></a>
-        <?php } ?>
-      </div>
+        <div class="box">
+            <h1>Validation du compte</h1>
+
+            <?php if ($isValidated) { ?>
+            <p>Votre compte a bien été validé 🍻.</p>
+            <a href="../connexion">
+                <p class="msg-connection">Se connecter</p>
+            </a>
+            <?php } else { ?>
+            <p class="error-message"><?=$message?></p>
+            <a href="../inscription">
+                <p class="msg-connection">S'inscrire</p>
+            </a>
+            <?php } ?>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>

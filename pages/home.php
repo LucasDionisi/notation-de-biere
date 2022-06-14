@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <?php include 'includes/head.php';?>
     <link rel="stylesheet" href="css/home.css">
-  </head>
-  <body>
-    <?php include 'includes/header.php';?>
-      <form class="form-search" role="search">
-        <input type="search" class="input-search" placeholder="Quelle bière ?" aria-label="Rechercher une bière">
-      </form>
+</head>
 
-      <div class="collection-beer">
-      <?php
+<body>
+    <?php include 'includes/header.php';?>
+    <form class="form-search" role="search">
+        <input type="search" class="input-search" placeholder="Quelle bière ?" aria-label="Rechercher une bière">
+    </form>
+
+    <div class="collection-beer">
+        <?php
         require_once 'modules/database/databaseManager.php';
 
         $beers = null;
@@ -38,50 +40,54 @@
       ?>
 
         <div class="beer-preview">
-          <a href="/biere/<?=$beer['name']?>">
-            <div class="beer-thumbnail">
-              <img src="resources/img/beers/<?=$beer['image_name']?>"/>
-            </div>
-            <div class="beer-description">
-              <div class="beer-description-name"><p><?=$beer['name']?></p></div>
-              <div class="beer-rate">
-                <div class="beer-rate-img">
-                  <?php
+            <a href="/biere/<?=$beer['name']?>">
+                <div class="beer-thumbnail">
+                    <img src="resources/img/beers/<?=$beer['image_name']?>" />
+                </div>
+                <div class="beer-description">
+                    <div class="beer-description-name">
+                        <p><?=$beer['name']?></p>
+                    </div>
+                    <div class="beer-rate">
+                        <div class="beer-rate-img">
+                            <?php
                     if ($beer['rate_average']) 
                     {
                       $floor = floor($beer['rate_average']);
                       $i = 0;
                       while ($i < $floor) 
                       {?>
-                          <img src="resources/img/beer-rate/beer-100.png">
-                      <?php
+                            <img src="resources/img/beer-rate/beer-100.png">
+                            <?php
                         $i++; 
                       }
                       if ($i < 5) {
                       ?>
-                      <img src="resources/img/beer-rate/beer-<?=(int)((fmod($beer['rate_average'], $floor))*4) * 25?>.png">
-                      <?php
+                            <img
+                                src="resources/img/beer-rate/beer-<?=(int)((fmod($beer['rate_average'], $floor))*4) * 25?>.png">
+                            <?php
                         $i++;
                       }
                       while($i < 5) {
                         ?>
-                          <img src="resources/img/beer-rate/beer-0.png">
-                        <?php
+                            <img src="resources/img/beer-rate/beer-0.png">
+                            <?php
                         $i++;
                       }
                     } 
                   ?>
+                        </div>
+                        <div class="beer-rate-advices"><?=$beer['nb_advices']?> avis</div>
+                    </div>
                 </div>
-                <div class="beer-rate-advices"><?=$beer['nb_advices']?> avis</div>
-              </div>
-            </div>
-          </a>
+            </a>
         </div>
 
         <?php
           }
         }
         ?>
-      </div>
-  </body>
+    </div>
+</body>
+
 </html>

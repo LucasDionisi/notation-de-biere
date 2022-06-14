@@ -27,14 +27,14 @@
 ?>
 
 <div class="beer-info">
-        <div class="title-rate-and-description">
+    <div class="title-rate-and-description">
         <div class="title-and-rate">
-          <div class="title-info">
-            <h1><?=$beer['name']?></h1>
-            <p>Alc. <?=$beer['alcohol_level']?>% Vol.</p>
-          </div>
-          <div class="rate-icons">
-            <?php
+            <div class="title-info">
+                <h1><?=$beer['name']?></h1>
+                <p>Alc. <?=$beer['alcohol_level']?>% Vol.</p>
+            </div>
+            <div class="rate-icons">
+                <?php
             if ($beer['rate_average']) 
             {
               $floor = floor($beer['rate_average']);
@@ -42,7 +42,7 @@
               while ($i < $floor) 
               {?>
                 <img src="../resources/img/beer-rate/beer-100.png">
-              <?php
+                <?php
                 $i++; 
               }
               if ($i < 5) {
@@ -54,16 +54,16 @@
               while($i < 5) {
               ?>
                 <img src="../resources/img/beer-rate/beer-0.png">
-              <?php
+                <?php
                 $i++;
               }
             } 
           ?>
-          </div>
+            </div>
         </div>
-          <div class="description">
+        <div class="description">
             <p><?=$beer['information']?></p>
-          </div>
         </div>
-        <img src="../resources/img/beers/<?=$beer['image_name']?>">
+    </div>
+    <img src="../resources/img/beers/<?=$beer['image_name']?>">
 </div>

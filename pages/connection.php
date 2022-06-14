@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <?php include 'includes/head.php';?>
     <link rel="stylesheet" type="text/css" href="../css/connection.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <?php 
       include 'includes/header.php';
       require_once 'modules/database/databaseManager.php';
@@ -49,30 +51,31 @@
       }
     ?>
     <div class="connection-page">
-      <h1>Connexion</h1>
-      <form method="POST" action="">
-        <div class="connection-box">
-          <div class="input-group">
-            <input type="text" name="email" required value="<?=$email?>">
-            <span class="bar"></span>
-            <label>Adresse mail</label>
-          </div>
-          <div class="input-group">
-            <input type="password" name="password" required>
-            <span class="bar"></span>
-            <label>Mot de passe</label>
-          </div>
-          <button type="submit" name="submitButton">Se connecter</button>
-          <?php
+        <h1>Connexion</h1>
+        <form method="POST" action="">
+            <div class="connection-box">
+                <div class="input-group">
+                    <input type="text" name="email" required value="<?=$email?>">
+                    <span class="bar"></span>
+                    <label>Adresse mail</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <span class="bar"></span>
+                    <label>Mot de passe</label>
+                </div>
+                <button type="submit" name="submitButton">Se connecter</button>
+                <?php
             if (!empty($errorMsg)) {
           ?>
-            <p class="error-message"><?=$errorMsg?></p>
-          <?php
+                <p class="error-message"><?=$errorMsg?></p>
+                <?php
             }
           ?>
-        </div>
-      </form>
-      <p>Vous n'avez pas de compte ? <a href="../inscription">S'inscrire</a></p>
+            </div>
+        </form>
+        <p>Vous n'avez pas de compte ? <a href="../inscription">S'inscrire</a></p>
     </div>
-  </body>
+</body>
+
 </html>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <?php include 'includes/head.php';?>
     <link rel="stylesheet" href="../css/add.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <?php 
       include 'includes/header.php';
 
@@ -15,5 +17,6 @@
     <h1>
         Ajouter une nouvelle bière
     </h1>
-  </body>
+</body>
+
 </html>

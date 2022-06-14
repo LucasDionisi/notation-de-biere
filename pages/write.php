@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <?php include 'includes/head.php';?>
     <link rel="stylesheet" type="text/css" href="../css/beer.css">
     <link rel="stylesheet" href="../css/write.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <?php 
       include 'includes/header.php';
       require_once 'modules/database/databaseManager.php';
@@ -15,7 +17,7 @@
     ?>
 
     <div class="beer-page">
-    <?php
+        <?php
       include 'includes/beerInfo.php';
 
       $title = "";
@@ -64,37 +66,38 @@
         }
       }
       ?>
-      <form method="POST" action="">
-        <div class="write-advice">
-          <div class="advice-header">
-            <div class="title-group">
-              <input id="title-input" type="text" name="title" required maxlength="100" value="<?=$title?>">
-              <span class="bar"></span>
-              <label>Titre</label>
+        <form method="POST" action="">
+            <div class="write-advice">
+                <div class="advice-header">
+                    <div class="title-group">
+                        <input id="title-input" type="text" name="title" required maxlength="100" value="<?=$title?>">
+                        <span class="bar"></span>
+                        <label>Titre</label>
+                    </div>
+                    <div class="rate-group">
+                        <p id="rate-message">Selectionnez pour noter ></p>
+                        <div class="rate-img">
+                            <img name="1" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                            <img name="2" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                            <img name="3" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                            <img name="4" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                            <img name="5" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
+                        </div>
+                        <input type="text" name="rate" id="rate-input" value="<?=$rate?>" hidden>
+                    </div>
+                </div>
+                <div class="comment-group">
+                    <textarea id="comment-textarea" name="comment" required maxlength="500"
+                        placeholder="Faites part de votre avis." rows="10" cols="40"><?=$comment?></textarea>
+                </div>
+                <?php if (!empty($errorMsg)) { ?>
+                <p class="error-message">Pour créer un avis : <?=$errorMsg?></p>
+                <?php } ?>
             </div>
-            <div class="rate-group">
-              <p id="rate-message">Selectionnez pour noter ></p>
-              <div class="rate-img">
-                <img name="1" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-                <img name="2" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-                <img name="3" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-                <img name="4" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-                <img name="5" onclick="imageOver(this)" src="../resources/img/beer-rate/beer-0.png">
-              </div>
-              <input type="text" name="rate" id="rate-input" value="<?=$rate?>" hidden>
+            <div class="buttons-bar">
+                <button type="submit" name="submitButton">Poster l'avis</button>
             </div>
-          </div>
-          <div class="comment-group">
-            <textarea id="comment-textarea" name="comment" required maxlength="500" placeholder="Faites part de votre avis." rows="10" cols="40"><?=$comment?></textarea>
-          </div>
-          <?php if (!empty($errorMsg)) { ?>
-            <p class="error-message">Pour créer un avis : <?=$errorMsg?></p>
-          <?php } ?>
-        </div>
-        <div class="buttons-bar">
-          <button type="submit" name="submitButton">Poster l'avis</button>
-        </div>
-      </form>
+        </form>
     </div>
     <?php
       if (isset($databaseManager)) 
@@ -104,5 +107,6 @@
     ?>
     <script type="text/javascript" src="../js/libs/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../js/writeAdvice.js"></script>
-  </body>
+</body>
+
 </html>
