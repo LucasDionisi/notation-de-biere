@@ -51,7 +51,10 @@
                 require 'includes/adviceTemplate.php';
             } ?>
         </div>
-        <?php } ?>
+        <?php 
+            } 
+            $databaseManager->disconnect();
+        ?>
     </div>
 
 </body>
