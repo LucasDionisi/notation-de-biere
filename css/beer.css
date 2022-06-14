@@ -142,6 +142,7 @@
 {
 	background-color: #100f0ea8;
 	display: flex;
+	align-items: stretch;
 	border-radius: 0.8em;
 	margin-top: 1em;
 	padding: 1em 3em 0 2em;
@@ -150,13 +151,14 @@
 
 .beer-advice-left
 {
+	width: 10%;
 	display: flex;
 	flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.beer-advice-left .userName
+.beer-advice-left .pseudo
 {
 	font-size: 1.2em;
 }
@@ -189,10 +191,7 @@
 .beer-advice-right
 {
 	margin-left: 5%;
-}
-
-.beer-advice-right
-{
+	width: 90%;
 	text-align: justify;
 }
 
