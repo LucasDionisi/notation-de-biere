@@ -186,7 +186,7 @@
         function getAdvicesByUserId($userId) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT * FROM advice WHERE user_id = ? ORDER BY created_at DESC";
+            $sql = "SELECT a.*, b.image_name, b.name AS beer_name FROM advice a LEFT JOIN beer b ON a.beer_id = b.id WHERE a.user_id = ? ORDER BY a.created_at DESC";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 'i', $userId);
             $stmt->execute();
