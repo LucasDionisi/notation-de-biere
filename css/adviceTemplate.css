@@ -1,0 +1,81 @@
+.advice
+{
+	background-color: #100f0ea8;
+	display: flex;
+	align-items: stretch;
+	border-radius: 0.8em;
+	margin-top: 1em;
+	padding: 1em 3em 0 2em;
+	height: 13em;
+}
+
+.advice-left
+{
+	width: 10%;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advice-left .pseudo
+{
+	font-size: 1.2em;
+}
+
+.advice-left .nbAdvices
+{
+	font-size: 0.6em;
+}
+
+.advice-left img
+{
+	width: 6em;
+	margin-bottom: 10%;
+}
+
+.advice-left p
+{
+	margin: 0;
+}
+
+.userInfos
+{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	margin-top: 10%;
+}
+
+.advice-right
+{
+	margin-left: 5%;
+	width: 90%;
+	text-align: justify;
+}
+
+.rate-and-date
+{
+	display: flex;
+	margin-bottom: 1em;
+}
+
+.rate-and-date p
+{
+	font-size: 0.8em;
+	margin-left: 1em;
+}
+
+.advice-rate img
+{
+	width: 2em;
+	height: 2em;
+}
+
+.advice-title p
+{
+	font-size: 1.5em;
+	margin: 0;
+	color: #f3a401;
+}

@@ -3,6 +3,7 @@
   <head>
     <?php include 'includes/head.php';?>
     <link rel="stylesheet" type="text/css" href="../css/beer.css">
+    <link rel="stylesheet" type="text/css" href="../css/adviceTemplate.css">
   </head>
   <body>
     <?php 
@@ -23,7 +24,7 @@
           <button class="add-advice" onclick="window.location.href='../rediger/<?=$beer['name']?>'">Rédiger un avis</button>
           <p><?=$beer['nb_advices']?> avis</p>
         </div>
-        <div class="beer-advices">
+        <div class="advices">
 
       <?php
         if (!isset($databaseManager)) 

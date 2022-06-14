@@ -1,5 +1,5 @@
-<div class="beer-advice">
-  <div class="beer-advice-left">
+<div class="advice">
+  <div class="advice-left">
     <a href="../u/<?=$advice['pseudo']?>">
       <img src="../resources/img/profil.svg">
     </a>
@@ -12,7 +12,7 @@
       </div>-->
     </div>
   </div>   
-    <div class="beer-advice-right">
+    <div class="advice-right">
       <div class="rate-and-date">
         <div class="advice-rate">
         <?php
