@@ -7,7 +7,8 @@
 - Pagination.
 - Faire une classe qui faire les appels BDD pour s'assurer de bien close.
 - Possibilité de modifier/supprimer son avis.
-- Afficher le style de la bière (blonde, blanche, ...)
+- Afficher le style de la bière (blonde, blanche, ...).
+- La barre de recherche.
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
