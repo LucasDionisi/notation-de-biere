@@ -1,5 +1,5 @@
 body {
-    font-family: cursive, 'Brush Script MT', sans-serif;
+    font-family: sans-serif;;
     font-weight: unset;
     font-size: 1em;
     margin: 0px;
@@ -9,7 +9,6 @@ body {
 
 input
 {
-    font-family: cursive, 'Brush Script MT', sans-serif;
     font-weight: unset; 
 }
 
