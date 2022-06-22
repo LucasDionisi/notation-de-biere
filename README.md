@@ -1,6 +1,7 @@
 # notation-de-biere
 
 ## A faire P1
+- Ajouter le versionning des fichier css pour pas avoir besoin de refresh le cache
 - Permettre à l'utilisateur de modifier son profil (popup?).
 - Permettre d'ajouter une bière.
 - Email de validation d'inscription.
