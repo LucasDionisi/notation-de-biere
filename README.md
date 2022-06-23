@@ -16,6 +16,5 @@
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
 - Signaler un avis.
 - Aimer un avis.
-- Faire des animations (lors de l'apparitions de bières).
 
 ## Idées P3

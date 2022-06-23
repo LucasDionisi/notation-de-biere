@@ -27,6 +27,13 @@
     overflow: auto;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
+    opacity: 0;
+}
+
+.collection-beer.is-loaded {
+    transition: all 1s;
+    -webkit-transition: all 2s;
+    opacity: 1;
 }
 
 .collection-beer::-webkit-scrollbar {

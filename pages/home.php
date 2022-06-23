@@ -91,6 +91,8 @@
         }
         ?>
     </div>
+    <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
+    <script type="text/javascript" src="../js/<?=$jsHome?>"></script>
 </body>
 
 </html>
