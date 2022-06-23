@@ -2,8 +2,7 @@
 <html lang="fr">
 
 <head>
-    <?php include 'includes/head.php';?>
-    <link rel="stylesheet" href="../css/add.css">
+    <?php include 'includes/head.php'; ?>
 </head>
 
 <body>

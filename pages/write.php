@@ -3,8 +3,8 @@
 
 <head>
     <?php include 'includes/head.php';?>
-    <link rel="stylesheet" type="text/css" href="../css/beer.css">
-    <link rel="stylesheet" href="../css/write.css">
+    <link rel="stylesheet" type="text/css" href="../css/<?=$cssBeer?>">
+    <link rel="stylesheet" href="../css/<?=$cssWrite?>">
 </head>
 
 <body>

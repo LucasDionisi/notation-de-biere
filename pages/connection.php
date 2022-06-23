@@ -3,7 +3,7 @@
 
 <head>
     <?php include 'includes/head.php';?>
-    <link rel="stylesheet" type="text/css" href="../css/connection.css">
+    <link rel="stylesheet" type="text/css" href="../css/<?=$cssConnection?>">
 </head>
 
 <body>

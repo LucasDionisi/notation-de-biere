@@ -3,8 +3,8 @@
 
 <head>
     <?php include 'includes/head.php';?>
-    <link rel="stylesheet" type="text/css" href="../css/user.css">
-    <link rel="stylesheet" type="text/css" href="../css/adviceTemplate.css">
+    <link rel="stylesheet" type="text/css" href="../css/<?=$cssUser?>">
+    <link rel="stylesheet" type="text/css" href="../css/<?=$cssAdviceTemplate?>">
 </head>
 
 <body>

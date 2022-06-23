@@ -2,12 +2,13 @@
 <html lang="fr">
 
 <head>
-    <?php include 'includes/head.php';?>
-    <link rel="stylesheet" href="css/home.css">
+    <?php include 'includes/head.php'; ?>
+    <link rel="stylesheet" href="css/<?=$cssHome?>">
 </head>
 
 <body>
     <?php include 'includes/header.php';?>
+
     <!--
     <form class="form-search" role="search">
         <input type="search" class="input-search" placeholder="Quelle bière ?" aria-label="Rechercher une bière">
@@ -84,92 +85,7 @@
                 </div>
             </a>
         </div>
-        <div class="beer-preview">
-            <a href="/biere/<?=$beer['name']?>">
-                <div class="beer-thumbnail">
-                    <img src="resources/img/beers/<?=$beer['image_name']?>" />
-                </div>
-                <div class="beer-description">
-                    <div class="beer-description-name">
-                        <p><?=$beer['name']?></p>
-                    </div>
-                    <div class="beer-rate">
-                        <div class="beer-rate-img">
-                            <?php
-                    if ($beer['rate_average']) 
-                    {
-                      $floor = floor($beer['rate_average']);
-                      $i = 0;
-                      while ($i < $floor) 
-                      {?>
-                            <img src="resources/img/beer-rate/beer-100.png">
-                            <?php
-                        $i++; 
-                      }
-                      if ($i < 5) {
-                      ?>
-                            <img
-                                src="resources/img/beer-rate/beer-<?=(int)((fmod($beer['rate_average'], $floor))*4) * 25?>.png">
-                            <?php
-                        $i++;
-                      }
-                      while($i < 5) {
-                        ?>
-                            <img src="resources/img/beer-rate/beer-0.png">
-                            <?php
-                        $i++;
-                      }
-                    } 
-                  ?>
-                        </div>
-                        <div class="beer-rate-advices"><p><?=$beer['nb_advices']?> avis</p></div>
-                    </div>
-                </div>
-            </a>
-        </div>
-<div class="beer-preview">
-            <a href="/biere/<?=$beer['name']?>">
-                <div class="beer-thumbnail">
-                    <img src="resources/img/beers/<?=$beer['image_name']?>" />
-                </div>
-                <div class="beer-description">
-                    <div class="beer-description-name">
-                        <p><?=$beer['name']?></p>
-                    </div>
-                    <div class="beer-rate">
-                        <div class="beer-rate-img">
-                            <?php
-                    if ($beer['rate_average']) 
-                    {
-                      $floor = floor($beer['rate_average']);
-                      $i = 0;
-                      while ($i < $floor) 
-                      {?>
-                            <img src="resources/img/beer-rate/beer-100.png">
-                            <?php
-                        $i++; 
-                      }
-                      if ($i < 5) {
-                      ?>
-                            <img
-                                src="resources/img/beer-rate/beer-<?=(int)((fmod($beer['rate_average'], $floor))*4) * 25?>.png">
-                            <?php
-                        $i++;
-                      }
-                      while($i < 5) {
-                        ?>
-                            <img src="resources/img/beer-rate/beer-0.png">
-                            <?php
-                        $i++;
-                      }
-                    } 
-                  ?>
-                        </div>
-                        <div class="beer-rate-advices"><p><?=$beer['nb_advices']?> avis</p></div>
-                    </div>
-                </div>
-            </a>
-        </div>
+
         <?php
           }
         }
