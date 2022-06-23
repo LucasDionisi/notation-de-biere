@@ -1,7 +1,7 @@
-header 
-{
+header {
     padding: 0.5em 10% 0.5em 10%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-weight: bold;
     font-size: 1.2em;
@@ -9,76 +9,45 @@ header
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-header p 
-{
+header p {
     color: white;
 }
 
-.header img 
-{
+.header img {
     width: 3em;
 }
 
-.header-left 
-{
+.header-left {
     display: flex;
+    align-items: center;
 }
 
-.header-left > img 
-{
+.header-left p {
+    font-size: 2em;
+    margin: .2em;
+} 
+
+.header-left > img {
     margin-right: 1em;
 }
 
-.header-right 
-{
+.header-right {
     display: flex;
 }
 
-.add-beer 
-{
-    display: flex;
-    align-items: center;
-    margin-right: 2em;
-}
 
-.add-beer > a
-{
-    all: inherit;
-    cursor: pointer;
-}
-
-.add-beer img 
-{
-    width: 2em;
-    margin-right: 0.5em;
-}
-
-@media screen and (max-width: 700px) 
-{
-    header > p 
-    {
+@media screen and (max-width: 768px) {
+    header > p     {
         font-size: 1em;
         padding: 0.5em 10% 0.5em 10%;
     }
 
-    .header > img 
-    {
+    .header > img     {
         width: 2em;
     }
 
-    .add-beer
-    {
-        margin-right: 0.2em;
-    }
-
-    .add-beer p 
-    {
-        display: none;
-    }
-
-    .add-beer img
-    {
-        width: 1.6em;
-        margin-right: 0;
-    }
+    .header-left p {
+    font-size: 1em;
+    margin: .2em;
+} 
 }
