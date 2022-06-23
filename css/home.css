@@ -1,11 +1,10 @@
-.form-search
-{
+.form-search {
     padding: 1em 10% 1em 10%;
     text-align: center;
 }
 
-.input-search 
-{
+/*
+.input-search  {
     all: unset;
     background-color: #100f0e;
     padding-left: 0.8em;
@@ -17,11 +16,11 @@
     border-radius: 2em;
     font-style: italic;
 }
+*/
 
-.collection-beer
-{
-    padding: 1% 5% 0 5%;
-    height: calc(100vh - 12em);
+.collection-beer {
+    padding: 3% 5% 0 5%;
+    max-height: calc(100vh - 12em);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,73 +33,114 @@
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-.beer-preview
-{
+.beer-preview {
     height: 20em;
-    min-width: 16em;
-    max-width: 16em;
+    width: 16em;
     display: flex;
     flex-direction: column;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     margin-bottom: 3em;
-    border-radius: 0.5em;
+    border-radius: .5em;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.beer-thumbnail
-{
+.beer-thumbnail {
     height: 16em;
     width: auto;
 }
 
-.beer-preview img
-{
+.beer-preview img {
     object-fit: cover;
     object-position: center;
     height: 100%;
     width: 100%;
 }
 
-.beer-description
-{
+.beer-description {
     background-color: #100f0e;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 4em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0 1em 0 1em;
 }
 
-.beer-description-name
-{
+.beer-description-name {
     font-size: 1.3em;
 }
 
-.beer-description p
-{
+.beer-description p {
     color: white;
     font-weight: bold;
     margin: 0;
 }
 
-.beer-rate
-{
+.beer-rate {
     display: flex;
     justify-content: space-between;
 }
 
-.beer-rate-img img
-{
+.beer-rate-img img {
     width: 1.2em;
     height: 1.2em;
 }
 
-.beer-rate-advices
-{
+.beer-rate-advices p {
     margin-left: 1em;
     font-style: italic;
     color: #ffffffb5;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .collection-beer {
+        max-height: calc(100vh - 9em);
+    }
+
+    .beer-preview {
+        height: 15em;
+        width: 12em;
+        margin-bottom: 2em;
+    }
+
+    .beer-thumbnail {
+        height: 12em;
+    }
+
+    .beer-description {
+        height: 3em;
+        padding: 0 .75em 0 .75em;
+    }
+
+    .beer-rate-img img {
+        width: .9em;
+        height: .9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .collection-beer {
+        max-height: calc(100vh - 6em);
+    }
+
+    .beer-preview {
+        height: 10em;
+        width: 8em;
+        margin-bottom: 1em;
+    }
+
+    .beer-thumbnail {
+        height: 8em;
+    }
+
+    .beer-description {
+        height: 2em;
+        padding: 0 .55em 0 .55em;
+    }
+
+    .beer-rate-img img {
+        width: .6em;
+        height: .6em;
+    }
 }
