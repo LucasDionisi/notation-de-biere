@@ -15,14 +15,14 @@
 	border-radius: 1em;
 	overflow: hidden;
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	padding: 0 1em 0 1em;
 }
 
 .beer-info > img
 {
 	max-height: 15em;
-	margin: 1em 0 1em 0;
+	margin: 1em 0 1em 1em;
 }
 
 .beer-content
@@ -68,12 +68,6 @@
 	white-space: nowrap;
 }
 
-.rate-icons
-{
-	padding-left:  2%;
-	padding-right: 2%;
-}
-
 .rate-icons img
 {
 	width: 2em;
@@ -103,34 +97,7 @@
 .title-rate-and-description
 {
 	width: 70%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-
-@media screen and (max-width: 700px) 
-{
-	.rate-icons img
-	{
-		width: 1.2em;
-		height: 1.2em;
-	}
-
-	.description
-	{
-		max-height: 6em;
-	}
-	
-	.description p
-	{
-		max-height: 6em;
-	}
-
-	.beer-info > img
-	{
-		max-height: 6em;
-	}
+	margin: 1em 0 1em 0;
 }
 
 .advices
@@ -139,20 +106,33 @@
 	flex-direction: column;
 }
 
-@media screen and (max-width: 380px) 
-{
-	.beer-info > img
-	{
-		display: none;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.beer-info > img {
+		max-height: 10em;
 	}
 
-	.title-rate-and-description
+	.rate-icons img {
+		width: 1.2em;
+		height: 1.2em;
+	}
+
+		.description
 	{
-		width: 100%;
+		max-height: 6em;
 	}
 }
 
-@media screen and (max-width: 700px) 
-{
+@media screen and (max-width: 480px) {
+	.beer-info > img {
+		display: none;
+	}
 
+	.title-rate-and-description {
+		width: 100%;
+	}
+
+	.rate-icons img {
+		width: 1.2em;
+		height: 1.2em;
+	}
 }
