@@ -105,8 +105,8 @@
         $databaseManager->disconnect();
       }
     ?>
-    <script type="text/javascript" src="../js/libs/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="../js/writeAdvice.js"></script>
+    <script type="text/javascript" src="../js/libs/<?$jsJquery?>"></script>
+    <script type="text/javascript" src="../js/<?=$jsWriteAdvice?>"></script>
 </body>
 
 </html>

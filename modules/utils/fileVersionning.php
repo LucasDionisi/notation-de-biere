@@ -11,4 +11,7 @@
 	$cssValidation = 'validation_1.0.css';
 	$cssWrite = 'write_1.0.css';
 
+	$jsJquery = 'jquery-3.6.0.min.js';
+	$jsWriteAdvice = 'writeAdvice_1.0.js';
+
 ?>
