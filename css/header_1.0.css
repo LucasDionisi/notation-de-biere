@@ -42,12 +42,12 @@ header p {
         padding: 0.5em 10% 0.5em 10%;
     }
 
-    .header > img     {
+    .header img     {
         width: 2em;
     }
 
     .header-left p {
-    font-size: 1em;
-    margin: .2em;
-} 
+        font-size: 1em;
+        margin: .2em;
+    } 
 }
