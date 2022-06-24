@@ -1,46 +1,39 @@
-.advice
-{
+.advice {
 	background-color: #100f0ea8;
 	display: flex;
 	align-items: stretch;
 	border-radius: 0.8em;
 	margin-top: 1em;
-	padding: 1em 3em 1em 2em;
+	padding: 1em;
 	height: 13em;
 }
 
-.advice-left
-{
-	width: 10%;
+.advice-left {
+	width: 20%;
 	display: flex;
 	flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  	align-items: center;
+  	justify-content: center;
 }
 
-.advice-left .pseudo
-{
+.advice-left .pseudo {
 	font-size: 1.2em;
 }
 
-.advice-left .nbAdvices
-{
+.advice-left .nbAdvices {
 	font-size: 0.6em;
 }
 
-.advice-left img
-{
+.advice-left img {
 	width: 6em;
 	margin-bottom: 10%;
 }
 
-.advice-left p
-{
+.advice-left p {
 	margin: 0;
 }
 
-.userInfos
-{
+.userInfos {
 	display: flex;
 	flex-direction: column;
     align-items: center;
@@ -48,34 +41,61 @@
 	margin-top: 10%;
 }
 
-.advice-right
-{
+.advice-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin-left: 5%;
-	width: 90%;
+	width: 80%;
 	text-align: justify;
 }
 
-.rate-and-date
-{
+.rate-and-date {
 	display: flex;
+	align-items: center;
 	margin-bottom: 1em;
 }
 
-.rate-and-date p
-{
-	font-size: 0.8em;
+.rate-and-date p {
 	margin-left: 1em;
 }
 
-.advice-rate img
-{
+.advice-rate img {
 	width: 2em;
 	height: 2em;
 }
 
-.advice-title p
-{
-	font-size: 1.5em;
+.advice-title p {
 	margin: 0;
 	color: #f3a401;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.advice {
+		height: 10em;
+	}
+
+	.advice-left img {
+		width: 5em;
+	}
+
+	.advice-rate img {
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.advice {
+		height: 7em;
+	}
+
+	.advice-left img {
+		width: 3em;
+	}
+
+	.advice-rate img {
+		width: 1.2em;
+		height: 1.2em;
+	}
 }
