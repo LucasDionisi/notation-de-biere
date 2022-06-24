@@ -4,12 +4,12 @@
 	align-items: stretch;
 	border-radius: 0.8em;
 	margin-top: 1em;
-	padding: 1em 2em 1em 1em;
+	padding: 1em 2em 1em 2em;
 	height: 13em;
 }
 
 .advice-left {
-	width: 20%;
+	width: 10%;
 	display: flex;
 	flex-direction: column;
   	align-items: center;
@@ -46,7 +46,7 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 5%;
-	width: 80%;
+	width: 90%;
 	text-align: justify;
 }
 
@@ -83,13 +83,21 @@
 	margin-bottom: 0;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.advice {
 		height: 10em;
 	}
 
+	.advice-left {
+		width: 20%;
+	}
+
 	.advice-left img {
 		width: 5em;
+	}
+
+	.advice-right {
+		width: 80%;
 	}
 
 	.advice-rate img {
@@ -109,7 +117,7 @@
 @media screen and (max-width: 480px) {
 	.advice {
 		height: 7em;
-		padding: .5em 1em .5em .5em;
+		padding: .5em 1em .5em 1em;
 	}
 
 	.advice-left img {
