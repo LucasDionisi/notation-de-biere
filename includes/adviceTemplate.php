@@ -48,11 +48,12 @@
         }
         ?>
       </div>
-      <p><i>Avis publié le <?= date_format(new DateTime($advice['created_at']), 'd-m-Y à H:i') ?></i></p>
+      <p class="date-full"><i>Avis publié le <?= date_format(new DateTime($advice['created_at']), 'd-m-Y à H:i') ?></i></p>
+      <p class="date-cut"><i>Le <?= date_format(new DateTime($advice['created_at']), 'd-m-Y') ?></i></p>
     </div>
     <div class="advice-title">
       <p><?= $advice['title'] ?></p>
     </div>
-    <p><?= $advice['comment'] ?></p>
+    <p class="advice-comment scrollbar"><?= $advice['comment'] ?></p>
   </div>
 </div>

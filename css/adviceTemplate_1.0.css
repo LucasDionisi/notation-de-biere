@@ -4,7 +4,7 @@
 	align-items: stretch;
 	border-radius: 0.8em;
 	margin-top: 1em;
-	padding: 1em;
+	padding: 1em 2em 1em 1em;
 	height: 13em;
 }
 
@@ -60,6 +60,14 @@
 	margin-left: 1em;
 }
 
+.rate-and-date .date-full {
+	display: block;
+}
+
+.rate-and-date .date-cut {
+	display: none;
+}
+
 .advice-rate img {
 	width: 2em;
 	height: 2em;
@@ -68,6 +76,11 @@
 .advice-title p {
 	margin: 0;
 	color: #f3a401;
+}
+
+.advice-comment {
+	padding-right: .8em;
+	margin-bottom: 0;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -80,14 +93,23 @@
 	}
 
 	.advice-rate img {
-		width: 1.5em;
-		height: 1.5em;
+		width: 1.2em;
+		height: 1.2em;
+	}
+
+	.rate-and-date .date-full {
+		display: none;
+	}
+
+	.rate-and-date .date-cut {
+		display: block;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.advice {
 		height: 7em;
+		padding: .5em 1em .5em .5em;
 	}
 
 	.advice-left img {
@@ -97,5 +119,23 @@
 	.advice-rate img {
 		width: 1.2em;
 		height: 1.2em;
+	}
+
+	.rate-and-date {
+		margin-bottom: 0;
+	}
+
+	.rate-and-date .date-full {
+		display: none;
+	}
+
+	.rate-and-date .date-cut {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.rate-and-date .date-cut {
+		display: none;
 	}
 }

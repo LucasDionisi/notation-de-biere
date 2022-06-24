@@ -57,7 +57,7 @@ try {
         <p>Alc. <?= $beer['alcohol_level'] ?>% Vol.</p>
       </div>
     </div>
-    <div class="description">
+    <div class="description scrollbar">
       <p><?= $beer['information'] ?></p>
     </div>
   </div>

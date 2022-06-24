@@ -85,13 +85,7 @@
 .description p
 {
 	max-height: 8em;
-	overflow: auto;
-	-ms-overflow-style: none; /* for Internet Explorer, Edge */
-	scrollbar-width: none; /* for Firefox */
-}
-
-.description p::-webkit-scrollbar {
-  	display: none; /* for Chrome, Safari, and Opera */
+	padding-right: .8em;
 }
 
 .title-rate-and-description
