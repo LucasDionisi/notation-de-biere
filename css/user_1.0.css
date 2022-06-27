@@ -1,9 +1,8 @@
 .user-page {
-    margin: 3em 10% 0 10%;
-    text-align: center;
+    margin: 2em 11% 0 11%;
     overflow: auto;
-	height: calc(100vh - 10em);
-	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+		height: calc(100vh - 8em);
+		-ms-overflow-style: none; /* for Internet Explorer, Edge */
   	scrollbar-width: none; /* for Firefox */
 }
 
@@ -22,9 +21,6 @@
 	height: 7em;
 }
 
-.user-header p {
-	font-size: 1.2em;
-}
 
 .user-header-right {
 	display: flex;
@@ -41,11 +37,10 @@
 	margin-bottom: 1em;
 	display: flex;
 	align-items: center;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .user-header-right-top p {
-	font-size: 2em;
 	margin: 0;
 }
 
@@ -85,12 +80,11 @@
 
 .beer-advice-left .userName
 {
-	font-size: 1.2em;
 }
 
 .beer-advice-left .nbAdvices
 {
-	font-size: 0.6em;
+
 }
 
 .beer-advice-left img
@@ -131,7 +125,7 @@
 
 .rate-and-date p
 {
-	font-size: 0.8em;
+
 	margin-left: 1em;
 }
 
@@ -143,7 +137,7 @@
 
 .advice-title p
 {
-	font-size: 1.5em;
+
 	margin: 0;
 	color: #f3a401;
 }

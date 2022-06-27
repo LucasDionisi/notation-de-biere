@@ -52,7 +52,7 @@
       <p class="date-cut"><i>Le <?= date_format(new DateTime($advice['created_at']), 'd-m-Y') ?></i></p>
     </div>
     <div class="advice-title">
-      <p><?= $advice['title'] ?></p>
+      <h2><?= $advice['title'] ?></h2>
     </div>
     <p class="advice-comment scrollbar"><?= $advice['comment'] ?></p>
   </div>

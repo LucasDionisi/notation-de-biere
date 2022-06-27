@@ -22,6 +22,12 @@ h1 {
 	padding: 0.5% 1% 0 5%;
 }
 
+h2 {
+    font-size: 1.3em;
+    color: white;
+    margin: 0;
+}
+
 p {
     font-size: 1em;
     color: white;
@@ -68,6 +74,10 @@ button:hover {
         font-size: 1.5em;
     }
 
+    h2 {
+        font-size: 1em;
+    }
+
     p {
         font-size: .8em;
     }
@@ -80,6 +90,10 @@ button:hover {
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: .75em;
     }
 
     p {
