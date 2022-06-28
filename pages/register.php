@@ -69,17 +69,17 @@
                     <label>Adresse mail</label>
                 </div>
                 <div class="input-group">
-                    <input type="text" name="pseudo" minlength="5" required value="<?=$pseudo?>">
+                    <input type="text" name="pseudo" required value="<?=$pseudo?>">
                     <span class="bar"></span>
                     <label>Pseudo</label>
                 </div>
                 <div class="input-group">
-                    <input type="password" name="password" minlength="8" required>
+                    <input type="password" name="password" required>
                     <span class="bar"></span>
                     <label>Mot de passe</label>
                 </div>
                 <div class="input-group">
-                    <input type="password" name="password-confirmation" minlength="8" required>
+                    <input type="password" name="password-confirmation" required>
                     <span class="bar"></span>
                     <label>Confirmez votre mot de passe</label>
                 </div>
