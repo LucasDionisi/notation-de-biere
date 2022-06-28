@@ -1,5 +1,4 @@
-.connection-page
-{
+.connection-page {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -7,18 +6,15 @@
     margin-top: 2em;
 }
 
-.connection-page h1
-{
+.connection-page h1 {
      padding: 0;
 }
 
-.connection-page a
-{
+.connection-page a {
     color: #f3a401;
 }
 
-.connection-box
-{
+.connection-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -30,14 +26,12 @@
     background-color: #100f0ea8;
 }
 
-.input-group
-{
+.input-group {
 	  position: relative;
     margin-bottom: 3em;
 }
 
-.input-group input
-{
+.input-group input {
   font-size: 1.1em;
   padding: 0.5em 0.5em 0.5em 0.25em;
   display: block;
@@ -48,13 +42,11 @@
   color: white;
 }
 
-.input-group input:focus
-{ 
+.input-group input:focus { 
 	outline: none; 
 }
 
-.input-group label
-{
+.input-group label {
   color: #f3a401; 
   font-size: 1.1em;
   font-weight: normal;
@@ -67,23 +59,19 @@
   -webkit-transition:0.2s ease all;
 }
 
-
-.input-group input:focus ~ label, .input-group input:valid ~ label
-{
+.input-group input:focus ~ label, .input-group input:valid ~ label {
   top:-1em;
   font-size:0.8em;
   color:#f3a401;
 }
 
-.input-group .bar  
-{ 
+.input-group .bar { 
 	position:relative; 
 	display:block; 
 	width:20.7em;
 }
 
-.input-group .bar:before, .input-group .bar:after   
-{
+.input-group .bar:before, .input-group .bar:after {
   content:'';
   height:2px; 
   width:0;
@@ -95,23 +83,19 @@
   -webkit-transition:0.2s ease all;
 }
 
-.input-group .bar:before 
-{
+.input-group .bar:before {
   left:50%;
 }
 
-.input-group .bar:after 
-{
+.input-group .bar:after {
   right:50%; 
 }
 
-.input-group input:focus ~ .bar:before, .input-group input:focus ~ .bar:after 
-{
+.input-group input:focus ~ .bar:before, .input-group input:focus ~ .bar:after {
   width:50%;
 }
 
-.error-message
-{
+.error-message {
   color: red;
 	font-style: italic;
 	font-size: 0.8em;

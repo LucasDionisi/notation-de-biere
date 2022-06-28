@@ -18,7 +18,7 @@
 }
 
 .user-header img {
-	height: 7em;
+	height: 5em;
 }
 
 
@@ -78,15 +78,6 @@
   justify-content: center;
 }
 
-.beer-advice-left .userName
-{
-}
-
-.beer-advice-left .nbAdvices
-{
-
-}
-
 .beer-advice-left img
 {
 	width: 6em;
@@ -140,4 +131,25 @@
 
 	margin: 0;
 	color: #f3a401;
+}
+
+
+@media screen and (max-width: 768px) {
+	.user-header {
+		padding: 1.5em;
+	}
+
+	.user-header img {
+		height: 4em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.user-header {
+		padding: 1em;
+	}
+
+	.user-header img {
+		height: 3em;
+	}
 }

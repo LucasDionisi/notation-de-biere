@@ -38,7 +38,7 @@
                     <?php } ?>
                 </div>
                 <div class="user-header-right-bottom">
-                    <p>Contributions</p>
+                    <p>Contributions :</p>
                     <p><?=$advices->num_rows > 0 ? $advices->num_rows : 0?> Avis</p>
                 </div>
             </div>
