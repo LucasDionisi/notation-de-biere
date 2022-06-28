@@ -51,7 +51,7 @@
       }
     ?>
     <div class="connection-page">
-        <h1>Connexion</h1>
+        <h1>Se connecter</h1>
         <form method="POST" action="">
             <div class="connection-box">
                 <div class="input-group">

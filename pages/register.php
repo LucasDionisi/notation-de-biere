@@ -60,7 +60,7 @@
     ?>
 
     <div class="register-page">
-        <h1>Inscription</h1>
+        <h1>S'inscrire</h1>
         <form method="POST" action="">
             <div class="register-box">
                 <div class="input-group">
