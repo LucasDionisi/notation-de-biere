@@ -13,6 +13,7 @@
 - Rajouter alt aux img.
 - Ajouter une bière (changer l'user id).
 - Mouse hover change couleur biere dans new biere.
+- Poster un avis uniquement si je suis connecté.
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
