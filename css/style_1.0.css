@@ -28,7 +28,7 @@ h2 {
     margin: 0;
 }
 
-p, input, label {
+p, input, label, textarea {
     font-size: 1em;
     color: white;
 }
@@ -78,7 +78,7 @@ button:hover {
         font-size: 1em;
     }
 
-    p, input, label {
+    p, input, label, textarea {
         font-size: .8em;
     }
 
@@ -96,7 +96,7 @@ button:hover {
         font-size: .75em;
     }
 
-    p, input, label {
+    p, input, label, textarea {
         font-size: .6em;
     }
 
