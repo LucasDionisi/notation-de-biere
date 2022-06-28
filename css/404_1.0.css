@@ -1,0 +1,17 @@
+.page-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 8em);
+}
+
+.page-content h1 {
+	padding: 0;
+	margin: 1em 0 1em 0;
+	color: #f3a401;
+}
+
+.page-content img {
+	border-radius: 1em;
+}
