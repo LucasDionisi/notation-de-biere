@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 
 .connection-page h1 {
@@ -20,8 +20,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 1em;
-    height: 25em;
-    width: 35em;
+    padding: 6em 6em 4em 6em;
     border-radius: 1em;
     background-color: #100f0ea8;
 }
@@ -32,7 +31,6 @@
 }
 
 .input-group input {
-  font-size: 1.1em;
   padding: 0.5em 0.5em 0.5em 0.25em;
   display: block;
   width: 18em;
@@ -48,7 +46,6 @@
 
 .input-group label {
   color: #f3a401; 
-  font-size: 1.1em;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -61,14 +58,13 @@
 
 .input-group input:focus ~ label, .input-group input:valid ~ label {
   top:-1em;
-  font-size:0.8em;
   color:#f3a401;
 }
 
 .input-group .bar { 
 	position:relative; 
 	display:block; 
-	width:20.7em;
+	width:100%;
 }
 
 .input-group .bar:before, .input-group .bar:after {
@@ -99,4 +95,24 @@
   color: red;
 	font-style: italic;
 	font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+  .connection-box {
+    padding: 4em 4em 2em 4em;
+  }
+
+  .input-group {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .connection-box {
+    padding: 3em 3em 1.5em 3em;
+  }
+
+  .input-group {
+    margin-bottom: 1.5em;
+  }
 }

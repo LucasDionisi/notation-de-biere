@@ -28,7 +28,7 @@ h2 {
     margin: 0;
 }
 
-p {
+p, input, label {
     font-size: 1em;
     color: white;
 }
@@ -78,7 +78,7 @@ button:hover {
         font-size: 1em;
     }
 
-    p {
+    p, input, label {
         font-size: .8em;
     }
 
@@ -96,7 +96,7 @@ button:hover {
         font-size: .75em;
     }
 
-    p {
+    p, input, label {
         font-size: .6em;
     }
 
