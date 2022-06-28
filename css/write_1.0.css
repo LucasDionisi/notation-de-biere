@@ -1,17 +1,14 @@
-.buttons-bar
-{
+.buttons-bar {
 	margin-top: 1em;
 	display: flex;
   justify-content: flex-end;
 }
 
-.buttons-bar button
-{
+.buttons-bar button {
 	margin-left: 1em;
 }
 
-.write-advice
-{
+.write-advice {
 	background-color: #100f0ea8;
     display: flex;
     flex-direction: column;
@@ -20,41 +17,35 @@
     padding: 1em 3em 0 2em;
 }
 
-.write-advice .rate-img img
-{
+.write-advice .rate-img img {
 	cursor: pointer;
 	height: 2.8em;
 	width: auto;
 }
 
-.advice-header
-{
+.advice-header {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-.rate-group
-{
+.rate-group {
 	display: flex;
 	align-items: center;
 }
 
-.rate-group p
-{
+.rate-group p {
 	margin-right: 1em;
 	color: #f3a401;
 	font-size: 1.1em;
 }
 
-.title-group
-{
+.title-group {
 	position: relative;
 }
 
-.title-group input
-{
+.title-group input {
   font-size: 1.1em;
   padding: 0.5em 0.5em 0.5em 0.25em;
   display: block;
@@ -65,13 +56,11 @@
   color: white;
 }
 
-.title-group input:focus
-{ 
+.title-group input:focus { 
 	outline: none; 
 }
 
-.title-group label
-{
+.title-group label {
   color: #f3a401; 
   font-size: 1.1em;
   font-weight: normal;
@@ -85,22 +74,19 @@
 }
 
 
-.title-group input:focus ~ label, .title-group input:valid ~ label
-{
+.title-group input:focus ~ label, .title-group input:valid ~ label {
   top:-1em;
   font-size:0.8em;
   color:#f3a401;
 }
 
-.title-group .bar  
-{ 
+.title-group .bar { 
 	position:relative; 
 	display:block; 
 	width:20.7em;
 }
 
-.title-group .bar:before, .title-group .bar:after   
-{
+.title-group .bar:before, .title-group .bar:after {
   content:'';
   height:2px; 
   width:0;
@@ -112,53 +98,52 @@
   -webkit-transition:0.2s ease all;
 }
 
-.title-group .bar:before 
-{
+.title-group .bar:before {
   left:50%;
 }
 
-.title-group .bar:after 
-{
+.title-group .bar:after {
   right:50%; 
 }
 
-.title-group input:focus ~ .bar:before, .title-group input:focus ~ .bar:after 
-{
+.title-group input:focus ~ .bar:before, .title-group input:focus ~ .bar:after {
   width:50%;
 }
 
-.comment-group
-{
+.comment-group {
 	margin-bottom: 1em;
 }
 
-.comment-group textarea
-{
-	width: 80%;
+.comment-group textarea {
+	width: 100%;
 	background-color: #1e1d1e;
 	color: white;
 	font-size: 1.5em;
 	border: .1em solid #f3a401;
-	border-bottom: .2em solid #f3a401;
 	border-radius: .4em;
 	padding: .5em;
 }
 
-.comment-group textarea::placeholder
-{
+.comment-group textarea::placeholder {
 	color: grey;
   font-style: italic;
 }
 
-.comment-group textarea:focus
-{
+.comment-group textarea:focus {
 	outline: none;
 }
 
-.error-message
-{
+.error-message {
 	margin: 0 0 1em 0;
 	color: red;
 	font-style: italic;
 	font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
 }
