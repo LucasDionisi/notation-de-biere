@@ -21,7 +21,6 @@
 	height: 5em;
 }
 
-
 .user-header-right {
 	display: flex;
 	align-items: flex-start;
@@ -42,6 +41,14 @@
 
 .user-header-right-top p {
 	margin: 0;
+}
+
+.manage-user {
+	display: flex;
+}
+
+.manage-user .first {
+	margin-right: 1em;
 }
 
 .user-header-right-bottom {

@@ -34,7 +34,10 @@
                 <div class="user-header-right-top">
                     <p><?=$user['pseudo']?></p>
                     <?php if ($isMyPage) { ?>
-                    <button>Modifier le profil</button>
+                    <div class="manage-user">
+                        <button class="first">Modifier le profil</button>
+                        <button id="logout">Se déconnecter</button>
+                    </div>
                     <?php } ?>
                 </div>
                 <div class="user-header-right-bottom">
@@ -56,7 +59,8 @@
             $databaseManager->disconnect();
         ?>
     </div>
-
+    <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
+    <script type="text/javascript" src="../js/<?=$jsUser?>"></script>
 </body>
 
 </html>

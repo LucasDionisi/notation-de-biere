@@ -23,6 +23,9 @@ if ($url == '') {
     case 'connexion':
       require 'pages/connection.php';
       break;
+    case 'deconnexion':
+      require 'pages/logout.php';
+      break;
     case 'inscription':
       require 'pages/register.php';
       break;
