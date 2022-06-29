@@ -61,7 +61,7 @@
             $databaseManager = new DatabaseManager();            
           }
 
-          $res = $databaseManager->addAdvice($beer['id'], 1, $rate, $title, $comment);
+          $res = $databaseManager->addAdvice($beer['id'], $session['id'], $rate, $title, $comment);
 
           if (!isset($res)) {
             header('Location: ../biere/' . $beer['name']);

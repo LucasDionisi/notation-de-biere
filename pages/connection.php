@@ -36,6 +36,7 @@
               if (!$user['is_validated']) {
                 $userInfo = array();
                 $userInfo['pseudo'] = $user['pseudo'];
+                $userInfo['id'] = $user['id'];
     
                 $sessionManager->connectUser($userInfo);
 

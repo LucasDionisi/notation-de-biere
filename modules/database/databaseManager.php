@@ -115,7 +115,7 @@
         function getUserByEmail($email) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT pseudo FROM user WHERE email = ?";
+            $sql = "SELECT id, pseudo FROM user WHERE email = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $email);
             $stmt->execute();
