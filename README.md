@@ -14,6 +14,7 @@
 - Ajouter une bière (changer l'user id).
 - Mouse hover change couleur biere dans new biere.
 - Mettre la police d'écriture plus grande pour les inputs.
+- Un bouton pour se déconnecter.
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
