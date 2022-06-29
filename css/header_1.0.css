@@ -37,6 +37,7 @@ header p {
 
 .user-connected {
     display: flex;
+    cursor: pointer;
 }
 
 .user-connected p {
