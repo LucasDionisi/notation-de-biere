@@ -11,7 +11,6 @@
 - La barre de recherche.
 - Rajouter alt aux img.
 - Mouse hover change couleur biere dans new biere.
-- Mettre la police d'écriture plus grande pour les inputs.
 - Un bouton pour se déconnecter.
 
 ## A faire P2

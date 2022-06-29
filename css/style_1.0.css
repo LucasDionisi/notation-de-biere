@@ -33,6 +33,10 @@ p, input, label, textarea {
     color: white;
 }
 
+textarea {
+    font-family: inherit;
+}
+
 button {
     color: #ffffff;
     background-color: #f79716ba;
