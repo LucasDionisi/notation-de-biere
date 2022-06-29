@@ -6,14 +6,14 @@ $(document).ready(function () {
     }
 });
 
-function imageOver(param) {
-    changeImage(param.parentElement, param.name);
+$('.rate-img img').hover(function () {
+    changeImage(this.parentElement, this.name);
     
     let message = '< Selectionnez pour noter';
 
-    $('#rate-input').val(param.name);
+    $('#rate-input').val(this.name);
 
-    switch(param.name){
+    switch(this.name){
         case '1':
             message = 'Horrible >';
             break;
@@ -32,7 +32,7 @@ function imageOver(param) {
     }
 
     $('#rate-message').html(message);
-}
+});
 
 function changeImage(parent, id) {
     let childs = parent.children;

@@ -10,7 +10,6 @@
 - Afficher le style de la bière (blonde, blanche, ...).
 - La barre de recherche.
 - Rajouter alt aux img.
-- Mouse hover change couleur biere dans new biere.
 - Un bouton pour se déconnecter.
 
 ## A faire P2
