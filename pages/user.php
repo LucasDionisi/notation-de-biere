@@ -35,7 +35,7 @@
                     <p><?=$user['pseudo']?></p>
                     <?php if ($isMyPage) { ?>
                     <div class="manage-user">
-                        <button class="first">Modifier le profil</button>
+                        <!--<button class="first">Modifier le profil</button>-->
                         <button id="logout">Se déconnecter</button>
                     </div>
                     <?php } ?>
