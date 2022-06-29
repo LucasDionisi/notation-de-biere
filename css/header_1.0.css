@@ -35,6 +35,13 @@ header p {
     display: flex;
 }
 
+.user-connected {
+    display: flex;
+}
+
+.user-connected p {
+    margin-right: 1em;
+}
 
 @media screen and (max-width: 768px) {
     header > p     {

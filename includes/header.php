@@ -22,7 +22,12 @@
         <?php 
       } else {
     ?>
-        <a href="../u/<?=$session['pseudo']?>"><img src="../resources/img/profil.svg" alt="Photo de profil" /></a>
+        <a href="../u/<?=$session['pseudo']?>">
+            <div class="user-connected">
+                <p><?=$session['pseudo']?></p>
+                <img src="../resources/img/profil.svg" alt="Photo de profil" />
+            </div>
+        </a>
         <?php
       }
     ?>
