@@ -10,6 +10,11 @@
 <body>
     <?php 
       include 'includes/header.php';
+
+      if ($session === NULL) {
+        header('Location: ../connexion');
+      }
+
       require_once 'modules/database/databaseManager.php';
       $databaseManager = null;
 
