@@ -20,7 +20,7 @@
 
 .collection-beer {
     padding: 3% 5% 0 5%;
-    max-height: calc(100vh - 12em);
+    max-height: calc(100vh - 6em);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

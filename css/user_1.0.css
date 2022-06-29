@@ -1,7 +1,7 @@
 .user-page {
     padding: 2em 11% 0 11%;
     overflow: auto;
-		height: calc(100vh - 8em);
+		height: 100vh;
 		-ms-overflow-style: none; /* for Internet Explorer, Edge */
   	scrollbar-width: none; /* for Firefox */
 }
@@ -54,39 +54,8 @@
 	margin: 0;
 }
 
-.beer-advices
-{
-	display: flex;
-	flex-direction: column;
-}
-
-.beer-advice
-{
-	background-color: #100f0ea8;
-	display: flex;
-	border-radius: 0.8em;
-	margin-top: 1em;
-	padding: 1em 3em 0 2em;
-	height: 13em;
-}
-
-.beer-advice-left
-{
-	display: flex;
-	flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.beer-advice-left img
-{
-	width: 6em;
-	margin-bottom: 10%;
-}
-
-.beer-advice-left p
-{
-	margin: 0;
+.advices {
+	margin-bottom: 8em;
 }
 
 .userInfos
