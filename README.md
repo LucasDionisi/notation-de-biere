@@ -11,7 +11,6 @@
 - La barre de recherche.
 - Faire la page 404.
 - Rajouter alt aux img.
-- Ajouter une bière (changer l'user id).
 - Mouse hover change couleur biere dans new biere.
 - Mettre la police d'écriture plus grande pour les inputs.
 - Un bouton pour se déconnecter.
