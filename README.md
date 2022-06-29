@@ -9,7 +9,6 @@
 - Possibilité de modifier/supprimer son avis.
 - Afficher le style de la bière (blonde, blanche, ...).
 - La barre de recherche.
-- Faire la page 404.
 - Rajouter alt aux img.
 - Mouse hover change couleur biere dans new biere.
 - Mettre la police d'écriture plus grande pour les inputs.
