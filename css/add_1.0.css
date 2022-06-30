@@ -1,0 +1,142 @@
+.page-content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em 11% 0 11%;
+}
+
+.page-content h1 {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+.box-new {
+	background-color: #100f0ea8;
+	border-radius: 1em;
+	padding: 2em;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-box {
+	width:  70%;
+}
+
+.right-box img {
+	height: 15em;
+	width: auto;
+}
+
+.name-group {
+	position: relative;
+	margin-bottom: 2em;
+	width: 18.8em;
+}
+
+.name-group input {
+  padding: 0.5em 0.5em 0.5em 0.25em;
+  display: block;
+  width: 18em;
+  border: none;
+  border-bottom: 0.1em solid #f3a401;
+  background-color: #1e1d1e;
+  color: white;
+}
+
+.name-group input:focus { 
+	outline: none; 
+}
+
+.name-group label {
+  color: #f3a401; 
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0.25em;
+  top: 0.5em;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.name-group input:focus ~ label, .name-group input:valid ~ label {
+  top:-1em;
+  font-size:0.8em;
+  color:#f3a401;
+}
+
+.name-group .bar { 
+	position: relative; 
+	display: block; 
+	width: 100%;
+}
+
+.name-group .bar:before, .name-group .bar:after {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#f3a401; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.name-group .bar:before {
+  left:50%;
+}
+
+.name-group .bar:after {
+  right:50%; 
+}
+
+.name-group input:focus ~ .bar:before, .name-group input:focus ~ .bar:after {
+  width:50%;
+}
+
+.description-group textarea {
+	width: 80%;
+	background-color: #1e1d1e;
+	color: white;
+	border: .1em solid #f3a401;
+	border-radius: .4em;
+	padding: .5em;
+}
+
+.description-group textarea::placeholder {
+	color: grey;
+  font-style: italic;
+}
+
+.description-group textarea:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 768px) {
+	.right-box img {
+		height: 10em;
+		width: auto;
+	}
+
+	.name-group {
+		width: 8.7em;
+	}
+
+	.name-group input {
+		width: 10em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.right-box img {
+		height: 7em;
+		width: auto;
+	}
+
+	.name-group {
+		width: 6.3em;
+	}
+}
