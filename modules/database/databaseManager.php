@@ -109,13 +109,12 @@
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 'is', $res->fetch_assoc()['id'], $passwordCrypted);
             $stmt->execute();
-            
         }
 
         function getUserByEmail($email) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT id, pseudo FROM user WHERE email = ?";
+            $sql = "SELECT id, pseudo, is_validated FROM user WHERE email = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $email);
             $stmt->execute();

@@ -47,6 +47,10 @@
                 $validation_token = bin2hex(random_bytes(16));
                 $databaseManager->createUser($email, $pseudo, $passwordCrypted, $validation_token);
 
+                require_once 'modules/utils/sendEmail.php';
+
+                $sendEmail->sendRegisterValidation($email, $pseudo, 'https://notabiere.fr/validation/' . $validation_token);
+
                 // reset values
                 $email = "";
                 $pseudo = "";

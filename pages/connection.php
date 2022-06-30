@@ -33,7 +33,7 @@
             if ($res->num_rows === 1) {
               $user = $res->fetch_assoc();
 
-              if (!$user['is_validated']) {
+              if ($user['is_validated']) {
                 $userInfo = array();
                 $userInfo['pseudo'] = $user['pseudo'];
                 $userInfo['id'] = $user['id'];

@@ -3,7 +3,6 @@
 ## A faire P1
 - Permettre à l'utilisateur de modifier son profil (popup?).
 - Permettre d'ajouter une bière.
-- Email de validation d'inscription.
 - Pagination.
 - Faire une classe qui faire les appels BDD pour s'assurer de bien close.
 - Possibilité de modifier/supprimer son avis.
