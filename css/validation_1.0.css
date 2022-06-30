@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 5em;
+    margin-top: 2.5em;
 }
 
 .box
@@ -14,7 +14,9 @@
     align-items: center;
     background-color: #100f0ea8;
     border-radius: 1em;
-    padding: 2em;
+    margin-top: 1em;
+    padding: 6em 6em 4em 6em;
+    height: 50%;
 }
 
 .validation-page h1 {
@@ -23,16 +25,27 @@
 }
 
 .validation-page p {
-	margin: 0.2em;
-	font-size: 1.8em;
+	margin: .2em;
 	color: #f3a401;
 }
 
 .validation-page .error-message {
+    margin-bottom: 1.5em;
  	color: red;
 }
 
 .validation-page .msg-connection {
-	font-size: 1em;
 	font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 4em 4em 2em 4em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    padding: 3em 3em 1.5em 3em;
+  }
 }
