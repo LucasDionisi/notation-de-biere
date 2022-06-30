@@ -9,6 +9,7 @@
 - Possibilité de modifier/supprimer son avis.
 - Afficher le style de la bière (blonde, blanche, ...).
 - La barre de recherche.
+- Donner un avis : gout, couleur, ...
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
