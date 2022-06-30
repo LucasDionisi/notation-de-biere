@@ -82,11 +82,11 @@
                     <div class="rate-group">
                         <p id="rate-message">Selectionnez pour noter ></p>
                         <div class="rate-img">
-                            <img name="1" src="../resources/img/beer-rate/beer-0.png">
-                            <img name="2" src="../resources/img/beer-rate/beer-0.png">
-                            <img name="3" src="../resources/img/beer-rate/beer-0.png">
-                            <img name="4" src="../resources/img/beer-rate/beer-0.png">
-                            <img name="5" src="../resources/img/beer-rate/beer-0.png">
+                            <img name="1" src="../resources/img/beer-rate/beer-0.png" alt="Image de notation">
+                            <img name="2" src="../resources/img/beer-rate/beer-0.png" alt="Image de notation">
+                            <img name="3" src="../resources/img/beer-rate/beer-0.png" alt="Image de notation">
+                            <img name="4" src="../resources/img/beer-rate/beer-0.png" alt="Image de notation">
+                            <img name="5" src="../resources/img/beer-rate/beer-0.png" alt="Image de notation">
                         </div>
                         <input type="text" name="rate" id="rate-input" value="<?=$rate?>" hidden>
                     </div>

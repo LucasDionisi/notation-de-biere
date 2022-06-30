@@ -9,7 +9,6 @@
 - Possibilité de modifier/supprimer son avis.
 - Afficher le style de la bière (blonde, blanche, ...).
 - La barre de recherche.
-- Rajouter alt aux img.
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).

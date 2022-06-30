@@ -2,7 +2,7 @@
   <div class="advice-left">
     <?php if ($isUserPage) { ?>
       <a href="../biere/<?= $advice['beer_name'] ?>">
-        <img src="../resources/img/beers/<?= $advice['image_name'] ?>">
+        <img src="../resources/img/beers/<?= $advice['image_name'] ?>" alt="Image de bière">
         <div class="userInfos">
           <div class="pseudo">
             <p><?= $advice['beer_name'] ?></p>
@@ -11,7 +11,7 @@
       </a>
     <?php } else { ?>
       <a href="../u/<?= $advice['pseudo'] ?>">
-        <img src="../resources/img/profil.svg">
+        <img src="../resources/img/profil.svg" alt="Image de profil">
         <div class="userInfos">
           <div class="pseudo">
             <p><?= $advice['pseudo'] ?></p>
@@ -28,20 +28,20 @@
           $floor = floor($advice['rate']);
           $i = 0;
           while ($i < $floor) { ?>
-            <img src="../resources/img/beer-rate/beer-100.png">
+            <img src="../resources/img/beer-rate/beer-100.png" alt="Image de notation">
           <?php
             $i++;
           }
           if ($i < 5) {
           ?>
-            <img src="../resources/img/beer-rate/beer-<?= (int)((fmod($advice['rate'], $floor)) * 4) * 25 ?>.png">
+            <img src="../resources/img/beer-rate/beer-<?= (int)((fmod($advice['rate'], $floor)) * 4) * 25 ?>.png" alt="Image de notation">
           <?php
             $i++;
           }
 
           while ($i < 5) {
           ?>
-            <img src="../resources/img/beer-rate/beer-0.png">
+            <img src="../resources/img/beer-rate/beer-0.png" alt="Image de notation">
         <?php
             $i++;
           }

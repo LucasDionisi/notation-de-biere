@@ -32,19 +32,19 @@ try {
         $floor = floor($beer['rate_average']);
         $i = 0;
         while ($i < $floor) { ?>
-          <img src="../resources/img/beer-rate/beer-100.png">
+          <img src="../resources/img/beer-rate/beer-100.png" alt="Image de notation">
         <?php
           $i++;
         }
         if ($i < 5) {
         ?>
-          <img src="../resources/img/beer-rate/beer-<?= (int)((fmod($beer['rate_average'], $floor)) * 4) * 25 ?>.png">
+          <img src="../resources/img/beer-rate/beer-<?= (int)((fmod($beer['rate_average'], $floor)) * 4) * 25 ?>.png" alt="Image de notation">
         <?php
           $i++;
         }
         while ($i < 5) {
         ?>
-          <img src="../resources/img/beer-rate/beer-0.png">
+          <img src="../resources/img/beer-rate/beer-0.png" alt="Image de notation">
       <?php
           $i++;
         }
@@ -61,5 +61,5 @@ try {
       <p><?= $beer['information'] ?></p>
     </div>
   </div>
-  <img src="../resources/img/beers/<?= $beer['image_name'] ?>">
+  <img src="../resources/img/beers/<?= $beer['image_name'] ?>" alt="Image de bière">
 </div>
