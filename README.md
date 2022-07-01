@@ -9,6 +9,7 @@
 - La barre de recherche.
 - Donner un avis : gout, couleur, ...
 - Mettre un bouton pour permetre de dl une image et upload la nvll biere.
+- Popup : avez vous 18ans?
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).

@@ -14,7 +14,7 @@
 			$message  = "<html>";
 			$message .= 	"<p>Salut {$userPseudo},</p>";
 			$message .=		"<p>Merci d'avoir rejoint Notabiere 🍻!</p><br>";
-			$message .=		"<p>Nous aimerions vous confirmer que votre compte a été créé avec succès. Pour activer votre compte, cliquez sur le lien ci-dessous.</p>";
+			$message .=		"<p>Pour activer votre compte, cliquez sur le lien ci-dessous.</p>";
 			$message .=		"<p>{$link}</p><br>";
 			$message .=		"<p>Si vous rencontrez des difficultés pour vous connecter à votre compte, contactez-nous à contact@notabiere.fr</p><br>";
 			$message .=		"<p>Cordialement,</p>";
