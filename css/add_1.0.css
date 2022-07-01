@@ -16,17 +16,41 @@
 	padding: 2em;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.box-new .submitButton {
+	width: 8em;
+}
+
+.box-main {
+	width: 100%;
+	display: flex;
+	justify-content: inherit;
+	align-items: center;
+	margin-bottom: 2em;
 }
 
 .left-box {
 	width:  70%;
 }
 
+.right-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.right-box button {
+	margin-top: 1em;
+}
+
 .right-box img {
 	height: 15em;
 	width: auto;
+	border-radius: .3em;
 }
 
 .name-group {
@@ -123,6 +147,7 @@
 
 	.name-group {
 		width: 8.7em;
+		margin-bottom: 1em;
 	}
 
 	.name-group input {
@@ -131,6 +156,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
 	.right-box img {
 		height: 7em;
 		width: auto;
@@ -138,5 +164,6 @@
 
 	.name-group {
 		width: 6.3em;
+		margin-bottom: .5em;
 	}
 }
