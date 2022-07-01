@@ -48,8 +48,8 @@
 }
 
 .right-box img {
-	height: 15em;
-	width: auto;
+  max-width: 25vw;
+  max-height: 20vh;
 	border-radius: .3em;
 	cursor: pointer;
 }
@@ -141,11 +141,6 @@
 }
 
 @media screen and (max-width: 768px) {
-	.right-box img {
-		height: 10em;
-		width: auto;
-	}
-
 	.name-group {
 		width: 8.7em;
 		margin-bottom: 1em;
@@ -157,12 +152,6 @@
 }
 
 @media screen and (max-width: 480px) {
-
-	.right-box img {
-		height: 7em;
-		width: auto;
-	}
-
 	.name-group {
 		width: 6.3em;
 		margin-bottom: .5em;

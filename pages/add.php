@@ -31,7 +31,8 @@
                 </div>
                 <div class="right-box">
                     <img id="uploaded-img" src="../resources/img/beers/fada.png">
-                    <button id="upload-img">Photo</button>
+                    <button id="btn-upload-img">Photo</button>
+                    <input id="file-input" type="file" name="img" accept="image/*" hidden>
                 </div>
             </div>
             <div>
@@ -40,6 +41,7 @@
         </div>
     </div>
     <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
+    <script type="text/javascript" src="../js/libs/<?=$jsCompressorJs?>"></script>
     <script type="text/javascript" src="../js/<?=$jsAdd?>"></script>
 </body>
 

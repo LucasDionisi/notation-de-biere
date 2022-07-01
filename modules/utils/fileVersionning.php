@@ -14,6 +14,7 @@
 	$css404			   = '404_1.0.css';
 
 	$jsJquery 		   = 'jquery-3.6.0.min.js';
+	$jsCompressorJs	   = 'compressorJs-1.1.1.min.js';
 	$jsWriteAdvice 	   = 'writeAdvice_1.0.js';
 	$jsHome 		   = 'home_1.0.js';
 	$jsUser			   = 'user_1.0.js';

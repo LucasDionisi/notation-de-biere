@@ -15,5 +15,6 @@
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
 - Signaler un avis.
 - Aimer un avis.
+- Compressor js -> error.
 
 ## Idées P3
