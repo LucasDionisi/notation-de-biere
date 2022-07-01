@@ -39,6 +39,8 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
+    <script type="text/javascript" src="../js/<?=$jsAdd?>"></script>
 </body>
 
 </html>
