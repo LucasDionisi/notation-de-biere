@@ -9,6 +9,7 @@
 - Donner un avis : gout, couleur, ...
 - Popup : avez vous 18ans?
 - Form to publish beer.
+- Si y'a pas d'img pour un avis ? img par défaut.
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
