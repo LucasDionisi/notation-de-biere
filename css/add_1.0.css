@@ -30,6 +30,12 @@
 	align-items: center;
 }
 
+.box-new > form {
+	  all: inherit;
+    background-color: #1e1d1e;
+    margin: 0;
+}
+
 .box-new .submitButton {
 	width: 8em;
 }
