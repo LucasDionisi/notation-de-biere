@@ -58,7 +58,8 @@
         if (empty($errorMsg)) 
         {
           if (!isset($databaseManager)) {
-            $databaseManager = new DatabaseManager();            
+            $databaseManager = new DatabaseManager();
+            $databaseManager->connect();
           }
 
           $res = $databaseManager->addAdvice($beer['id'], $session['id'], $rate, $title, $comment);

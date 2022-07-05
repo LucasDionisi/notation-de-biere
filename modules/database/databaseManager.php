@@ -77,6 +77,16 @@
             return $res;
         }
 
+        function addBeer($name, $style, $infomration, $alcohol, $image_name) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "INSERT INTO beer (name, style_id, information, alcohol_level, image_name) VALUES (?, ?, ?, ?, ?)";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'sisds', $name, $style, $infomration, $alcohol, $image_name);
+
+            return $stmt->execute();
+        }
+
         function getUserByCredentials($email, $password) {
             if (! isset($this->connection)) return NULL;
 

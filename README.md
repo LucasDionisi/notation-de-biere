@@ -10,6 +10,8 @@
 - Popup : avez vous 18ans?
 - Form to publish beer.
 - Si y'a pas d'img pour un avis ? img par défaut.
+- Bière created by.
+- Biere crée elle existe???
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
@@ -17,5 +19,6 @@
 - Aimer un avis.
 - Compressor js -> error.
 - Faire une classe qui faire les appels BDD pour s'assurer de bien close.
+- Ajouter une bière un peu plus joli.
 
 ## Idées P3

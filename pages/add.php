@@ -28,7 +28,18 @@
             $fileName = $beerName . $version . $ext;
         }
 
-        move_uploaded_file($_FILES['img']['tmp_name'], __DIR__ . '/../resources/img/beers/' . $fileName);
+        if(!move_uploaded_file($_FILES['img']['tmp_name'], __DIR__ . '/../resources/img/beers/' . $fileName)) {
+            // TODO Error
+        } 
+
+        require_once 'modules/database/databaseManager.php';
+        $databaseManager = new DatabaseManager();
+        $databaseManager->connect();
+        if (!$databaseManager->addBeer($beerName, 1, $description, 2.7, $fileName)) {
+            // TODO Error
+        }
+
+        header('Location: ../biere/' . $beerName);
       }
 
     ?>
