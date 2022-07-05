@@ -61,7 +61,6 @@
                     </div>
                     <div class="right-box">
                         <img id="uploaded-img" src="../resources/img/beers/fada.png">
-                        <button id="btn-upload-img">Photo</button>
                         <input id="file-input" type="file" name="img" accept="image/*" hidden>
                     </div>
                 </div>
