@@ -46,7 +46,7 @@
     <div class="page-content">
         <h1>Ajouter une nouvelle bière</h1>
         <div class="box-new">
-            <form method="POST" action="POST" enctype="multipart/form-data">
+            <form method="POST" action="" enctype="multipart/form-data">
                 <div class="box-main">
                     <div class="left-box">
                         <div class="name-group">
