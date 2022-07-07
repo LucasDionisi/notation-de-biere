@@ -9,6 +9,7 @@
 <body>
     <?php 
         include 'includes/header.php';
+        $NB_ITEM_MAX = 20;
 
         $search = "";
 
@@ -39,7 +40,7 @@
                     $currentPage = (int) $_GET['page'];
                   }
 
-                  $beers = $databaseManager->getBeers($search, $currentPage*20, 20);
+                  $beers = $databaseManager->getBeers($search, $currentPage*$NB_ITEM_MAX, $NB_ITEM_MAX+1);
 
                   $databaseManager->disconnect();
                 } catch (Exception $e)
@@ -54,8 +55,11 @@
                   exit();
                 }
 
+                $haveNext = $beers->num_rows > $NB_ITEM_MAX;
+
                 if ($beers->num_rows > 0) {
-                  while ($beer = $beers->fetch_assoc()) {
+                  for ($index = 0; $index < $beers->num_rows; $index++) {
+                    $beer = $beers->fetch_assoc();
               ?>
 
                 <div class="beer-preview">
@@ -103,14 +107,23 @@
                 </div>
 
                 <?php
-                  }
+                    if ($index == $NB_ITEM_MAX-1) $index++;
+                  } 
                 }
                 ?>
             </div>
             <div class="paging">
+            <?php if ($currentPage > 0) { ?>
                 <a href="?page=<?=$currentPage-1?>"><p>Page précédente</p></a>
+            <?php } ?>
+
+            <?php if ($currentPage > 0 && $haveNext) { ?>
                 <p> - </p>
+            <?php } ?>
+
+            <?php if ($haveNext) { ?>
                 <a href="?page=<?=$currentPage+1?>"><p>Page suivante</p></a>
+            <?php } ?>
             </div>
         </div>
         <div class="end-of-page"></div>

@@ -114,6 +114,7 @@
 .paging {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
 }
 
 .paging p {
