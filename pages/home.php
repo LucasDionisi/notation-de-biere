@@ -13,7 +13,7 @@
         $search = "";
 
         if (isset($_POST['submitButton'])) {
-            $search = $_POST['search'];
+            $search = trim(rtrim($_POST['search']));
         }
     ?>
 
