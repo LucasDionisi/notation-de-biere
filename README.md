@@ -5,13 +5,11 @@
 - Pagination.
 - Possibilité de modifier/supprimer son avis.
 - Afficher le style de la bière (blonde, blanche, ...).
-- La barre de recherche.
 - Donner un avis : gout, couleur, ...
 - Popup : avez vous 18ans?
-- Form to publish beer.
 - Si y'a pas d'img pour un avis ? img par défaut.
 - Bière created by.
-- Biere crée elle existe???
+- Biere crée elle existe pas déjà ???
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
@@ -20,5 +18,7 @@
 - Compressor js -> error.
 - Faire une classe qui faire les appels BDD pour s'assurer de bien close.
 - Ajouter une bière un peu plus joli.
+- Validation de création de bière.
+- title page en fonction de la page...
 
 ## Idées P3
