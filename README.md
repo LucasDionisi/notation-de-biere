@@ -2,7 +2,6 @@
 
 ## A faire P1
 - Permettre à l'utilisateur de modifier son profil (popup?).
-- Pagination.
 - Possibilité de modifier/supprimer son avis.
 - Afficher le style de la bière (blonde, blanche, ...).
 - Donner un avis : gout, couleur, ...
@@ -20,5 +19,6 @@
 - Ajouter une bière un peu plus joli.
 - Validation de création de bière.
 - title page en fonction de la page...
+- Pagination avis.
 
 ## Idées P3
