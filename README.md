@@ -1,6 +1,7 @@
 # notation-de-biere
 
 ## A faire P1
+- Si je cherche avec un filtre, -> page 0. Ex: si page 2, filtre lef donne aucun résultat.
 - Permettre à l'utilisateur de modifier son profil (popup?).
 - Possibilité de modifier/supprimer son avis.
 - Afficher le style de la bière (blonde, blanche, ...).
