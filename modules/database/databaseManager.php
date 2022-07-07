@@ -58,17 +58,12 @@
             $this->connected = false;
         }
 
-        function getBeers() {
-            if (! isset($this->connection)) return NULL;
-            return $this->connection->query("SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) AS rate_average FROM beer b LEFT JOIN advice a ON b.id = a.beer_id GROUP BY b.id;");
-        }
-
-        function getBeersSearch($name) {
+        function getBeers($name, $first, $last) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT b.*, count(a.beer_id) AS nb_advices, AVG(a.rate) AS rate_average FROM beer b LEFT JOIN advice a ON b.id = a.beer_id WHERE LOWER(b.name) LIKE LOWER(CONCAT('%', ?, '%')) GROUP BY b.id";
+            $sql = "SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) AS rate_average FROM beer b LEFT JOIN advice a ON b.id = a.beer_id WHERE LOWER(b.name) LIKE LOWER(CONCAT('%', ?, '%')) GROUP BY b.id ORDER BY b.id ASC LIMIT ?, ?";
             $stmt = $this->connection->prepare($sql);
-            mysqli_stmt_bind_param($stmt, 's', $name);
+            mysqli_stmt_bind_param($stmt, 'sii', $name, $first, $last);
             $stmt->execute();
 
             $res = $stmt->get_result();
