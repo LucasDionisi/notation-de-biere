@@ -15,6 +15,8 @@
 
         if (isset($_POST['submitButton'])) {
             $search = trim(rtrim($_POST['search']));
+        } else if (isset($_GET['search']) && !empty($_GET['search'])) {
+            $search = $_GET['search'];
         }
     ?>
 
@@ -114,7 +116,7 @@
             </div>
             <div class="paging">
             <?php if ($currentPage > 0) { ?>
-                <a href="?page=<?=$currentPage-1?>"><p>Page précédente</p></a>
+                <a href="?page=<?=$currentPage-1?>&search=<?=$search?>"><p>Page précédente</p></a>
             <?php } ?>
 
             <?php if ($currentPage > 0 && $haveNext) { ?>
@@ -122,7 +124,7 @@
             <?php } ?>
 
             <?php if ($haveNext) { ?>
-                <a href="?page=<?=$currentPage+1?>"><p>Page suivante</p></a>
+                <a href="?page=<?=$currentPage+1?>&search=<?=$search?>"><p>Page suivante</p></a>
             <?php } ?>
             </div>
         </div>
