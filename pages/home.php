@@ -7,11 +7,19 @@
 </head>
 
 <body>
-    <?php include 'includes/header.php';?>
+    <?php 
+        include 'includes/header.php';
 
-    <form class="form-search" role="search">
-        <input type="search" class="input-search" placeholder="Recherche une bière" aria-label="Rechercher une bière">
-        <button>🔎</button>
+        $search = "";
+
+        if (isset($_POST['submitButton'])) {
+            $search = $_POST['search'];
+        }
+    ?>
+
+    <form class="form-search" role="search" method="POST" action="">
+        <input type="search" class="input-search" name="search" placeholder="Recherche une bière" aria-label="Rechercher une bière" value="<?=$search?>">
+        <button type="submit" name="submitButton">🔎</button>
     </form>
 
     <div class="home-page">
@@ -24,7 +32,14 @@
             {
               $databaseManager = new DatabaseManager();
               $databaseManager->connect();
-              $beers = $databaseManager->getBeers();
+              $beers;
+
+              if (isset($_POST['submitButton'])) {
+                $beers = $databaseManager->getBeersSearch($search);
+              } else {
+                $beers = $databaseManager->getBeers();
+              }
+
               $databaseManager->disconnect();
             } catch (Exception $e)
             {
