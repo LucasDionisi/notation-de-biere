@@ -1,5 +1,5 @@
 header {
-    padding: 0.5em 10% 0.5em 10%;
+    padding: .5em 5% .5em 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,6 +7,7 @@ header {
     font-size: 1.2em;
     background-color: #100f0e;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 3.2em;
 }
 
 header p {
@@ -38,6 +39,7 @@ header p {
 .user-connected {
     display: flex;
     cursor: pointer;
+    align-items: center;
 }
 
 .user-connected p {
@@ -45,6 +47,10 @@ header p {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        height: 2.5em;
+    }
+
     header > p     {
         font-size: 1em;
         padding: 0.5em 10% 0.5em 10%;
@@ -58,4 +64,10 @@ header p {
         font-size: 1em;
         margin: .2em;
     } 
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 2em;
+    }    
 }

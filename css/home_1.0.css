@@ -18,9 +18,13 @@
 }
 */
 
+.home-page {
+    height: calc(100vh - 3.2em);
+}
+
 .collection-beer {
     padding: 3% 5% 0 5%;
-    max-height: calc(100vh - 6em);
+    height: 93%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -102,6 +106,11 @@
     color: #ffffffb5;
 }
 
+.end-of-page {
+    height: 0;
+    width: 100%;
+}
+
 @media screen and (min-width: 769px) {
     .beer-preview:hover {
         -ms-transform: scale(1.1); /* IE 9 */
@@ -111,8 +120,8 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .collection-beer {
-        max-height: calc(100vh - 9em);
+    .home-page {
+        height: calc(100vh - 2.5em);
     }
 
     .beer-preview {
@@ -137,8 +146,8 @@
 }
 
 @media screen and (max-width: 480px) {
-    .collection-beer {
-        max-height: calc(100vh - 6em);
+    .home-page {
+        height: calc(100vh - 2em);
     }
 
     .beer-preview {
@@ -159,5 +168,9 @@
     .beer-rate-img img {
         width: .6em;
         height: .6em;
+    }
+
+    .end-of-page {
+        height: 8em;
     }
 }
