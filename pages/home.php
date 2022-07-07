@@ -9,11 +9,11 @@
 <body>
     <?php include 'includes/header.php';?>
 
-    <!--
     <form class="form-search" role="search">
-        <input type="search" class="input-search" placeholder="Quelle bière ?" aria-label="Rechercher une bière">
+        <input type="search" class="input-search" placeholder="Recherche une bière" aria-label="Rechercher une bière">
+        <button>🔎</button>
     </form>
-    -->
+
     <div class="home-page">
         <div class="collection-beer">
             <?php

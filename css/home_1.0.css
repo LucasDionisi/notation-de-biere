@@ -1,9 +1,16 @@
 .form-search {
     padding: 1em 10% 1em 10%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*
+.form-search button {
+    margin-left: .5em;
+    padding: .2em .5em;
+}
+
 .input-search  {
     all: unset;
     background-color: #100f0e;
@@ -16,14 +23,13 @@
     border-radius: 2em;
     font-style: italic;
 }
-*/
 
 .home-page {
     height: calc(100vh - 3.2em);
 }
 
 .collection-beer {
-    padding: 3% 5% 0 5%;
+    padding: 2% 5% 0 5%;
     height: 93%;
     display: flex;
     flex-wrap: wrap;
