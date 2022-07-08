@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="right-box">
-                        <img id="uploaded-img" src="../resources/img/beers/fada.png">
+                        <img id="uploaded-img" src="../resources/img/beers/404.jpg">
                         <input id="file-input" type="file" name="img" accept="image/*" hidden>
                     </div>
                 </div>
