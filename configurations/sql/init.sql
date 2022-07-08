@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS beer
     information VARCHAR(500),
     alcohol_level FLOAT,
     image_name VARCHAR(100),
-    created_by INT,
+    created_by INT DEFAULT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (style_id) REFERENCES beer_style(id),
     FOREIGN KEY (created_by) REFERENCES user(id)
