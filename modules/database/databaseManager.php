@@ -86,12 +86,12 @@
             return $res;
         }
 
-        function addBeer($name, $style, $infomration, $alcohol, $image_name) {
+        function addBeer($name, $style, $infomration, $alcohol, $imageName, $userId) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "INSERT INTO beer (name, style_id, information, alcohol_level, image_name) VALUES (?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO beer (name, style_id, information, alcohol_level, image_name, created_by) VALUES (?, ?, ?, ?, ?, ?)";
             $stmt = $this->connection->prepare($sql);
-            mysqli_stmt_bind_param($stmt, 'sisds', $name, $style, $infomration, $alcohol, $image_name);
+            mysqli_stmt_bind_param($stmt, 'sisdsi', $name, $style, $infomration, $alcohol, $imageName, $userId);
 
             return $stmt->execute();
         }

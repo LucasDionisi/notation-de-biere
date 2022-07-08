@@ -35,7 +35,7 @@
         require_once 'modules/database/databaseManager.php';
         $databaseManager = new DatabaseManager();
         $databaseManager->connect();
-        if (!$databaseManager->addBeer($beerName, 1, $description, 2.7, $fileName)) {
+        if (!$databaseManager->addBeer($beerName, 1, $description, 2.7, $fileName, $sessionManager->getUserInfo()['id'])) {
             // TODO Error
         }
 
