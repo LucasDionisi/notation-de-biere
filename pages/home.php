@@ -38,7 +38,7 @@
                   $databaseManager->connect();
 
                   $currentPage = 0;
-                  if(isset($_GET['page']) && !empty($_GET['page'])){
+                  if(isset($_GET['page']) && !empty($_GET['page']) && !isset($_POST['submitButton'])){
                     $currentPage = (int) $_GET['page'];
                   }
 
