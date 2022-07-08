@@ -114,6 +114,11 @@
                 }
                 ?>
             </div>
+            <?php if (!$haveNext) { ?>
+            <div class="add-your-beer">    
+                <p>Tu ne trouves pas ta bière ? <a href="/ajouter">Créer sa bière</a></p>
+            </div>
+            <?php } ?>
             <div class="paging">
             <?php if ($currentPage > 0) { ?>
                 <a href="?page=<?=$currentPage-1?>&search=<?=$search?>"><p>Page précédente</p></a>

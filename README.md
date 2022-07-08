@@ -8,7 +8,6 @@
 - Popup : avez vous 18ans?
 - Si y'a pas d'img pour un avis ? img par défaut.
 - Biere crée elle existe pas déjà ???
-- Afficher le bouton ajouter bière.
 
 ## A faire P2
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).

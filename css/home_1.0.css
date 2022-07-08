@@ -111,6 +111,15 @@
     color: #ffffffb5;
 }
 
+.add-your-beer {
+    display: flex;
+    justify-content: center;
+}
+
+.add-your-beer a {
+    color: #f3a401;
+}
+
 .paging {
     display: flex;
     justify-content: center;
