@@ -6,7 +6,6 @@
 - Afficher le style de la bière (blonde, blanche, ...).
 - Donner un avis : gout, couleur, ...
 - Popup : avez vous 18ans?
-- Si y'a pas d'img pour un avis ? img par défaut.
 - Biere crée elle existe pas déjà ???
 
 ## A faire P2

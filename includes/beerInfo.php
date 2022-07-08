@@ -61,5 +61,8 @@ try {
       <p><?= $beer['information'] ?></p>
     </div>
   </div>
+  <?php 
+    if (!file_exists('../resources/img/beers/' . $beer['image_name'])) $beer['image_name'] = '404.jpg';
+  ?>
   <img src="../resources/img/beers/<?= $beer['image_name'] ?>" alt="Image de bière">
 </div>

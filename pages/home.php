@@ -67,6 +67,9 @@
                 <div class="beer-preview">
                     <a href="/biere/<?=$beer['name']?>">
                         <div class="beer-thumbnail">
+                            <?php 
+                                if (!file_exists('resources/img/beers/' . $beer['image_name'])) $beer['image_name'] = '404.jpg';
+                            ?>
                             <img src="resources/img/beers/<?=$beer['image_name']?>" alt="Image de bière"/>
                         </div>
                         <div class="beer-description">
