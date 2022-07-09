@@ -22,7 +22,7 @@ INSERT INTO user_credential (user_id, password) VALUES
 INSERT INTO advice (beer_id, user_id, rate, title, comment) VALUES
 (1, 1, 5, "Excellente bière 🍺 !", "J'ai pu avoir l'occasion de la gouter sur place, elle est très bonne et très fraiche. Gros point fort sur le brasseur qui est accueillant et passionnant"),
 (1, 2, 4, "C'est pas mal du tout", "La bière n'est pas donnée mais vraiment bonne."),
-(1, 1, 5, "Elle est vraiment bonne et je vais vous raconter 3 fois son histoire : Brassée avec un mélange d'épeautre provençal et de malt d'orge, la FADA blonde est une belle lager où s'exprime pleinement le cœur aromatique frais et floral du houblon Mistral. Les notes maltées s'équilibrent autour d'une amertume fine et légère."),
+(1, 1, 5, "titre", "Elle est vraiment bonne et je vais vous raconter 3 fois son histoire : Brassée avec un mélange d'épeautre provençal et de malt d'orge, la FADA blonde est une belle lager où s'exprime pleinement le cœur aromatique frais et floral du houblon Mistral. Les notes maltées s'équilibrent autour d'une amertume fine et légère."),
 (2, 1, 2, "C'est trop fort !!!", "C'est du whiskey ou quoi ? 😫"),
 (4, 2, 1, "Que du marketing 👎.", "Vraiment nulle, prendre l'eau de la montagne n'a aucun intérêt à part trouver de nouveaux clients. Une bière pour les touristes !"),
 (4, 1, 4, "Vraiment bonne 😍 !!", "Elle est très bonne, cependant un peu forte. Je recommande quand même.")
