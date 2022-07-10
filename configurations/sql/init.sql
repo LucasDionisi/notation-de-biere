@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS user
     id INT NOT NULL AUTO_INCREMENT,
     pseudo VARCHAR(100),
     email VARCHAR(100),
+    avatar VARCHAR(100) DEFAULT NULL,
     validation_token VARCHAR(100),
     is_validated BOOLEAN DEFAULT false,
     PRIMARY KEY (id)

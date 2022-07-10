@@ -133,7 +133,7 @@
         function getUserByEmail($email) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT id, pseudo, is_validated FROM user WHERE email = ?";
+            $sql = "SELECT id, pseudo, avatar, is_validated FROM user WHERE email = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $email);
             $stmt->execute();
@@ -147,7 +147,7 @@
         function getUserByPseudo($pseudo) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT id, email, pseudo FROM user WHERE pseudo = ?";
+            $sql = "SELECT id, email, pseudo, avatar FROM user WHERE pseudo = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $pseudo);
             $stmt->execute();

@@ -37,6 +37,7 @@
                 $userInfo = array();
                 $userInfo['pseudo'] = $user['pseudo'];
                 $userInfo['id'] = $user['id'];
+                $userInfo['avatar'] = $user['avatar'];
     
                 $sessionManager->connectUser($userInfo);
 
