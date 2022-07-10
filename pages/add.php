@@ -9,6 +9,9 @@
 <body>
     <?php 
       include 'includes/header.php';
+      require_once 'modules/database/databaseManager.php';
+      $databaseManager = new DatabaseManager();
+      $databaseManager->connect();
 
       if ($sessionManager->getUserInfo() === NULL) {
         header('Location: ../connexion');
@@ -17,6 +20,7 @@
       if (isset($_POST['submitButton'])) {
         $beerName = $_POST['name'];
         $description = $_POST['description'];
+        $beerStyle = $_POST['beerStyle'];
         $image = $_FILES['img'];
         $ext = '.' . pathinfo($image['name'], PATHINFO_EXTENSION);
 
@@ -32,10 +36,7 @@
             // TODO Error
         } 
 
-        require_once 'modules/database/databaseManager.php';
-        $databaseManager = new DatabaseManager();
-        $databaseManager->connect();
-        if (!$databaseManager->addBeer($beerName, 1, $description, 2.7, $fileName, $sessionManager->getUserInfo()['id'])) {
+        if (!$databaseManager->addBeer($beerName, $beerStyle, $description, 2.7, $fileName, $sessionManager->getUserInfo()['id'])) {
             // TODO Error
         }
 
@@ -49,10 +50,25 @@
             <form method="POST" action="" enctype="multipart/form-data">
                 <div class="box-main">
                     <div class="left-box">
-                        <div class="name-group">
-                            <input id="name-input" type="text" name="name" required maxlength="100">
-                            <span class="bar"></span>
-                            <label>Nom de la bière</label>
+                        <div class="name-style">
+                            <div class="name-group">
+                                <input id="name-input" type="text" name="name" required maxlength="100">
+                                <span class="bar"></span>
+                                <label>Nom de la bière</label>
+                            </div>
+                            <?php
+                                $styles = $databaseManager->getBeerStyle();
+                                if ($styles->num_rows > 0) {
+                            ?>
+                            <div class="style-group">
+                                <select id="styles" name="beerStyle">
+                                    <option value="">Style de bière</option>
+                                <?php while($style = $styles->fetch_assoc()) { ?>
+                                    <option value="<?=$style['id']?>"><?=$style['name']?></option>
+                                <?php } ?>
+                                </select>
+                            </div>
+                            <?php } ?>
                         </div>
                         <div class="description-group">
                             <textarea id="description-textarea" name="description" required maxlength="500"
@@ -70,6 +86,7 @@
             </form>
          </div>
     </div>
+    <?php $databaseManager->disconnect(); ?>
     <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
     <script type="text/javascript" src="../js/libs/<?=$jsCompressorJs?>"></script>
     <script type="text/javascript" src="../js/<?=$jsAdd?>"></script>

@@ -72,10 +72,26 @@
 	cursor: pointer;
 }
 
+.name-style {
+	display: flex;
+	align-items: flex-end;
+}
+
+.name-style div {
+	margin: 0 2em 2em 0;
+}
+
 .name-group {
 	position: relative;
-	margin-bottom: 2em;
 	width: 18.8em;
+}
+
+.style-group select {
+	padding: 0.5em 0.5em 0.5em 0.25em;
+	width: 16em;
+	border: none;
+	border-bottom: 0.1em solid #f3a401;
+	background-color: #1e1d1e;
 }
 
 .name-group input {
@@ -162,6 +178,10 @@
 	.name-group {
 		width: 8.7em;
 		margin-bottom: 1em;
+	}
+
+	.style-group input {
+		width: 10em;
 	}
 
 	.name-group input {

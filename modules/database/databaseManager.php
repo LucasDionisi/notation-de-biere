@@ -226,5 +226,10 @@
                 return NULL;
             }
         }
+
+        function getBeerStyle() {
+            if (! isset($this->connection)) return NULL;
+            return $this->connection->query('SELECT * FROM beer_style');
+        }
     }
 ?>

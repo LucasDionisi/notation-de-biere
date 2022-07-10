@@ -28,7 +28,7 @@ h2 {
     margin: 0;
 }
 
-p, input, label, textarea {
+p, input, label, textarea, select {
     font-size: 1em;
     color: white;
 }
@@ -82,7 +82,7 @@ button:hover {
         font-size: 1em;
     }
 
-    p, input, label, textarea {
+    p, input, label, textarea, select {
         font-size: .8em;
     }
 
@@ -100,7 +100,7 @@ button:hover {
         font-size: .75em;
     }
 
-    p, input, label, textarea {
+    p, input, label, textarea, select {
         font-size: .6em;
     }
 
