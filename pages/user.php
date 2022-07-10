@@ -29,7 +29,13 @@
 
     <div class="user-page">
         <div class="user-header">
-            <img src="../resources/img/profil.svg" alt="Photo de profil" />
+            <?php
+                $img = $user['avatar'];
+                if ($img == NULL || !file_exists('resources/img/avatars/' . $img)) {
+                    $img = "default.png";
+                }
+            ?>
+            <img src="../resources/img/avatars/<?=$img?>" alt="Photo de profil" />
             <div class="user-header-right">
                 <div class="user-header-right-top">
                     <p><?=$user['pseudo']?></p>
