@@ -75,6 +75,7 @@
                         <div class="beer-description">
                             <div class="beer-description-name">
                                 <p><?=$beer['name']?></p>
+                                <p><?=$beer['beerStyle']?></p>
                             </div>
                             <div class="beer-rate">
                                 <div class="beer-rate-img">
