@@ -16,7 +16,13 @@
       </a>
     <?php } else { ?>
       <a href="../u/<?= $advice['pseudo'] ?>">
-        <img src="../resources/img/profil.svg" alt="Image de profil">
+        <?php
+          $img = $advice['avatar'];
+          if ($img == NULL || !file_exists('resources/img/avatars/' . $img)) {
+            $img = "default.png";
+          }
+        ?>
+        <img src="../resources/img/avatars/<?=$img?>" alt="Image de profil">
         <div class="userInfos">
           <div class="pseudo">
             <p><?= $advice['pseudo'] ?></p>
