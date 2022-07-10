@@ -19,5 +19,6 @@
 - Validation de création de bière.
 - title page en fonction de la page...
 - Pagination avis.
+- Si je supprime une bière, supprimer aussi la photo.
 
 ## Idées P3
