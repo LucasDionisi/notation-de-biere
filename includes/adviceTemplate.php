@@ -2,6 +2,11 @@
   <div class="advice-left">
     <?php if ($isUserPage) { ?>
       <a href="../biere/<?= $advice['beer_name'] ?>">
+        <?php
+        if (!file_exists('resources/img/beers/' . $advice['image_name'])) {
+          $advice['image_name'] = '404.jpg';
+        }
+        ?>
         <img src="../resources/img/beers/<?= $advice['image_name'] ?>" alt="Image de bière">
         <div class="userInfos">
           <div class="pseudo">
