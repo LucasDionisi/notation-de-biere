@@ -61,7 +61,7 @@
                                 if ($styles->num_rows > 0) {
                             ?>
                             <div class="style-group">
-                                <select id="styles" name="beerStyle">
+                                <select id="styles" name="beerStyle" required>
                                     <option value="">Style de bière</option>
                                 <?php while($style = $styles->fetch_assoc()) { ?>
                                     <option value="<?=$style['id']?>"><?=$style['name']?></option>
