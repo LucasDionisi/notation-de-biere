@@ -1,6 +1,7 @@
 USE beer_rating;
 
-INSERT INTO beer_style (name) VALUES 
+INSERT INTO beer_style (name) VALUES
+('Autre'),
 ('Blonde'),
 ('Blanche'),
 ('IPA');

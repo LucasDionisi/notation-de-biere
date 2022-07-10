@@ -85,6 +85,9 @@
 }
 
 .beer-description-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 1.3em;
 }
 
@@ -92,6 +95,11 @@
     color: white;
     font-weight: bold;
     margin: 0;
+    white-space: nowrap;
+}
+
+.beer-description-name .style {
+    font-size: .7em;
 }
 
 .beer-rate {
@@ -166,6 +174,10 @@
         width: .9em;
         height: .9em;
     }
+
+    .beer-description-name .style {
+        font-size: .6em;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -187,6 +199,10 @@
         padding: .2em .55em .2em .55em;
     }
 
+    .beer-description-name .style {
+        font-size: .5em;
+    }
+    
     .beer-rate-img img {
         width: .6em;
         height: .6em;
