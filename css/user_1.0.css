@@ -21,6 +21,10 @@
 	height: 5em;
 }
 
+#avatar-img {
+	cursor: pointer;
+}
+
 .user-header-right {
 	display: flex;
 	align-items: flex-start;
@@ -41,6 +45,10 @@
 
 .user-header-right-top p {
 	margin: 0;
+}
+
+.user-header-right-top h1 {
+	padding: 0;
 }
 
 .manage-user {
@@ -104,11 +112,13 @@
 
 .advice-title p
 {
-
 	margin: 0;
 	color: #f3a401;
 }
 
+.is-blur {
+	filter: blur(2px);
+}
 
 @media screen and (max-width: 768px) {
 	.user-header {

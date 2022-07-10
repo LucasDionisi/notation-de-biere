@@ -27,7 +27,7 @@
       $advices = $databaseManager->getAdvicesByUserId($user['id']);
     ?>
 
-    <div class="user-page">
+    <div class="user-page" id="content">
         <div class="user-header">
             <?php
                 $img = $user['avatar'];
@@ -35,10 +35,10 @@
                     $img = "default.png";
                 }
             ?>
-            <img src="../resources/img/avatars/<?=$img?>" alt="Photo de profil" />
+            <img src="../resources/img/avatars/<?=$img?>" alt="Photo de profil" <?php if ($isMyPage) { ?> id="avatar-img" <?php } ?>/>
             <div class="user-header-right">
                 <div class="user-header-right-top">
-                    <p><?=$user['pseudo']?></p>
+                    <h1><?=$user['pseudo']?></h1>
                     <?php if ($isMyPage) { ?>
                     <div class="manage-user">
                         <!--<button class="first">Modifier le profil</button>-->
@@ -60,11 +60,20 @@
                 require 'includes/adviceTemplate.php';
             } ?>
         </div>
-        <?php 
-            } 
-            $databaseManager->disconnect();
-        ?>
+        <?php } ?>
     </div>
+    <?php if ($isMyPage) { ?>
+
+        <div id="avatar-modal" class="modal">
+            <div class="modal-content">
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+
+    <?php 
+        } 
+        $databaseManager->disconnect();
+    ?>
     <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
     <script type="text/javascript" src="../js/<?=$jsUser?>"></script>
 </body>
