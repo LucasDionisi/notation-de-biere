@@ -66,7 +66,13 @@
 
         <div id="avatar-modal" class="modal">
             <div class="modal-content">
-                <p>Some text in the Modal..</p>
+                <div class="modal-top">
+                    <h2>Sélectionner une image de profil</h2>
+                    <p>&#x2715</p>
+                </div>
+                <div class="modal-main">
+                    
+                </div>
             </div>
         </div>
 

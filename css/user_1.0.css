@@ -120,6 +120,25 @@
 	filter: blur(2px);
 }
 
+.modal-content {
+	padding: 1em 2em 2em 2em;
+}
+
+.modal-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.modal-top p {
+	font-size: 2em;
+	margin: 0;
+}
+
+.modal-main {
+	
+}
+
 @media screen and (max-width: 768px) {
 	.user-header {
 		padding: 1.5em;
