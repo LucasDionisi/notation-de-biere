@@ -53,8 +53,9 @@ try {
     </div>
     <div class="title-and-rate">
       <div class="title-info">
-        <h1><?= $beer['name'] ?></h1>
-        <p>Alc. <?= $beer['alcohol_level'] ?>% Vol.</p>
+        <h1><?=$beer['name'] ?></h1>
+        <p>Alc. <?=$beer['alcohol_level'] ?>% Vol.</p>
+        <p class="beer-style"><?=$beer['beerStyle']?></p>
       </div>
     </div>
     <div class="description scrollbar">

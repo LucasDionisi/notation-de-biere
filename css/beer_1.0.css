@@ -69,6 +69,10 @@
 	white-space: nowrap;
 }
 
+.title-info .beer-style {
+	color: #f3a401;
+}
+
 .rate-icons img
 {
 	width: 2em;

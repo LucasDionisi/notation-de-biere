@@ -3,7 +3,6 @@
 ## A faire P1
 - Permettre à l'utilisateur de modifier son profil (popup?).
 - Possibilité de modifier/supprimer son avis.
-- Afficher le style de la bière (blonde, blanche, ...).
 - Donner un avis : gout, couleur, ...
 - Popup : avez vous 18ans?
 - Biere crée elle existe pas déjà ???
