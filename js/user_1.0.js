@@ -8,7 +8,12 @@ $('#avatar-img').on('click', function() {
 	$('#avatar-modal').css("display", "block");
 	$('#content').addClass('is-blur');
 
+	unSelectAll();
 	$('#content').on('click', onContent);
+});
+
+$('#close-modal').on('click', function() {
+	onContent();
 });
 
 function onContent() {
@@ -20,4 +25,15 @@ function onContent() {
 	} else {
 		once = false;
 	}
+}
+
+$('.avatars img').on('click', function(e) {
+	unSelectAll();
+	e.currentTarget.classList.add('selected');
+});
+
+function unSelectAll() {
+	$('.avatars .selected').each(function () {
+		this.classList.remove('selected');
+	});
 }

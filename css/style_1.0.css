@@ -77,11 +77,10 @@ button:hover {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 12.5%;
-  top: 12.5%;
-  width: 75%;
-  height: 75%;
-  overflow: auto;
+  left: 12.5vw;
+  top: 12.5vh;
+  width: 75vw;
+  height: 75vh;
   background-color: #100f0e;
   border-radius: .5em;
 }

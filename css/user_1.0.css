@@ -136,7 +136,26 @@
 }
 
 .modal-main {
-	
+	margin-top: 3em;
+	height: 55vh;
+}
+
+.avatars {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.avatars a {
+	margin: 1em;
+}
+
+.avatars img {
+	width: 5em;
+	height: 5em;
+}
+
+.avatars img.selected {
+	outline: .2em solid #f3a401;
 }
 
 @media screen and (max-width: 768px) {
