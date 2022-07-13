@@ -79,7 +79,7 @@
                                 foreach ($files as $file) {
                                     if (is_file('resources/img/avatars/' . $file)) {
                         ?>
-                                        <a href="#"><img src="../resources/img/avatars/<?=$file?>"/></a>
+                                        <a href="#"><img alt="Image de profil" name="<?=$file?>" src="../resources/img/avatars/<?=$file?>"/></a>
                         <?php 
                                     }  
                                 }
@@ -89,7 +89,10 @@
                         ?>
                     </div>
                 </div>
-                <button class="save-btn">Enregistrer</button>
+                <form method="POST" action="">
+                    <input id="file-name-input" type="text" name="file-name" hidden>
+                    <button class="save-btn">Enregistrer</button>
+                </form>
             </div>
         </div>
 

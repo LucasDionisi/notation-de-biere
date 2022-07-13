@@ -30,6 +30,7 @@ function onContent() {
 $('.avatars img').on('click', function(e) {
 	unSelectAll();
 	e.currentTarget.classList.add('selected');
+	$('#file-name-input').val(e.currentTarget.name);
 });
 
 function unSelectAll() {
