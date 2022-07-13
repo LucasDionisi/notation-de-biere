@@ -166,6 +166,15 @@
 	.user-header img {
 		height: 4em;
 	}
+
+	.avatars img {
+		width: 4em;
+		height: 4em;
+	}
+
+	.modal-top p {
+		font-size: 1.4em;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -175,5 +184,14 @@
 
 	.user-header img {
 		height: 3em;
+	}
+
+	.avatars img {
+		width: 3em;
+		height: 3em;
+	}
+
+	.modal-top p {
+		font-size: 1em;
 	}
 }

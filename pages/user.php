@@ -67,7 +67,7 @@
         <div id="avatar-modal" class="modal">
             <div class="modal-content">
                 <div class="modal-top">
-                    <h2>Sélectionner une image de profil</h2>
+                    <h2>Sélectionner un avtar</h2>
                     <a id="close-modal" href="#"><p>&#x2715</p></a>
                 </div>
                 <div class="modal-main scrollbar">
