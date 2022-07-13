@@ -72,112 +72,21 @@
                 </div>
                 <div class="modal-main scrollbar">
                     <div class="avatars">
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MaisonCarr%C3%A9e.jpeg"/></a>
+                        <?php 
+                            if (file_exists('resources/img/avatars/')) {
+                                $files = scandir('resources/img/avatars/');
+
+                                foreach ($files as $file) {
+                                    if (is_file('resources/img/avatars/' . $file)) {
+                        ?>
+                                        <a href="#"><img src="../resources/img/avatars/<?=$file?>"/></a>
+                        <?php 
+                                    }  
+                                }
+                            } else {
+                                // TODO no img
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
