@@ -16,10 +16,15 @@
       require_once 'modules/database/databaseManager.php';
       $databaseManager = new DatabaseManager();
       $databaseManager->connect();
+
       $res = $databaseManager->getUserByPseudo($pseudo);
 
       if ($res->num_rows != 1) {
         header('Location: ../404');
+      }
+
+      if ($isMyPage && isset($_POST['submitButton'])) {
+        $fileName = $_POST['file-name'];
       }
 
       $user = $res->fetch_assoc();
@@ -91,7 +96,7 @@
                 </div>
                 <form method="POST" action="">
                     <input id="file-name-input" type="text" name="file-name" hidden>
-                    <button class="save-btn">Enregistrer</button>
+                    <button type="submit" name="submitButton" class="save-btn">Enregistrer</button>
                 </form>
             </div>
         </div>
