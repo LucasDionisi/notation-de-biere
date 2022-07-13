@@ -152,6 +152,13 @@
 .avatars img {
 	width: 5em;
 	height: 5em;
+	transition: transform .4s;
+}
+
+.avatars img:hover {
+	-ms-transform: scale(1.4); /* IE 9 */
+	-webkit-transform: scale(1.4); /* Safari 3-8 */
+	transform: scale(1.4);
 }
 
 .avatars img.selected {
