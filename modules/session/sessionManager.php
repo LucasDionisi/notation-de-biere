@@ -38,6 +38,11 @@
             $this->resetTimeSessionCreated();
             return $_SESSION['USER'];
         }
+
+        public function setUserAvatar($avatar) {
+            if (!$this->checkTimeSessionCreated()) return NULL;
+            $_SESSION['USER']['avatar'] = $avatar;
+        }
     }
 
     $sessionManager = new SessionManager();

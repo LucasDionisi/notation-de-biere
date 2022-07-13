@@ -17,14 +17,19 @@
       $databaseManager = new DatabaseManager();
       $databaseManager->connect();
 
+      if ($isMyPage && isset($_POST['submitButton'])) {
+        $fileName = $_POST['file-name'];
+
+        $databaseManager->setUserAvatar($session['id'], $fileName);
+        if ($session->setUserAvatar($fileName) == NULL) {
+            // Loc index
+        }
+      }
+
       $res = $databaseManager->getUserByPseudo($pseudo);
 
       if ($res->num_rows != 1) {
         header('Location: ../404');
-      }
-
-      if ($isMyPage && isset($_POST['submitButton'])) {
-        $fileName = $_POST['file-name'];
       }
 
       $user = $res->fetch_assoc();

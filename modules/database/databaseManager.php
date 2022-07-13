@@ -172,10 +172,22 @@
             return $res;
         }
 
+        function setUserAvatar($userId, $avatar) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "UPDATE user SET avatar = ? WHERE id = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'si', $avatar, $userId);
+            $res = $stmt->execute();
+            $stmt->close();
+
+            return $res;
+        }
+
         function validateUser($validationToken) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "UPDATE user SET is_validated = 1, validation_token = NULL where validation_token = ?";
+            $sql = "UPDATE user SET is_validated = 1, validation_token = NULL WHERE validation_token = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $validationToken);
             $stmt->execute();
