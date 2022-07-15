@@ -200,7 +200,7 @@
     }
 
     .beer-description-name .style {
-        font-size: .5em;
+        display: none;
     }
     
     .beer-rate-img img {
