@@ -4,6 +4,7 @@
 - Possibilité de modifier/supprimer son avis.
 - Donner un avis : gout, couleur, ...
 - Biere crée elle existe pas déjà ???
+- Créer contact@notabiere.fr.
 
 ## A faire P2
 - XP pour changer sa PP.
@@ -22,3 +23,4 @@
 
 ## Idées P3
 - connection régulière xp.
+- xp via parainage.
