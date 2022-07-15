@@ -18,5 +18,6 @@
 - Pagination avis.
 - Si je supprime une bière, supprimer aussi la photo.
 - Popup : avez vous 18ans?
+- close bdd after query.
 
 ## Idées P3

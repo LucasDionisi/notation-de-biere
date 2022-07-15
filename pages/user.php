@@ -16,25 +16,32 @@
       require_once 'modules/database/databaseManager.php';
       $databaseManager = new DatabaseManager();
       $databaseManager->connect();
-
+      
       if ($isMyPage && isset($_POST['submitButton'])) {
-        $fileName = $_POST['file-name'];
+        $avatarValue = $_POST['avatar-value'];
 
         require_once 'modules/session/sessionManager.php';
+        $avatarInfo = $databaseManager->getAvatarById($avatarValue);
+        $avatarInfo = $avatarInfo->fetch_assoc();
+        
+        if ($session['level'] < $avatarInfo['level']) {
+            header('Location: ../404');
+        }
 
-        $databaseManager->setUserAvatar($session['id'], $fileName);
-        if ($sessionManager->setUserAvatar($fileName) !== NULL) {
+        $databaseManager->setUserAvatar($session['id'], $avatarInfo['id']);
+        if ($sessionManager->setUserAvatar($avatarInfo['file_name']) !== NULL) {
             header("Refresh:0");
         }
       }
+      
 
-      $res = $databaseManager->getUserByPseudo($pseudo);
+      $user = $databaseManager->getUserByPseudo($pseudo);
 
-      if ($res->num_rows != 1) {
+      if ($user->num_rows != 1) {
         header('Location: ../404');
       }
 
-      $user = $res->fetch_assoc();
+      $user = $user->fetch_assoc();
 
       $advices = $databaseManager->getAdvicesByUserId($user['id']);
     ?>
@@ -84,25 +91,23 @@
                 </div>
                 <div class="modal-main scrollbar">
                     <div class="avatars">
-                        <?php 
-                            if (file_exists('resources/img/avatars/')) {
-                                $files = scandir('resources/img/avatars/');
+                        <?php
+                            $avatars = $databaseManager->getAvatars();
 
-                                foreach ($files as $file) {
-                                    if (is_file('resources/img/avatars/' . $file)) {
+                             while ($avatar = $avatars->fetch_assoc()) {
+
+                                if (is_file('resources/img/avatars/' . $avatar['file_name'])) {
+                                    $className = $session['level'] < $avatar['level'] ? 'black-and-white' : '';
                         ?>
-                                        <a href="#"><img alt="Image de profil" name="<?=$file?>" src="../resources/img/avatars/<?=$file?>"/></a>
+                                    <a href="#"><img alt="Image de profil" title="Niveau nécessaire <?=$avatar['level']?>" name="<?=$avatar['id']?>" class="<?=$className?>" src="../resources/img/avatars/<?=$avatar['file_name']?>"/></a>
                         <?php 
-                                    }  
-                                }
-                            } else {
-                                // TODO no img
+                                }  
                             }
                         ?>
                     </div>
                 </div>
                 <form method="POST" action="">
-                    <input id="file-name-input" type="text" name="file-name" hidden>
+                    <input id="avatar-value" type="text" name="avatar-value" hidden>
                     <button type="submit" name="submitButton" class="save-btn">Enregistrer</button>
                 </form>
             </div>

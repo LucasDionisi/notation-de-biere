@@ -133,7 +133,7 @@
         function getUserByEmail($email) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT id, pseudo, avatar, is_validated FROM user WHERE email = ?";
+            $sql = "SELECT u.id, u.pseudo, a.file_name AS avatar, u.is_validated, u.level FROM user u LEFT JOIN avatar a ON u.avatar_id = a.id WHERE email = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $email);
             $stmt->execute();
@@ -147,7 +147,7 @@
         function getUserByPseudo($pseudo) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT id, email, pseudo, avatar FROM user WHERE pseudo = ?";
+            $sql = "SELECT u.id, u.email, u.pseudo, a.file_name AS avatar FROM user u LEFT JOIN avatar a ON u.avatar_id = a.id WHERE pseudo = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 's', $pseudo);
             $stmt->execute();
@@ -175,7 +175,7 @@
         function setUserAvatar($userId, $avatar) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "UPDATE user SET avatar = ? WHERE id = ?";
+            $sql = "UPDATE user SET avatar_id = ? WHERE id = ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 'si', $avatar, $userId);
             $res = $stmt->execute();
@@ -202,7 +202,7 @@
         function getAdvices($beer_id) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT a.*, u.pseudo AS pseudo, u.avatar FROM advice a LEFT JOIN user u ON a.user_id = u.id WHERE beer_id = ? ORDER BY a.created_at DESC";
+            $sql = "SELECT a.*, u.pseudo AS pseudo, av.file_name AS avatar FROM advice a LEFT JOIN user u ON a.user_id = u.id LEFT JOIN avatar av ON u.avatar_id = av.id WHERE beer_id = ? ORDER BY a.created_at DESC";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 'i', $beer_id);
             $stmt->execute();
@@ -235,6 +235,7 @@
             mysqli_stmt_bind_param($stmt, 'iiiss', $beer_id, $user_id, $rate, $title, $comment);
             
             if (!$stmt->execute()) {
+                $stmt->close();
                 return NULL;
             }
         }
@@ -242,6 +243,25 @@
         function getBeerStyle() {
             if (! isset($this->connection)) return NULL;
             return $this->connection->query('SELECT * FROM beer_style');
+        }
+
+        function getAvatars() {
+            if (! isset($this->connection)) return NULL;
+            return $this->connection->query('SELECT * FROM avatar ORDER BY level');
+        }
+
+        function getAvatarById($id) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "SELECT * FROM avatar WHERE id = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'i', $id);
+            $stmt->execute();
+
+            $res = $stmt->get_result();
+            $stmt->close();
+
+            return $res;
         }
     }
 ?>

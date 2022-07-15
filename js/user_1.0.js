@@ -28,9 +28,11 @@ function onContent() {
 }
 
 $('.avatars img').on('click', function(e) {
-	unSelectAll();
-	e.currentTarget.classList.add('selected');
-	$('#file-name-input').val(e.currentTarget.name);
+	if (!e.currentTarget.classList.contains('black-and-white')) {
+		unSelectAll();
+		e.currentTarget.classList.add('selected');
+		$('#avatar-value').val(e.currentTarget.name);
+	}
 });
 
 function unSelectAll() {

@@ -38,6 +38,7 @@
                 $userInfo['pseudo'] = $user['pseudo'];
                 $userInfo['id'] = $user['id'];
                 $userInfo['avatar'] = $user['avatar'];
+                $userInfo['level'] = $user['level'];
     
                 $sessionManager->connectUser($userInfo);
 

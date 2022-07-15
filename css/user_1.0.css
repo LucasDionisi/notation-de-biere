@@ -155,13 +155,18 @@
 	transition: transform .4s;
 }
 
-.avatars img:hover {
+.avatars img.black-and-white {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.avatars img:hover:not(.black-and-white){
 	-ms-transform: scale(1.4); /* IE 9 */
 	-webkit-transform: scale(1.4); /* Safari 3-8 */
 	transform: scale(1.4);
 }
 
-.avatars img.selected {
+.avatars img.selected:not(.black-and-white) {
 	outline: .2em solid #f3a401;
 }
 
