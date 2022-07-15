@@ -28,10 +28,11 @@ CREATE TABLE IF NOT EXISTS user
     id INT NOT NULL AUTO_INCREMENT,
     pseudo VARCHAR(100),
     email VARCHAR(100),
-    avatar VARCHAR(100) DEFAULT NULL,
+    avatar_id INT DEFAULT 1,
     validation_token VARCHAR(100),
     is_validated BOOLEAN DEFAULT false,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    FOREIGN KEY (avatar_id) REFERENCES avatar(id)
 );
 
 CREATE TABLE IF NOT EXISTS user_credential
