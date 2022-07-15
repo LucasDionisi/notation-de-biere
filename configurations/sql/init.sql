@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS user
     level INT NOT NULL DEFAULT 1,
     validation_token VARCHAR(100),
     is_validated BOOLEAN DEFAULT false,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id),
     FOREIGN KEY (avatar_id) REFERENCES avatar(id)
 );
