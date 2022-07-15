@@ -20,9 +20,11 @@
       if ($isMyPage && isset($_POST['submitButton'])) {
         $fileName = $_POST['file-name'];
 
+        require_once 'modules/session/sessionManager.php';
+
         $databaseManager->setUserAvatar($session['id'], $fileName);
-        if ($session->setUserAvatar($fileName) == NULL) {
-            // Loc index
+        if ($sessionManager->setUserAvatar($fileName) !== NULL) {
+            header("Refresh:0");
         }
       }
 

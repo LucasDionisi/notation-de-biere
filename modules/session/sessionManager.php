@@ -42,6 +42,7 @@
         public function setUserAvatar($avatar) {
             if (!$this->checkTimeSessionCreated()) return NULL;
             $_SESSION['USER']['avatar'] = $avatar;
+            return true;
         }
     }
 
