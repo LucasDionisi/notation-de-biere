@@ -1,6 +1,7 @@
 # notation-de-biere
 
 ## A faire P1
+- 🛑 Quand on créer une bière changer le %alcool 🛑
 - Possibilité de modifier/supprimer son avis.
 - Donner un avis : gout, couleur, ...
 - Biere crée elle existe pas déjà ???
