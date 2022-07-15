@@ -61,4 +61,12 @@ CREATE TABLE IF NOT EXISTS configuration
     param VARCHAR(100),
     data VARCHAR(100),
     PRIMARY KEY (id)
-)
+);
+
+CREATE TABLE IF NOT EXISTS avatar
+(
+    id INT NOT NULL AUTO_INCREMENT,
+    file_name VARCHAR(100),
+    level INT NOT NULL,
+    PRIMARY KEY (id)
+);

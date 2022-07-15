@@ -31,3 +31,12 @@ INSERT INTO advice (beer_id, user_id, rate, title, comment) VALUES
 
 INSERT INTO configuration (param, data) VALUES
 ("salt", "Tc2w5t6!A=Vm");
+
+INSERT INTO avatar (file_name, level) VALUES
+("default.png", 1), 
+("1.png", 1),  ("2.png", 1),  ("3.png", 1),  ("4.png", 1),  ("5.png", 1),  ("6.png", 2),  ("7.png", 2),  ("8.png", 2),  ("9.png", 2),  ("10.png", 2),
+("11.png", 2), ("12.png", 3), ("13.png", 3), ("14.png", 3), ("15.png", 3), ("16.png", 3), ("17.png", 3), ("18.png", 4), ("19.png", 4), ("20.png", 4),
+("21.png", 4), ("22.png", 4), ("23.png", 4), ("24.png", 5), ("25.png", 5), ("26.png", 5), ("27.png", 5), ("28.png", 5), ("29.png", 5), ("30.png", 6),
+("31.png", 6), ("32.png", 6), ("33.png", 6), ("34.png", 6), ("35.png", 7), ("36.png", 7), ("37.png", 7), ("38.png", 7), ("39.png", 7), ("40.png", 8),
+("41.png", 8), ("42.png", 8), ("43.png", 8), ("44.png", 9), ("45.png", 9), ("46.png", 9), ("47.png", 9), ("48.png", 9), ("49.png", 10), ("50.png", 10),
+("51.png", 10), ("52.png", 11), ("53.png", 11), ("54.png", 11), ("55.png", 12), ("56.png", 12);
