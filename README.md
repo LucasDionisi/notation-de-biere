@@ -21,3 +21,4 @@
 - close bdd after query.
 
 ## Idées P3
+- connection régulière xp.
