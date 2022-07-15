@@ -61,7 +61,7 @@
         function getBeers($name, $first, $last) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) AS rate_average, bs.name AS beerStyle FROM beer b LEFT JOIN advice a ON b.id = a.beer_id LEFT JOIN beer_style bs ON b.style_id = bs.id WHERE LOWER(b.name) LIKE LOWER(CONCAT('%', ?, '%')) GROUP BY b.id ORDER BY b.id ASC LIMIT ?, ?";
+            $sql = "SELECT b.*, COUNT(a.beer_id) AS nb_advices, AVG(a.rate) AS rate_average, bs.name AS beerStyle FROM beer b LEFT JOIN advice a ON b.id = a.beer_id LEFT JOIN beer_style bs ON b.style_id = bs.id WHERE LOWER(b.name) LIKE LOWER(CONCAT('%', ?, '%')) GROUP BY b.id ORDER BY b.id DESC LIMIT ?, ?";
             $stmt = $this->connection->prepare($sql);
             mysqli_stmt_bind_param($stmt, 'sii', $name, $first, $last);
             $stmt->execute();
