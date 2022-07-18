@@ -21,6 +21,7 @@
         $beerName = $_POST['name'];
         $description = $_POST['description'];
         $beerStyle = $_POST['beerStyle'];
+        $alcohol = $_POST['alcohol'];
         $image = $_FILES['img'];
         $ext = '.' . pathinfo($image['name'], PATHINFO_EXTENSION);
 
@@ -36,7 +37,7 @@
             // TODO Error
         } 
 
-        if (!$databaseManager->addBeer($beerName, $beerStyle, $description, 0, $fileName, $sessionManager->getUserInfo()['id'])) {
+        if (!$databaseManager->addBeer($beerName, $beerStyle, $description, $alcohol, $fileName, $sessionManager->getUserInfo()['id'])) {
             // TODO Error
         }
 
@@ -69,6 +70,11 @@
                                 </select>
                             </div>
                             <?php } ?>
+                            <div class="alcohol-group">
+                                <input id="alcohol-input" type="number" step="0.1" name="alcohol" required>
+                                <span class="bar"></span>
+                                <label>% Alcool</label>
+                            </div>
                         </div>
                         <div class="description-group">
                             <textarea id="description-textarea" name="description" required maxlength="500"
