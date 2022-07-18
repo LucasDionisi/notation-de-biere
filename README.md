@@ -6,6 +6,7 @@
 - Donner un avis : gout, couleur, ...
 - Biere crée elle existe pas déjà ???
 - Créer contact@notabiere.fr.
+- Régler les pb du titre long donc on voit pas tout.
 
 ## A faire P2
 - XP pour changer sa PP.
