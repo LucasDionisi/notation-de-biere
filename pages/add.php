@@ -36,7 +36,7 @@
             // TODO Error
         } 
 
-        if (!$databaseManager->addBeer($beerName, $beerStyle, $description, 2.7, $fileName, $sessionManager->getUserInfo()['id'])) {
+        if (!$databaseManager->addBeer($beerName, $beerStyle, $description, 0, $fileName, $sessionManager->getUserInfo()['id'])) {
             // TODO Error
         }
 
