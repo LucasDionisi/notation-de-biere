@@ -4,7 +4,7 @@
 	$cssBeer 		   = 'beer_1.0.css';
 	$cssConnection 	   = 'connection_1.0.css'; 
 	$cssHeader 		   = 'header_1.0.css';
-	$cssHome 		   = 'home_1.0.css';
+	$cssHome 		   = 'home_1.1.css';
 	$cssRegister 	   = 'register_1.0.css';
 	$cssStyle 		   = 'style_1.0.css';
 	$cssUser 		   = 'user_1.0.css';

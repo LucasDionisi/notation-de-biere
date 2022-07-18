@@ -87,7 +87,7 @@
 .beer-description-name {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     font-size: 1.3em;
 }
 
@@ -96,6 +96,8 @@
     font-weight: bold;
     margin: 0;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .beer-description-name .style {
