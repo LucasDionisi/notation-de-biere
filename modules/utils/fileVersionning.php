@@ -10,7 +10,7 @@
 	$cssUser 		   = 'user_1.0.css';
 	$cssValidation 	   = 'validation_1.0.css';
 	$cssWrite 		   = 'write_1.0.css';
-	$cssAdd			   = 'add_1.0.css';
+	$cssAdd			   = 'add_1.1.css';
 	$css404			   = '404_1.0.css';
 
 	$jsJquery 		   = 'jquery-3.6.0.min.js';
