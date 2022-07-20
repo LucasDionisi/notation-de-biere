@@ -91,6 +91,7 @@
 {
 	max-height: 8em;
 	padding-right: .8em;
+	white-space: pre-line;
 }
 
 .title-rate-and-description
