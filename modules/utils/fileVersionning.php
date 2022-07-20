@@ -1,6 +1,6 @@
 <?php
 
-	$cssAdviceTemplate = 'adviceTemplate_1.0.css';
+	$cssAdviceTemplate = 'adviceTemplate_1.1.css';
 	$cssBeer 		   = 'beer_1.1.css';
 	$cssConnection 	   = 'connection_1.0.css'; 
 	$cssHeader 		   = 'header_1.0.css';
