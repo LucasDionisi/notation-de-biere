@@ -18,6 +18,6 @@
 	$jsWriteAdvice 	   = 'writeAdvice_1.0.js';
 	$jsHome 		   = 'home_1.0.js';
 	$jsUser			   = 'user_1.0.js';
-	$jsAdd			   = 'add_1.1.js';
+	$jsAdd			   = 'add_1.0.js';
 
 ?>
