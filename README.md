@@ -9,6 +9,7 @@
 - Régler les pb du titre long donc on voit pas tout.
 
 ## A faire P2
+- Btn scroll to top.
 - XP pour changer sa PP.
 - Enlever la duplication de code pour les advices avec des varible (si user -> affcicher bière. si biere afficher user...).
 - Signaler un avis.
