@@ -12,6 +12,14 @@ $('#file-input').on('change', function() {
 		maxHeight: 500,
 		success:  function (compressedFile) {
 			document.getElementById('uploaded-img').src = window.URL.createObjectURL(compressedFile);
+
+			const file = new File([compressedFile], compressedFile.name, {
+				type: compressedFile.type
+			})
+
+			const dataTransfere = new DataTransfer();
+			dataTransfere.items.add(file);
+			$('#file-input')[0].files = dataTransfere.files;
 		}
 	});
 });
