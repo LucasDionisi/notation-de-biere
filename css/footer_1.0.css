@@ -1,5 +1,16 @@
 .footer {
 	height: 3em;
 	width: 100vw;
-	background-color: red;
+	background-color: #100f0e;
+	-webkit-box-shadow: 0 .06em 1em 0 rgba(0,0,0,0.85); 
+	box-shadow: 0 .06em 1em 0 rgba(0,0,0,0.85);
+}
+
+.footer p {
+	padding-top: 1em;
+	text-align: center;
+}
+
+.footer a {
+	color: #f3a401;
 }
