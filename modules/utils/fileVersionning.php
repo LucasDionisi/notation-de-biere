@@ -4,6 +4,7 @@
 	$cssBeer 		   = 'beer_1.1.css';
 	$cssConnection 	   = 'connection_1.0.css'; 
 	$cssHeader 		   = 'header_1.0.css';
+	$cssFooter		   = 'footer_1.0.css';
 	$cssHome 		   = 'home_1.1.css';
 	$cssRegister 	   = 'register_1.0.css';
 	$cssStyle 		   = 'style_1.0.css';
@@ -18,6 +19,6 @@
 	$jsWriteAdvice 	   = 'writeAdvice_1.0.js';
 	$jsHome 		   = 'home_1.0.js';
 	$jsUser			   = 'user_1.0.js';
-	$jsAdd			   = 'add_1.1.js';
+	$jsAdd			   = 'add_1.0.js';
 
 ?>

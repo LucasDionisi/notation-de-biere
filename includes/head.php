@@ -8,4 +8,5 @@
 <?php require_once 'modules/utils/fileVersionning.php'; ?>
 <link rel="stylesheet" href="../css/<?=$cssStyle?>">
 <link rel="stylesheet" href="../css/<?=$cssHeader?>">
+<link rel="stylesheet" href="../css/<?=$cssFooter?>">
 <link rel="icon" href="../resources/img/favicon.ico">

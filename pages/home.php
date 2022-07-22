@@ -137,6 +137,9 @@
             <?php } ?>
             </div>
         </div>
+        <?php
+            include 'includes/footer.php';
+        ?>
         <div class="end-of-page"></div>
     </div>
 
