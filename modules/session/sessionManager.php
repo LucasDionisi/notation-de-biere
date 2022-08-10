@@ -5,10 +5,12 @@
             session_start();
         }
 
+        // Deprecated
         public function resetTimeSessionCreated() {
             $_SESSION['SESSION_CREATED'] = time();
         }
 
+        // Deprecated
         private function checkTimeSessionCreated() {
             if (!isset($_SESSION['SESSION_CREATED']) || !isset($_SESSION['USER'])) {
                 if (isset($_SESSION['USER'])) $this->resetTimeSessionCreated();
@@ -23,8 +25,9 @@
             return true;
         }
 
+
+
         public function connectUser($info) {
-            $this->resetTimeSessionCreated();
             $_SESSION['USER'] = $info;
         }
 
@@ -34,13 +37,10 @@
         }
 
         public function getUserInfo() {
-            if (!$this->checkTimeSessionCreated()) return NULL;
-            $this->resetTimeSessionCreated();
             return $_SESSION['USER'];
         }
 
         public function setUserAvatar($avatar) {
-            if (!$this->checkTimeSessionCreated()) return NULL;
             $_SESSION['USER']['avatar'] = $avatar;
             return true;
         }
