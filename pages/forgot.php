@@ -29,7 +29,7 @@
             $databaseManager->resetPassword($email, $validationToken);
 
             require_once 'modules/utils/sendEmail.php';
-            $sendEmail->sendResetPassword($email, 'https://notabiere.fr/reinitialisation/' . $validation_token);
+            $sendEmail->sendResetPassword($email, 'https://notabiere.fr/reinitialisation/' . $validationToken);
 
 
             $validationMsg = "Un lien vous a été envoyé par mail pour modifier votre mot de passe.";
