@@ -91,10 +91,20 @@
   width:50%;
 }
 
+.forget-password {
+  width: 100%;
+  margin-top: -1.5em;
+}
+
+.forget-password a {
+  text-decoration: underline;
+}
+
 .error-message {
   color: red;
 	font-style: italic;
 	font-size: 0.8em;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -105,6 +115,11 @@
   .input-group {
     margin-bottom: 2em;
   }
+
+  .forget-password {
+    margin-top: -1em;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -114,5 +129,9 @@
 
   .input-group {
     margin-bottom: 1.5em;
+  }
+
+  .forget-password {
+    margin-top: -.75em;
   }
 }

@@ -67,6 +67,9 @@
                     <span class="bar"></span>
                     <label>Mot de passe</label>
                 </div>
+                <div class="forget-password">
+                    <p><a href="../oublie">Mot de passe oublié ?</a></p>
+                </div>
                 <button type="submit" name="submitButton">Se connecter</button>
                 <?php
             if (!empty($errorMsg)) {

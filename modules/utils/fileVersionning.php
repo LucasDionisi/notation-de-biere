@@ -2,7 +2,7 @@
 
 	$cssAdviceTemplate = 'adviceTemplate_1.1.css';
 	$cssBeer 		   = 'beer_1.1.css';
-	$cssConnection 	   = 'connection_1.0.css'; 
+	$cssConnection 	   = 'connection_1.1.css'; 
 	$cssHeader 		   = 'header_1.0.css';
 	$cssFooter		   = 'footer_1.0.css';
 	$cssHome 		   = 'home_1.1.1.css';
