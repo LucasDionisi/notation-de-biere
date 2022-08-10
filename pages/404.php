@@ -2,7 +2,10 @@
 <html lang="fr">
 
 <head>
-    <?php include 'includes/head.php';?>
+    <?php 
+        $title = "Page introuvable 404";
+        include 'includes/head.php';
+    ?>
     <link rel="stylesheet" type="text/css" href="../css/<?=$css404?>">
 </head>
 

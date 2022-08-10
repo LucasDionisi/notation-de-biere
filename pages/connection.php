@@ -2,7 +2,10 @@
 <html lang="fr">
 
 <head>
-    <?php include 'includes/head.php';?>
+    <?php 
+        $title = "Connexion";
+        include 'includes/head.php';
+    ?>
     <link rel="stylesheet" type="text/css" href="../css/<?=$cssConnection?>">
 </head>
 

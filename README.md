@@ -14,7 +14,6 @@
 - Aimer un avis.
 - Faire une classe qui faire les appels BDD pour s'assurer de bien close.
 - Validation de création de bière.
-- title page en fonction de la page...
 - Pagination avis (dans biere et user).
 - Si je supprime une bière, supprimer aussi la photo.
 - close bdd after each query.

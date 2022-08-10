@@ -11,11 +11,12 @@
 	$cssHome 		   = 'home_1.1.1.css';
 	$cssRegister 	   = 'register_1.0.css';
 	$cssStyle 		   = 'style_1.0.css';
-	$cssUser 		   = 'user_1.0.css';
+	$cssUser 		   = 'user_1.1.css';
 	$cssValidation 	   = 'validation_1.0.css';
 	$cssWrite 		   = 'write_1.0.css';
 
 	$jsAdd			   = 'add_1.1.js';
+	$jsBeer			   = 'beer_1.0.js';
 	$jsCompressorJs	   = 'compressorJs-1.1.1.min.js';
 	$jsHome 		   = 'home_1.0.js';
 	$jsJquery 		   = 'jquery-3.6.0.min.js';

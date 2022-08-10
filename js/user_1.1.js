@@ -1,5 +1,9 @@
 var once = true;
 
+$(document).ready(function () {
+	document.title = $(".user-header-right-top h1")[0].innerHTML;;
+});
+
 $('#logout').on('click', function () {
 	window.location.replace("../deconnexion");
 });

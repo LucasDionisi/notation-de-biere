@@ -4,7 +4,15 @@
 <meta name="author" content="Lucas Dionisi">
 <meta name="description" content="Sélectionnez les meilleures bières, lisez des avis et notez vous-même n'importe quelle bière.">
 <meta name="keywords" content="notabiere, biere, avis, notation, note">
-<title>Notabière</title>
+
+<?php 
+	if (!isset($title)) {
+		$title = "Notabière";
+	}
+?>
+<title><?=$title?></title>
+
+
 <?php require_once 'modules/utils/fileVersionning.php'; ?>
 <link rel="stylesheet" href="../css/<?=$cssStyle?>">
 <link rel="stylesheet" href="../css/<?=$cssHeader?>">

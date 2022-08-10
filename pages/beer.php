@@ -50,6 +50,8 @@
       </div>
     </div>
   </div>
+    <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
+    <script type="text/javascript" src="../js/<?=$jsBeer?>"></script>
 </body>
 
 </html>
