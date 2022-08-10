@@ -204,6 +204,12 @@
             $stmt->close();
         }
 
+        function changePasswordAfterReset($validationToken, $password) {
+            if (!isset($this->connection)) return NULL;
+
+            // TODO
+        }
+
         function getSalt() {
             if (! isset($this->connection)) return NULL;
             return $this->connection->query('SELECT * FROM configuration WHERE param = "salt"');
