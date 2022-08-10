@@ -10,6 +10,7 @@
 	$cssHeader 		   = 'header_1.0.css';
 	$cssHome 		   = 'home_1.1.1.css';
 	$cssRegister 	   = 'register_1.0.css';
+	$cssResetPswd	   = 'resetPswd_1.0.css';
 	$cssStyle 		   = 'style_1.0.css';
 	$cssUser 		   = 'user_1.0.css';
 	$cssValidation 	   = 'validation_1.0.css';

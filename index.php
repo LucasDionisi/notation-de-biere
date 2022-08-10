@@ -37,6 +37,7 @@ if ($url == '') {
       require 'pages/validation.php';
       break;
     case 'reinitialisation':
+      $validationToken = $url[1];
       require 'pages/resetPswd.php';
       break;
     case 'u':
