@@ -17,6 +17,10 @@
     <?php 
       include 'includes/header.php';
 
+      if ($session !== NULL) {
+        header('Location: ../');
+      }
+
       if (isset($_POST['submitButton'])) {
         $email = $_POST["email"];
         $pseudo = $_POST["pseudo"];

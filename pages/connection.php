@@ -12,6 +12,11 @@
 <body>
     <?php 
       include 'includes/header.php';
+      
+      if ($session !== NULL) {
+        header('Location: ../');
+      }
+
       require_once 'modules/database/databaseManager.php';
       require_once 'modules/database/credentialManager.php';
       
