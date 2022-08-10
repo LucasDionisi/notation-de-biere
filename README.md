@@ -4,6 +4,7 @@
 - Possibilité de modifier/supprimer son avis.
 - Donner un avis : gout, couleur, ...
 - Biere crée elle existe pas déjà ???
+- Mot de passe oublié.
 
 ## A faire P2
 - Changer le responsive de la popup des avatars.
