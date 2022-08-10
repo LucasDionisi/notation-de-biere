@@ -71,13 +71,13 @@
                     <p><a href="../oublie">Mot de passe oublié ?</a></p>
                 </div>
                 <button type="submit" name="submitButton">Se connecter</button>
-                <?php
+            <?php
             if (!empty($errorMsg)) {
-          ?>
+            ?>
                 <p class="error-message"><?=$errorMsg?></p>
-                <?php
+            <?php
             }
-          ?>
+            ?>
             </div>
         </form>
         <p>Vous n'avez pas de compte ? <a href="../inscription">S'inscrire</a></p>
