@@ -25,8 +25,13 @@
             $databaseManager = new DatabaseManager();
             $databaseManager->connect();
 
-            
-            
+            $validationToken = bin2hex(random_bytes(16));
+            $databaseManager->resetPassword($email, $validationToken);
+
+            require_once 'modules/utils/sendEmail.php';
+            $sendEmail->sendResetPassword($email, 'https://notabiere.fr/reinitialisation/' . $validation_token);
+
+
             $validationMsg = "Un lien vous a été envoyé par mail pour modifier votre mot de passe.";
         }
       }

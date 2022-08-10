@@ -130,6 +130,16 @@
             $stmt->execute();
         }
 
+        function resetPassword($email, $validationToken) {
+            if (!isset($this->connection)) return NULL;
+
+            $sql = "UPDATE user SET validation_token = ? WHERE email = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'ss', $validationToken, $email);
+            $stmt->execute();
+            $stmt->close();
+        }
+
         function getUserByEmail($email) {
             if (! isset($this->connection)) return NULL;
 
