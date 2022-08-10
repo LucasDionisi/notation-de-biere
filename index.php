@@ -29,6 +29,9 @@ if ($url == '') {
     case 'inscription':
       require 'pages/register.php';
       break;
+    case 'oublie':
+      require 'pages/forgot.php';
+      break;
     case 'validation':
       $validationToken = $url[1];
       require 'pages/validation.php';
