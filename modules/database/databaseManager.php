@@ -207,7 +207,11 @@
         function changePasswordAfterReset($validationToken, $password) {
             if (!isset($this->connection)) return NULL;
 
-            // TODO
+            $sql = "UPDATE user_credential uc LEFT JOIN user u ON u.id = uc.user_id SET uc.password = ?, u.validation_token = NULL WHERE u.validation_token = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'ss', $password, $validationToken);
+            $stmt->execute();
+            $stmt->close();
         }
 
         function getSalt() {

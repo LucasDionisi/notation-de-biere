@@ -20,6 +20,15 @@
       require_once 'modules/database/databaseManager.php';
       require_once 'modules/database/credentialManager.php';
 
+      $databaseManager = new DatabaseManager();
+      $databaseManager->connect();
+
+      $res = $databaseManager->getUserByValidationToken($validationToken);
+
+      if ($res->num_rows <= 0) {
+        header('Location: ../');
+      }
+
       if (isset($_POST['submitButton'])) {
 
         $errorMsg = "";
@@ -28,12 +37,14 @@
         $passwordConfirmation = $_POST['password-confirmation'];
 
         if ($password !== $passwordConfirmation) {
-            $errorMsg = "Les deux mots de passe doivent être identiques";
+            $errorMsg = "Les deux mots de passe doivent être identiques.";
         } else {
-            $databaseManager = new DatabaseManager();
-            $databaseManager->connect();
+            $salt = $databaseManager->getSalt()->fetch_assoc()['data'];
+            $passwordCrypted = crypt($password, $salt);
 
-            // TODO
+            $databaseManager->changePasswordAfterReset($validationToken, $passwordCrypted);
+
+            $validationMsg = "Vous avez bien réinitialisé votre mot de passe.";
         }
       }
 
@@ -57,6 +68,10 @@
             if (!empty($errorMsg)) {
             ?>
                 <p class="error-message"><?=$errorMsg?></p>
+            <?php
+            } else if (!empty($validationMsg)) {
+            ?>
+                <p class="validation-message"><?=$validationMsg?></p>
             <?php
             }
             ?>
