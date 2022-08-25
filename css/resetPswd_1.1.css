@@ -18,12 +18,11 @@
     margin-top: 1em;
     padding: 6em 6em 4em 6em;
     border-radius: 1em;
-    background-color: #100f0ea8;
+    background-color: var(--col-dark-background-box);
 }
 
-
 .input-group {
-      position: relative;
+	  position: relative;
     margin-bottom: 3em;
 }
 
@@ -32,17 +31,17 @@
   display: block;
   width: 18em;
   border: none;
-  border-bottom: 0.1em solid #f3a401;
-  background-color: #1e1d1e;
-  color: white;
+  border-bottom: 0.1em solid var(--col-dark-element);
+  background-color: var(--col-dark-background-box);
+  color: var(--col-dark-text);
 }
 
 .input-group input:focus { 
-    outline: none; 
+	outline: none; 
 }
 
 .input-group label {
-  color: #f3a401; 
+  color: var(--col-dark-element); 
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -55,13 +54,13 @@
 
 .input-group input:focus ~ label, .input-group input:valid ~ label {
   top:-1em;
-  color:#f3a401;
+  color: var(--col-dark-element);
 }
 
 .input-group .bar { 
-    position:relative; 
-    display:block; 
-    width:100%;
+	position:relative; 
+	display:block; 
+	width:100%;
 }
 
 .input-group .bar:before, .input-group .bar:after {
@@ -70,7 +69,7 @@
   width:0;
   bottom:1px; 
   position:absolute;
-  background:#f3a401; 
+  background: var(--col-dark-element); 
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
@@ -90,8 +89,8 @@
 
 .error-message {
   color: red;
-    font-style: italic;
-    font-size: 0.8em;
+	font-style: italic;
+	font-size: 0.8em;
   text-align: center;
 }
 
@@ -121,5 +120,5 @@
   .input-group {
     margin-bottom: 1.5em;
   }
-
+  
 }

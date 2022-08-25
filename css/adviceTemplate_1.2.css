@@ -1,5 +1,5 @@
 .advice {
-	background-color: #100f0ea8;
+	background-color: var(--col-dark-background-box);
 	display: flex;
 	align-items: stretch;
 	border-radius: 0.8em;
@@ -75,7 +75,7 @@
 }
 
 .advice-title h2 {
-	color: #f3a401;
+	color: var(--col-dark-element);
 }
 
 .advice-comment {

@@ -11,7 +11,7 @@
 }
 
 .beer-info {
-	background-color: #100f0e;
+	background-color: var(--col-dark-background);
 	border-radius: 1em;
 	overflow: hidden;
 	display: flex;
@@ -52,7 +52,7 @@
 
 .title-and-rate h1
 {
-	color: white;
+	color: var(--col-dark-text);
 	margin: 0;
 	padding: 0.5% 1% 0 0;
 	white-space: nowrap;
@@ -70,7 +70,7 @@
 }
 
 .title-info .beer-style {
-	color: #f3a401;
+	color: var(--col-dark-element);
 }
 
 .rate-icons img

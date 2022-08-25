@@ -12,7 +12,7 @@
 
 .user-header {
 	display: flex;
-	background-color: #100f0e;
+	background-color: var(--col-dark-background);
 	padding: 2em;
 	border-radius: 1em;
 }
@@ -113,7 +113,7 @@
 .advice-title p
 {
 	margin: 0;
-	color: #f3a401;
+	color: var(--col-dark-element);
 }
 
 .is-blur {
@@ -167,7 +167,7 @@
 }
 
 .avatars img.selected:not(.black-and-white) {
-	outline: .2em solid #f3a401;
+	outline: .2em solid var(--col-dark-element);
 }
 
 .save-btn {

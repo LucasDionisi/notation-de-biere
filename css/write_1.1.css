@@ -9,7 +9,7 @@
 }
 
 .write-advice {
-	background-color: #100f0ea8;
+	background-color: var(--col-dark-background-box);
     display: flex;
     flex-direction: column;
     border-radius: 0.8em;
@@ -37,7 +37,7 @@
 
 .rate-group p {
 	margin-right: 1em;
-	color: #f3a401;
+	color: var(--col-dark-element);
 }
 
 .title-group {
@@ -49,9 +49,9 @@
   display: block;
   width: 18em;
   border: none;
-  border-bottom: 0.1em solid #f3a401;
-  background-color: #1e1d1e;
-  color: white;
+  border-bottom: 0.1em solid var(--col-dark-element);
+  background-color: var(--col-dark-background-box);
+  color: var(--col-dark-text);
 }
 
 .title-group input:focus { 
@@ -59,7 +59,7 @@
 }
 
 .title-group label {
-  color: #f3a401; 
+  color: var(--col-dark-element); 
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -74,7 +74,7 @@
 .title-group input:focus ~ label, .title-group input:valid ~ label {
   top:-1em;
   font-size:0.8em;
-  color:#f3a401;
+  color: var(--col-dark-element);
 }
 
 .title-group .bar { 
@@ -89,7 +89,7 @@
   width:0;
   bottom:1px; 
   position:absolute;
-  background:#f3a401; 
+  background:var(--col-dark-element); 
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
@@ -113,9 +113,9 @@
 
 .comment-group textarea {
 	width: 100%;
-	background-color: #1e1d1e;
-	color: white;
-	border: .1em solid #f3a401;
+	background-color: var(--col-dark-background-box);
+	color: var(--col-dark-text);
+	border: .1em solid var(--col-dark-element);
 	border-radius: .4em;
 	padding: .5em;
 }

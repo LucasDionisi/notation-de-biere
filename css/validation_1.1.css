@@ -12,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #100f0ea8;
+    background-color: var(--col-dark-background-box);
     border-radius: 1em;
     margin-top: 1em;
     padding: 6em 6em 4em 6em;
@@ -26,7 +26,7 @@
 
 .validation-page p {
 	margin: .2em;
-	color: #f3a401;
+	color: var(--col-dark-element);
 }
 
 .validation-page .error-message {

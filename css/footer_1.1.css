@@ -1,7 +1,7 @@
 .footer {
 	height: 3em;
 	width: 100vw;
-	background-color: #100f0e;
+	background-color: var(--col-dark-background);
 	-webkit-box-shadow: 0 .06em 1em 0 rgba(0,0,0,0.85); 
 	box-shadow: 0 .06em 1em 0 rgba(0,0,0,0.85);
 }
@@ -12,5 +12,5 @@
 }
 
 .footer a {
-	color: #f3a401;
+	color: var(--col-dark-element);
 }
