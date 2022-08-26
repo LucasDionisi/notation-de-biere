@@ -8,13 +8,8 @@
     --col-dark-element-secondary: hsl(34deg 93% 53% / 73%);
 }
 
-@font-face {
-    font-family: 'acme';
-    src: url('../font/acme.ttf') format ('truetype');
-}
-
 body {
-    font-family: 'acme';
+    font-family: sans-serif;
     font-weight: unset;
     margin: 0px;
     background-color: var(--col-dark-background-secondary);
