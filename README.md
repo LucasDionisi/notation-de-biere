@@ -2,7 +2,7 @@
 
 ## A faire P1
 - Possibilité de modifier/supprimer son avis.
-- Donner un avis : gout, couleur, ...
+- Donner un avis : Impression générale - arôme - saveur - texture en bouche
 - Biere crée elle existe pas déjà ???
 
 ## A faire P2
