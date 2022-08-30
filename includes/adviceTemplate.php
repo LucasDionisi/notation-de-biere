@@ -66,5 +66,9 @@
       <h2><?= $advice['title'] ?></h2>
     </div>
     <p class="advice-comment scrollbar"><?= $advice['comment'] ?></p>
+    <div class="additionals-rates">
+      <p>Parfum : <?=$advice['rate_aroma']?> / 5</p>
+      <p>Saveur : <?=$advice['rate_flavor']?> / 5</p>
+    </div>
   </div>
 </div>

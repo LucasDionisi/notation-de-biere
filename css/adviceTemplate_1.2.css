@@ -85,6 +85,15 @@
 	white-space: pre-line;
 }
 
+.additionals-rates {
+	display: flex;
+}
+
+.additionals-rates p {
+	margin-right: 1em;
+	color: var(--col-dark-element);
+}
+
 @media screen and (max-width: 768px) {
 	.advice {
 		height: 10em;
