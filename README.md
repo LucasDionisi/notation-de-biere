@@ -20,3 +20,4 @@
 ## Idées P3
 - connection régulière xp.
 - xp via parainage.
+- Masque opacité pour les texts tronqués
