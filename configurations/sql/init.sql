@@ -50,6 +50,8 @@ CREATE TABLE IF NOT EXISTS advice
     beer_id INT NOT NULL,
     user_id INT NOT NULL,
     rate INT NOT NULL,
+    rate_aroma INT NOT NULL,
+    rate_flavor INT NOT NULL,
     title VARCHAR(100),
     comment VARCHAR(750),
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -71,5 +73,13 @@ CREATE TABLE IF NOT EXISTS avatar
     id INT NOT NULL AUTO_INCREMENT,
     file_name VARCHAR(100),
     level INT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS version
+(
+    id INT NOT NULL AUTO_INCREMENT,
+    param VARCHAR(100),
+    data VARCHAR(100)
     PRIMARY KEY (id)
 );

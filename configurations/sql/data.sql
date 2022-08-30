@@ -40,3 +40,6 @@ INSERT INTO avatar (file_name, level) VALUES
 ("31.png", 6), ("32.png", 6), ("33.png", 6), ("34.png", 6), ("35.png", 7), ("36.png", 7), ("37.png", 7), ("38.png", 7), ("39.png", 7), ("40.png", 8),
 ("41.png", 8), ("42.png", 8), ("43.png", 8), ("44.png", 9), ("45.png", 9), ("46.png", 9), ("47.png", 9), ("48.png", 9), ("49.png", 10), ("50.png", 10),
 ("51.png", 10), ("52.png", 11), ("53.png", 11), ("54.png", 11), ("55.png", 12), ("56.png", 12);
+
+INSERT INTO version (param, data) VALUES
+("database", "1.0");
