@@ -247,12 +247,12 @@
             return $res;
         }
 
-        function addAdvice($beer_id, $user_id, $rate, $title, $comment) {
+        function addAdvice($beer_id, $user_id, $rate, $rateAroma, $rateFlavor, $title, $comment) {
             if (! isset($this->connection)) return NULL;
 
-            $sql = "INSERT INTO advice (beer_id, user_id, rate, title, comment) VALUES (?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO advice (beer_id, user_id, rate, rate_aroma, rate_flavor, title, comment) VALUES (?, ?, ?, ?, ?, ?, ?)";
             $stmt = $this->connection->prepare($sql);
-            mysqli_stmt_bind_param($stmt, 'iiiss', $beer_id, $user_id, $rate, $title, $comment);
+            mysqli_stmt_bind_param($stmt, 'iiiiiss', $beer_id, $user_id, $rate, $rateAroma, $rateFlavor, $title, $comment);
             
             if (!$stmt->execute()) {
                 $stmt->close();

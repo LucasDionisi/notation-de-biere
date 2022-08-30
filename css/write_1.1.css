@@ -129,6 +129,30 @@
 	outline: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+	
+   opacity: 1;
+
+}
+
+.additionals-rates {
+	margin-bottom: 1em;
+}
+
+.additionals-rates label {
+	margin-right: 1em;
+	color: var(--col-dark-element);
+	border-bottom: 0.1em solid var(--col-dark-element);
+}
+
+.additionals-rates input {
+	width: fit-content;
+	margin-right: 1em;
+	background-color: var(--col-dark-background-box);
+	border: none;
+}
+
 .error-message {
 	margin: 0 0 1em 0;
 	color: red;

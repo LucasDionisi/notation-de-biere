@@ -35,6 +35,8 @@
       if (isset($_POST['submitButton'])) {
         $title = $_POST['title'];
         $rate = $_POST['rate'];
+        $rateAroma = $_POST['rate-aroma'];
+        $rateFlavor = $_POST['rate-flavor'];
         $comment = $_POST['comment'];
         
         $titleLength = strlen($title);
@@ -53,6 +55,14 @@
           $errorMsg = $errorMsg . "Veuillez donner une note."; 
         }
 
+        if ($rateAroma < 0 || $rateAroma > 5) {
+            $errorMsg = $errorMsg . "Veuillez donner une note au parfum entre 0 et 5."; 
+        }
+
+        if ($rateFlavor < 0 || $rateFlavor > 5) {
+            $errorMsg = $errorMsg . "Veuillez donner une note à la saveur entre 0 et 5."; 
+        }
+
         if ($commentLength < 15 || $commentLength > 500)
         {
           $errorMsg = $errorMsg . "Veuillez donner un commentaire d'au moins 15 caractères."; 
@@ -65,7 +75,7 @@
             $databaseManager->connect();
           }
 
-          $res = $databaseManager->addAdvice($beer['id'], $session['id'], $rate, $title, $comment);
+          $res = $databaseManager->addAdvice($beer['id'], $session['id'], $rate, $rateAroma, $rateFlavor, $title, $comment);
 
           if (!isset($res)) {
             header('Location: ../biere/' . $beer['name']);
@@ -98,6 +108,15 @@
                 <div class="comment-group">
                     <textarea id="comment-textarea" name="comment" required maxlength="500"
                         placeholder="Faites part de votre avis." rows="10" cols="40"><?=$comment?></textarea>
+                </div>
+                <p>
+                    Note le parfum que tu sens et la saveur que tu goûtes sur 5.
+                </p>
+                <div class="additionals-rates">
+                    <label for="rate-aroma">Parfum :</label>
+                    <input type="number" name="rate-aroma" min="0" max="5" value="0">
+                    <label for="rate-flavor">Saveur :</label>
+                    <input type="number" name="rate-flavor" min="0" max="5" value="0">
                 </div>
                 <?php if (!empty($errorMsg)) { ?>
                 <p class="error-message">Pour créer un avis : <?=$errorMsg?></p>
