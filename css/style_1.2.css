@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'FrancoisOne-Regular';
+    src: url('/fonts/FrancoisOne-Regular.ttf') format('truetype');
+}
+
 :root {
     --col-dark-background: hsl(220deg 26% 6%);
     --col-dark-background-secondary: hsl(220deg 7% 26%);
@@ -6,10 +11,12 @@
     --col-dark-text-secondary: hsl(39deg 10% 90% / 71%);
     --col-dark-element: hsl(40deg 99% 48%);
     --col-dark-element-secondary: hsl(34deg 93% 53% / 73%);
+
+    --font-main: 'FrancoisOne-Regular';
 }
 
 body {
-    font-family: sans-serif;
+    font-family: var(--font-main);
     font-weight: unset;
     margin: 0px;
     background-color: var(--col-dark-background-secondary);
@@ -49,7 +56,7 @@ select {
 }
 
 textarea {
-    font-family: inherit;
+    font-family: var(--font-main);
 }
 
 button {

@@ -11,7 +11,7 @@
 	$cssHome 		   = 'home_1.2.css';
 	$cssRegister 	   = 'register_1.1.css';
 	$cssResetPswd	   = 'resetPswd_1.1.css';
-	$cssStyle 		   = 'style_1.1.css';
+	$cssStyle 		   = 'style_1.2.css';
 	$cssUser 		   = 'user_1.1.css';
 	$cssValidation 	   = 'validation_1.1.css';
 	$cssWrite 		   = 'write_1.1.css';
