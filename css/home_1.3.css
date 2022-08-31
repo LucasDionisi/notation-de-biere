@@ -41,7 +41,7 @@
     height: calc(93% - 2.5em);
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: flex-start;
     opacity: 0;
 }
@@ -53,7 +53,7 @@
 }
 
 .beer-preview {
-    height: 20em;
+    height: 100%;
     width: 16em;
     display: flex;
     flex-direction: column;
@@ -161,7 +161,7 @@
     }
 
     .beer-preview {
-        height: 15em;
+        height: 100%;
         width: 12em;
     }
 
@@ -190,7 +190,7 @@
     }
 
     .beer-preview {
-        height: 11em;
+        height: 100%;
         width: 8.8em;
     }
 

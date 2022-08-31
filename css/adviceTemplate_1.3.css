@@ -5,7 +5,7 @@
 	border-radius: 0.8em;
 	margin-top: 1em;
 	padding: 1em 2em 1em 2em;
-	height: 13em;
+	max-height: 20em;
 }
 
 .advice-left {
@@ -96,7 +96,7 @@
 
 @media screen and (max-width: 768px) {
 	.advice {
-		height: 10em;
+		max-height: 14em;
 	}
 
 	.advice-left {
@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 480px) {
 	.advice {
-		height: 7em;
+		max-height: 10em;
 		padding: .5em 1em .5em 1em;
 	}
 
