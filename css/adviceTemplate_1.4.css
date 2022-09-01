@@ -57,16 +57,19 @@
 	margin-bottom: 1em;
 }
 
-.rate-and-date p {
-	margin-left: 1em;
-}
-
 .rate-and-date .date-full {
 	display: block;
+	margin-left: 1em;
 }
 
 .rate-and-date .date-cut {
 	display: none;
+	margin-left: 1em;
+}
+
+.delete-advice {
+	margin: 0 0 0 auto;
+	font-size: 2em;
 }
 
 .advice-rate img {
@@ -114,6 +117,10 @@
 	.advice-rate img {
 		width: 1.2em;
 		height: 1.2em;
+	}
+
+	.delete-advice {
+		font-size: 1.2em;
 	}
 
 	.rate-and-date .date-full {

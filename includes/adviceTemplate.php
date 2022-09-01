@@ -61,6 +61,13 @@
       </div>
       <p class="date-full"><i>Avis publié le <?= date_format(new DateTime($advice['created_at']), 'd-m-Y à H:i') ?></i></p>
       <p class="date-cut"><i>Le <?= date_format(new DateTime($advice['created_at']), 'd-m-Y') ?></i></p>
+      <?php 
+        if ((!$isUserPage && ($session['pseudo'] == $advice['pseudo'])) || $isMyPage) {
+      ?>
+          <p class="delete-advice"><a href="#" alt="Supprimer l'avis">🗑</a></p>
+      <?php
+        }
+      ?>
     </div>
     <div class="advice-title">
       <h2><?= $advice['title'] ?></h2>
