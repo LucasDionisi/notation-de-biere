@@ -80,6 +80,6 @@ CREATE TABLE IF NOT EXISTS version
 (
     id INT NOT NULL AUTO_INCREMENT,
     param VARCHAR(100),
-    data VARCHAR(100)
+    data VARCHAR(100),
     PRIMARY KEY (id)
 );
