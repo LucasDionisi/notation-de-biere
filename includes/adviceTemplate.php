@@ -64,7 +64,7 @@
       <?php 
         if ((!$isUserPage && ($session['pseudo'] == $advice['pseudo'])) || $isMyPage) {
       ?>
-          <p class="delete-advice"><a href="#" alt="Supprimer l'avis">🗑</a></p>
+          <p class="delete-advice"><a href="#" value="<?=$advice['id']?>" alt="Supprimer l'avis">🗑</a></p>
       <?php
         }
       ?>
