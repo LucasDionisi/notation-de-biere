@@ -113,8 +113,9 @@
             </div>
         </div>
 
-    <?php 
-        } 
+    <?php
+        }
+        include 'includes/deleteModal.php';
         $databaseManager->disconnect();
     ?>
     <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>

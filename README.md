@@ -3,6 +3,7 @@
 ## A faire P1
 - Possibilité de modifier/supprimer son avis.
 - Biere crée elle existe pas déjà ???
+- Mettre le footer partout.
 
 ## A faire P2
 - Si déjà fait un avis, demande de modifier.

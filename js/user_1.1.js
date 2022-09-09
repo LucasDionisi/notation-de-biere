@@ -44,3 +44,13 @@ function unSelectAll() {
 		this.classList.remove('selected');
 	});
 }
+
+$('.delete-advice a').on('click', function() {
+	$('#delete-modal').css("display", "block");
+	$('#content').addClass('is-blur');
+});
+
+$('#close-delete-modal').on('click', function() {
+	$('#delete-modal').css("display", "none");
+	$('#content').removeClass('is-blur');
+})
