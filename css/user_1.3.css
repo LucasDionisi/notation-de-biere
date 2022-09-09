@@ -171,6 +171,26 @@
 	margin-top: 1em;
 }
 
+#delete-modal {
+	width: 25vw;
+	height: auto;
+	left: 37.5vw;
+	top: 20vh;
+}
+
+#delete-modal .modal-main {
+	height: 100%;
+}
+
+#delete-modal .btnGroup {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#delete-modal .btnGroup button {
+	margin-left: 1em;
+}
+
 @media screen and (max-width: 768px) {
 	.user-header {
 		padding: 1.5em;

@@ -6,11 +6,11 @@
         </div>
         <div class="modal-main">
         	<form method="POST" action="">
-        		<p>Es-tu certain de vouloir supprimer cet avis ? 😫</p>
+        		<p>Es-tu certain de vouloir supprimer cet avis ?</p>
                 <input type="text" name="advice-id" hidden>
                 <div class="btnGroup">
-	                <button type="submit" name="cancelButton" class="cancel-btn">Annuler</button>
-	                <button type="submit" name="submitButton" class="delete-btn">Supprimer</button>
+	                <button type="submit" name="cancelButton" class="cancel-btn">NON 😬</button>
+	                <button type="submit" name="submitButton" class="delete-btn">OUI 😭</button>
                 </div>
             </form>
         </div>

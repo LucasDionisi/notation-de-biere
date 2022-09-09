@@ -6,6 +6,7 @@
 :root {
     --col-dark-background: hsl(220deg 26% 6%);
     --col-dark-background-secondary: hsl(220deg 7% 26%);
+    --col-dark-backgroung-modal: hsl(220deg 4% 16%);
     --col-dark-background-box: hsl(220deg 9% 12%);
     --col-dark-text: hsl(39deg 17% 92%);
     --col-dark-text-secondary: hsl(39deg 10% 90% / 71%);
@@ -103,7 +104,7 @@ button:hover {
   top: 12.5vh;
   width: 75vw;
   height: 75vh;
-  background-color: var(--col-dark-background);
+  background-color: var(--col-dark-backgroung-modal);
   border-radius: .5em;
 }
 
