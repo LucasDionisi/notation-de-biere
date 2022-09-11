@@ -62,7 +62,8 @@
       <p class="date-full"><i>Avis publié le <?= date_format(new DateTime($advice['created_at']), 'd-m-Y à H:i') ?></i></p>
       <p class="date-cut"><i>Le <?= date_format(new DateTime($advice['created_at']), 'd-m-Y') ?></i></p>
       <?php 
-        if ((!$isUserPage && ($session['pseudo'] == $advice['pseudo'])) || $isMyPage) {
+        // if ((!$isUserPage && ($session['pseudo'] == $advice['pseudo'])) || $isMyPage) {
+          if ($isMyPage) {
       ?>
           <p class="delete-advice"><a href="#" value="<?=$advice['id']?>" alt="Supprimer l'avis">🗑</a></p>
       <?php
