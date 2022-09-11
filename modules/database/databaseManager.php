@@ -260,6 +260,16 @@
             }
         }
 
+        function deleteAdvice($userId, $adviceId) {
+            if (! isset($this->connection)) return NULL;
+
+            $sql = "DELETE FROM advice WHERE user_id = ? AND id = ?";
+            $stmt = $this->connection->prepare($sql);
+            mysqli_stmt_bind_param($stmt, 'ii', $userId, $adviceId);
+            $stmt->execute();
+            $stmt->close();
+        }
+
         function getBeerStyle() {
             if (! isset($this->connection)) return NULL;
             return $this->connection->query('SELECT * FROM beer_style');

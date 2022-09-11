@@ -46,6 +46,7 @@ function unSelectAll() {
 }
 
 $('.delete-advice a').on('click', function() {
+	$('#input-advice-id')[0].value = this.getAttribute('value');
 	$('#delete-modal').css("display", "block");
 	$('#content').addClass('is-blur');
 });

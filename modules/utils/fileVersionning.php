@@ -21,7 +21,7 @@
 	$jsCompressorJs	   = 'compressorJs-1.1.1.min.js';
 	$jsHome 		   = 'home_1.0.js';
 	$jsJquery 		   = 'jquery-3.6.0.min.js';
-	$jsUser			   = 'user_1.2.js';
+	$jsUser			   = 'user_1.1.1.js';
 	$jsWriteAdvice 	   = 'writeAdvice_1.0.js';
 
 ?>

@@ -1,9 +1,10 @@
 # notation-de-biere
 
 ## A faire P1
-- Possibilité de modifier/supprimer son avis.
+- Possibilité de modifier son avis.
 - Biere crée elle existe pas déjà ???
 - Mettre le footer partout.
+- Quand on écrit un avis, si y'a pas assez de caractères. Re mettre les notes.
 
 ## A faire P2
 - Si déjà fait un avis, demande de modifier.
