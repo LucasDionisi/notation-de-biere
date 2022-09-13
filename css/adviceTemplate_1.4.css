@@ -34,6 +34,10 @@
 	margin: 0;
 }
 
+.advice-left a {
+	text-align: center;
+}
+
 .userInfos {
 	display: flex;
 	flex-direction: column;
