@@ -1,7 +1,7 @@
 .user-page {
     padding: 2em 11% 0 11%;
     overflow: auto;
-		height: 100vh;
+		height: calc(100vh - 14em);
 		-ms-overflow-style: none; /* for Internet Explorer, Edge */
   	scrollbar-width: none; /* for Firefox */
 }

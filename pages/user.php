@@ -120,7 +120,10 @@
                 </form>
             </div>
         </div>
-
+            <?php
+            include 'includes/footer.php';
+        ?>
+        <div class="end-of-page"></div>
     <?php
     }
     include 'includes/deleteModal.php';

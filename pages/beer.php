@@ -66,6 +66,11 @@
     }
   ?>
 
+          <?php
+            include 'includes/footer.php';
+        ?>
+        <div class="end-of-page"></div>
+
   <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
   <script type="text/javascript" src="../js/<?=$jsBeer?>"></script>
 </body>

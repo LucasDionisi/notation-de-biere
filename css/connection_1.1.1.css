@@ -1,20 +1,20 @@
-.register-page {
+.connection-page {
     display: flex;
-    justify-content: center;
+    height: calc(100vh - 14em);
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 
-.register-page h1 {
+.connection-page h1 {
      padding: 0;
 }
 
-.register-page a {
+.connection-page a {
     color: var(--col-dark-element);
 }
 
-.register-box {
+.connection-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -26,8 +26,8 @@
 }
 
 .input-group {
-	position: relative;
-  margin-bottom: 3em;
+	  position: relative;
+    margin-bottom: 3em;
 }
 
 .input-group input {
@@ -56,7 +56,6 @@
   -webkit-transition:0.2s ease all;
 }
 
-
 .input-group input:focus ~ label, .input-group input:valid ~ label {
   top:-1em;
   color: var(--col-dark-element);
@@ -80,8 +79,7 @@
   -webkit-transition:0.2s ease all;
 }
 
-.input-group .bar:before 
-{
+.input-group .bar:before {
   left:50%;
 }
 
@@ -93,32 +91,47 @@
   width:50%;
 }
 
+.forget-password {
+  width: 100%;
+  margin-top: -1.5em;
+}
+
+.forget-password a {
+  text-decoration: underline;
+}
+
 .error-message {
   color: red;
 	font-style: italic;
-}
-
-.valid-message {
-  color: green;
-	font-style: italic;
+	font-size: 0.8em;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  .register-box {
+  .connection-box {
     padding: 4em 4em 2em 4em;
   }
 
   .input-group {
     margin-bottom: 2em;
   }
+
+  .forget-password {
+    margin-top: -1em;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
-  .register-box {
+  .connection-box {
     padding: 3em 3em 1.5em 3em;
   }
 
   .input-group {
     margin-bottom: 1.5em;
+  }
+
+  .forget-password {
+    margin-top: -.75em;
   }
 }

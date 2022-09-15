@@ -1,6 +1,6 @@
 .validation-page {
     display: flex;
-    justify-content: center;
+    height: cacl(100vh - 14em);
     flex-direction: column;
     align-items: center;
     margin-top: 2.5em;

@@ -90,6 +90,10 @@
         </form>
         <p>Vous n'avez pas de compte ? <a href="../inscription">S'inscrire</a></p>
     </div>
+            <?php
+            include 'includes/footer.php';
+        ?>
+        <div class="end-of-page"></div>
 </body>
 
 </html>
