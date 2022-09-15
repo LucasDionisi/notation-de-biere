@@ -121,7 +121,7 @@
 .modal-top {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 }
 
 .modal-top p {
@@ -172,7 +172,7 @@
 }
 
 #delete-modal {
-	width: 25vw;
+	width: auto;
 	height: auto;
 	left: 37.5vw;
 	top: 20vh;
