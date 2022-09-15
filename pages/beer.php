@@ -19,20 +19,30 @@
 
   <div class="beer-page">
 
-    <?php include 'includes/beerInfo.php'; ?>
+    <?php 
+      include 'includes/beerInfo.php'; 
+
+      if (!isset($databaseManager)) {
+        $databaseManager = new DatabaseManager();
+        $databaseManager->connect();
+      }
+
+      if (isset($_POST['submitDeleteButton'])) {
+        $deleteId = $_POST['advice-id'];
+
+        $databaseManager->deleteAdvice($session['id'], $deleteId);
+      }
+
+    ?>
 
     <div class="beer-content">
       <div class="beer-content-header">
         <button class="add-advice" onclick="window.location.href='../rediger/<?= $beer['name'] ?>'">Rédiger un avis</button>
-        <p><?= $beer['nb_advices'] ?> avis</p>
+        <p><?= $databaseManager->getAdvices($beer['id'])->num_rows ?> avis</p>
       </div>
       <div class="advices">
 
         <?php
-        if (!isset($databaseManager)) {
-          $databaseManager = new DatabaseManager();
-          $databaseManager->connect();
-        }
 
         $advices = $databaseManager->getAdvices($beer['id']);
 
@@ -42,16 +52,22 @@
             require 'includes/adviceTemplate.php';
           }
         }
-
-        if ($databaseManager != null) {
-          $databaseManager->disconnect();
-        }
         ?>
       </div>
     </div>
   </div>
-    <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
-    <script type="text/javascript" src="../js/<?=$jsBeer?>"></script>
+
+  <?php
+
+    include 'includes/deleteModal.php';
+        
+    if ($databaseManager != null) {
+      $databaseManager->disconnect();
+    }
+  ?>
+
+  <script type="text/javascript" src="../js/libs/<?=$jsJquery?>"></script>
+  <script type="text/javascript" src="../js/<?=$jsBeer?>"></script>
 </body>
 
 </html>
