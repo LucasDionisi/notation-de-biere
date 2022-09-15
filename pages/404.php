@@ -17,6 +17,11 @@
         <img src="resources/img/empty_beer.jpg" alt="Photo de bière vide">
         <h1>Va te resservir une bière 🍺 !</h1>
     </div>
+
+            <?php
+            include 'includes/footer.php';
+        ?>
+        <div class="end-of-page"></div>
 </body>
 
 </html>

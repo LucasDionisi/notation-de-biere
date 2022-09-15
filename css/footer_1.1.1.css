@@ -14,3 +14,16 @@
 .footer a {
 	color: var(--col-dark-element);
 }
+
+
+.end-of-page {
+    height: 5em;
+    width: 100%;
+    background-color: var(--col-dark-background);
+}
+
+@media screen and (max-width: 480px) {
+    .end-of-page {
+        height: 8em;
+    }
+}
