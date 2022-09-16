@@ -120,14 +120,17 @@
                 </form>
             </div>
         </div>
-            <?php
-            include 'includes/footer.php';
-        ?>
-        <div class="end-of-page"></div>
     <?php
-    }
-    include 'includes/deleteModal.php';
-    $databaseManager->disconnect();
+        }
+    ?>
+    <?php
+        include 'includes/footer.php';
+    ?>
+    <div class="end-of-page"></div>
+    
+    <?php
+        include 'includes/deleteModal.php';
+        $databaseManager->disconnect();
     ?>
     <script type="text/javascript" src="../js/libs/<?= $jsJquery ?>"></script>
     <script type="text/javascript" src="../js/<?= $jsUser ?>"></script>
